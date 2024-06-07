@@ -1,0 +1,12 @@
+pandas
+matplotlib
+plotly-express
+seaborn
+scikit-learn
+gradio
+joblib
+statsmodels
+scipy
+numpy
+catboost
+xgboost
