@@ -1,9 +1,10 @@
 import pandas as pd
 import numpy as np
+import pickle
 from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score, KFold
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 import statsmodels.api as sm
-from sklearn.preprocessing import StandardScaler, OneHotEncoder ,OrdinalEncoder ,LabelEncoder
+from sklearn.preprocessing import StandardScaler, OneHotEncoder, OrdinalEncoder, LabelEncoder, MinMaxScaler
 from sklearn.cluster import KMeans
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
@@ -13,17 +14,20 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.svm import SVR
 from catboost import CatBoostRegressor
 from xgboost import XGBRegressor
-from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.metrics import mean_squared_error, r2_score, root_mean_squared_error
 import joblib
+
 import matplotlib.pyplot as plt
 from Logger import CustomLogger
 
 logs = CustomLogger()
 
+
 class regressor:
     """
     This class object handles regression problems
     """
+
     def __init__(self, random_state=42):
         self.random_state = random_state
         self.models = {
@@ -31,7 +35,7 @@ class regressor:
             "RandomForestRegressor": RandomForestRegressor(random_state=self.random_state),
             "SVR": SVR(),
             "CatBoostRegressor": CatBoostRegressor(random_state=self.random_state, verbose=10),
-            "XGBRegressor": XGBRegressor(random_state=self.random_state, verbosity=10)
+            "XGBRegressor": XGBRegressor(random_state=self.random_state, verbosity=1)
         }
         self.best_model = None
         self.preprocessor = None
@@ -40,7 +44,7 @@ class regressor:
         self.results = {}
         self.wcss = None
 
-    def pre_process(self,X, categorical_features):
+    def pre_process(self, X, categorical_features):
         """
 
         :param X:
@@ -56,6 +60,7 @@ class regressor:
             categorical_transformer = Pipeline(steps=[
                 ('imputer', SimpleImputer(strategy='constant', fill_value='missing')),
                 ('encoder', OneHotEncoder(handle_unknown='ignore'))
+                #('encoder', LabelEncoder())
             ])
             self.preprocessor = ColumnTransformer(
                 transformers=[
@@ -68,7 +73,7 @@ class regressor:
 
         except Exception as e:
             raise ValueError(f"Error in preprocessing data: {e}")
-            logs.log("Something went wrong while pre-processing the dataset",level='ERROR')
+            logs.log("Something went wrong while pre-processing the dataset", level='ERROR')
 
     def find_optimal_clusters(self, X, max_k=5):
         """
@@ -91,8 +96,7 @@ class regressor:
             return optimal_k
         except Exception as e:
             raise ValueError(f"Error in finding optimal clusters {e}")
-            logs.log("Something went wrong while finding opimal clusters", level='ERROR')
-
+            logs.log("Something went wrong while finding optimal clusters", level='ERROR')
 
     def plot_elbow_curve(self, max_k=5):
         """
@@ -111,7 +115,6 @@ class regressor:
         except Exception as e:
             raise ValueError(f"Error in rendering plot of elbow curve {e}")
             logs.log("Something went wrong while rendering plot of elbow curve", level='ERROR')
-
 
     def find_clusters(self, X, n_clusters=4):
         """
@@ -137,11 +140,11 @@ class regressor:
         :return:
         """
         try:
+            logs.log("Successfully splitted the dataset to train-test set!")
             return train_test_split(X, y, test_size=test_size, random_state=self.random_state)
-        except Exception  as e:
+        except Exception as e:
             raise ValueError(f"Error in splitting dataset into train-test sets {e}")
             logs.log("Something went wrong while splitting dataset into train-test sets", level='ERROR')
-
 
     def check_multicollinearity(self, X, threshold=10.0):
         """
@@ -158,10 +161,11 @@ class regressor:
             # Drop columns with VIF above the threshold
             high_vif_features = vif_data[vif_data["VIF"] > threshold]["feature"].tolist()
             X_dropped = X.drop(columns=high_vif_features)
+            logs.log("Successfully performed the multi-collinearity check step!")
 
             return X_dropped, vif_data
         except Exception as e:
-            raise ValueError(f"Error in checking multicollinearity: {e}")
+            raise ValueError(f"Error in checking multi-collinearity: {e}")
 
     def adjusted_r2(self, r2, n, p):
         """
@@ -184,13 +188,16 @@ class regressor:
                 self.trained_models[name] = model
                 y_pred = model.predict(X)
                 mse = mean_squared_error(y, y_pred)
+                rmse = root_mean_squared_error(y, y_pred)
                 r2 = r2_score(y, y_pred)
                 adj_r2 = self.adjusted_r2(r2, n, p)
-                self.results[name] = {'mse': mse, 'r2': r2, 'adj_r2': adj_r2}
+                self.results[name] = {'mse': mse, 'rmse': rmse, 'r2': r2, 'adj_r2': adj_r2}
 
-            self.select_best_model()
+            logs.log("Successfully performed the training step!")
+            # self.select_best_model()
         except Exception as e:
             raise ValueError(f"Error in training models: {e}")
+            logs.log("Something went wrong while training the models", level='ERROR')
 
     def evaluate_models(self, X_test, y_test):
         """
@@ -204,12 +211,15 @@ class regressor:
             for name, model in self.trained_models.items():
                 y_pred = model.predict(X_test)
                 mse = mean_squared_error(y_test, y_pred)
+                rmse = root_mean_squared_error(y_test, y_pred)
                 r2 = r2_score(y_test, y_pred)
                 adj_r2 = self.adjusted_r2(r2, n, p)
-                evaluation_results[name] = {'mse': mse, 'r2': r2, 'adj_r2': adj_r2}
+                evaluation_results[name] = {'mse': mse, 'rmse': rmse, 'r2': r2, 'adj_r2': adj_r2}
+            logs.log("Successfully performed the evaluation of all trained models!")
             return evaluation_results
         except Exception as e:
             raise ValueError(f"Error in evaluating models: {e}")
+            logs.log("Something went wrong while evaluating models ", level='ERROR')
 
     def select_best_model(self):
         """
@@ -217,11 +227,13 @@ class regressor:
         """
         try:
             self.best_model = max(self.trained_models, key=lambda k: self.results[k]['adj_r2'])
+            logs.log("Successfully performed the select best model step!")
+            return self.best_model
         except Exception as e:
             raise ValueError(f"Error in selecting the best model: {e}")
+            logs.log("Something went wrong while selecting the best saved model ", level='ERROR')
 
-
-    def save_best_model(self, filename):
+    def save_best_model(self, filename='linear_reg.sav'):
         """
         :param filename:
         :return:
@@ -229,29 +241,100 @@ class regressor:
         try:
             best_model_instance = self.trained_models[self.best_model]
             joblib.dump(best_model_instance, filename)
+            pickle.dump(best_model_instance, open(filename, 'wb'))
+            logs.log("Successfully saved the best model!")
         except Exception as e:
             raise ValueError(f"Error in saving the best model: {e}")
+            logs.log("Something went wrong while saving the best saved model ", level='ERROR')
 
-    def plot_feature_importances(self):
+    def load_saved_best_model(self, filename='linear_reg.sav'):
         """
+        :param filename:
+        :return : saved model
+        """
+        try:
+            saved_model = pickle.load(open(filename, 'rb'))
+            return saved_model
+        except Exception as e:
+            raise ValueError(f"Error in loading the best saved model: {e}")
+            logs.log("Something went wrong while loading the best saved model ", level='ERROR')
+
+    def get_feature_names(self):
+        """Extract feature names from the preprocessing pipeline."""
+        try:
+            feature_names = []
+            if self.preprocessor is not None:
+                #self.preprocessor.fit(X)
+                for name, transformer, columns in self.preprocessor.transformers_:
+                    if transformer == 'drop' or transformer is None:
+                        continue
+                    if hasattr(transformer, 'named_seps'):
+                        # OneHotEncoder
+                        if 'onehot' in transformer.named_seps:
+                            encoder = transformer.named_seps['onehot']
+                            if hasattr(encoder, 'get_feature_names_out'):
+                                feature_names.extend(encoder.get_feature_names_out(columns))
+                            else:
+                                feature_names.extend(encoder.get_feature_names(columns))
+                        else:
+                            feature_names.extend(columns)
+                    else:
+                        if hasattr(transformer, 'get_feature_names_out'):
+                            feature_names.extend(transformer.get_feature_names_out(columns))
+                        else:
+                            feature_names.extend(columns)
+            else:
+                raise ValueError("Preprocessor is not defined or improperly configured.")
+            return feature_names
+        except Exception as e:
+            raise ValueError(f"Error in getting feature names from pre-processing pipeline: {e}")
+            logs.log("Something went wrong while getting feature names from pre-processing pipeline ", level='ERROR')
+
+    def plot_features_importance(self, X):
+        """
+        Plot features importance for the best model.
         :return:
         """
         try:
             if self.best_model in ["RandomForestRegressor", "CatBoostRegressor", "XGBRegressor"]:
                 model = self.trained_models[self.best_model]
                 feature_importances = model.feature_importances_
-                features = (self.preprocessor.transformers_[0][2] +
-                            self.preprocessor.transformers_[1][1]['encoder'].categories_[0].tolist())
+
+                # Extract feature names from the preprocessor
+                features = self.get_feature_names()
+                print(f"Features: {features}")
+                print(f"Feature Importances: {feature_importances}")
+
+                if len(features) != len(feature_importances):
+                    print(f"Lengths of features ({len(features)}) and feature_importances ({len(feature_importances)}) do not match.")
+                    raise ValueError("Lengths of features and feature_importances do not match.")
+
+                # If using one-hot encoding, aggregate importance scores per original feature
+                original_features = []  # List to store original feature names without one-hot encoding suffixes
+                importance_scores = []  # List to store aggregated importance scores per original feature
+
+                for feature_name, importance_score in zip(features, feature_importances):
+                    # Example: Extract original feature name from one-hot encoded feature
+                    original_feature_name = feature_name.split('_')[0]  # Assuming '_encoded' suffix
+
+                    if original_feature_name not in original_features:
+                        original_features.append(original_feature_name)
+                        importance_scores.append(importance_score)
+                    else:
+                        index = original_features.index(original_feature_name)
+                        importance_scores[index] += importance_score
+
                 plt.figure(figsize=(10, 6))
-                plt.barh(features, feature_importances)
+                plt.barh(original_features, importance_scores)
                 plt.xlabel('Feature Importance')
                 plt.ylabel('Feature')
-                plt.title(f'Feature Importances in {self.best_model}')
-                plt.show()
+                plt.title(f'Feature Importance in {self.best_model}')
+                plt.show(block=True)
             else:
-                raise ValueError(f"Feature importances are not available for the best model: {self.best_model}")
+                raise ValueError(f"Feature importance are not available for the best model: {self.best_model}")
         except Exception as e:
-            raise ValueError(f"Error in plotting feature importances: {e}")
+            raise ValueError(f"Error in plotting feature importance: {e}")
+            logs.log("Something went wrong while plotting feature importance ", level='ERROR')
 
     def tune_parameters(self, param_grid, X, y):
         try:
@@ -262,6 +345,7 @@ class regressor:
             self.trained_models[self.best_model.__class__.__name__] = self.best_model
             self.results[self.best_model.__class__.__name__] = {
                 'mse': -grid_search.best_score_,
+                'rmse': root_mean_squared_error(y, self.best_model.predict(X)),
                 'r2': r2_score(y, self.best_model.predict(X)),
                 'adj_r2': self.adjusted_r2(r2_score(y, self.best_model.predict(X)), X.shape[0], X.shape[1])
             }
@@ -281,10 +365,12 @@ class regressor:
             kf = KFold(n_splits=cv, shuffle=True, random_state=self.random_state)
             for name, model in self.models.items():
                 mse_scores = -cross_val_score(model, X, y, cv=kf, scoring='neg_mean_squared_error')
+                rmse_scores = -cross_val_score(model, X, y, cv=kf, scoring='neg_root_mean_squared_error')
                 r2_scores = cross_val_score(model, X, y, cv=kf, scoring='r2')
                 n, p = X.shape
                 adj_r2_scores = [self.adjusted_r2(r2, n, p) for r2 in r2_scores]
-                cv_results[name] = {'mse': mse_scores.mean(), 'r2': r2_scores.mean(), 'adj_r2': np.mean(adj_r2_scores)}
+                cv_results[name] = {'mse': mse_scores.mean(), 'rmse': rmse_scores.mean(), 'r2': r2_scores.mean(),
+                                    'adj_r2': np.mean(adj_r2_scores)}
             return cv_results
         except Exception as e:
             raise ValueError(f"Error in cross-validating models: {e}")

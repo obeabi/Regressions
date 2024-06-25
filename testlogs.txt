@@ -1,0 +1,438 @@
+2024-06-16 00:25:52,773 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:25:52,773 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:26:10,354 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:26:10,354 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:32:28,160 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:32:28,160 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:32:48,311 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:32:48,311 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:34:02,915 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:34:02,915 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:37:47,912 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:37:47,912 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:39:50,587 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:39:50,587 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:40:38,609 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:40:38,609 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:41:10,573 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:41:10,573 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:45:17,183 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:45:17,183 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:46:20,008 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:46:20,008 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:50:51,333 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:50:51,333 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:51:34,814 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:51:34,814 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:53:32,108 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:53:32,108 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:54:10,438 - INFO - Successfully performed the pre-processing step!
+2024-06-16 00:54:10,438 - INFO - Successfully performed the pre-processing step!
+2024-06-16 01:11:12,654 - INFO - Successfully performed the pre-processing step!
+2024-06-16 01:11:12,654 - INFO - Successfully performed the pre-processing step!
+2024-06-16 01:11:12,654 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 01:11:12,654 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 01:11:14,092 - INFO - Successfully performed the training step!
+2024-06-16 01:11:14,092 - INFO - Successfully performed the training step!
+2024-06-16 01:11:14,113 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 01:11:14,113 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 01:11:14,113 - INFO - Successfully performed the select best model step!
+2024-06-16 01:11:14,113 - INFO - Successfully performed the select best model step!
+2024-06-16 01:11:14,124 - INFO - Successfully saved the best model!
+2024-06-16 01:11:14,124 - INFO - Successfully saved the best model!
+2024-06-16 01:18:41,258 - INFO - Successfully performed the pre-processing step!
+2024-06-16 01:18:41,258 - INFO - Successfully performed the pre-processing step!
+2024-06-16 01:18:41,258 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 01:18:41,258 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 01:18:42,829 - INFO - Successfully performed the training step!
+2024-06-16 01:18:42,829 - INFO - Successfully performed the training step!
+2024-06-16 01:18:42,851 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 01:18:42,851 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 01:18:42,852 - INFO - Successfully performed the select best model step!
+2024-06-16 01:18:42,852 - INFO - Successfully performed the select best model step!
+2024-06-16 01:18:42,859 - INFO - Successfully saved the best model!
+2024-06-16 01:18:42,859 - INFO - Successfully saved the best model!
+2024-06-16 01:27:39,652 - INFO - Successfully performed the pre-processing step!
+2024-06-16 01:27:39,652 - INFO - Successfully performed the pre-processing step!
+2024-06-16 01:27:39,653 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 01:27:39,653 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 01:27:41,114 - INFO - Successfully performed the training step!
+2024-06-16 01:27:41,114 - INFO - Successfully performed the training step!
+2024-06-16 01:27:41,133 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 01:27:41,133 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 01:27:41,133 - INFO - Successfully performed the select best model step!
+2024-06-16 01:27:41,133 - INFO - Successfully performed the select best model step!
+2024-06-16 01:27:41,142 - INFO - Successfully saved the best model!
+2024-06-16 01:27:41,142 - INFO - Successfully saved the best model!
+2024-06-16 01:33:52,325 - INFO - Successfully performed the pre-processing step!
+2024-06-16 01:33:52,325 - INFO - Successfully performed the pre-processing step!
+2024-06-16 01:33:52,326 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 01:33:52,326 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 01:33:53,694 - INFO - Successfully performed the training step!
+2024-06-16 01:33:53,694 - INFO - Successfully performed the training step!
+2024-06-16 01:33:53,714 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 01:33:53,714 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 01:33:53,714 - INFO - Successfully performed the select best model step!
+2024-06-16 01:33:53,714 - INFO - Successfully performed the select best model step!
+2024-06-16 01:33:53,723 - INFO - Successfully saved the best model!
+2024-06-16 01:33:53,723 - INFO - Successfully saved the best model!
+2024-06-16 01:34:48,533 - INFO - Successfully performed the pre-processing step!
+2024-06-16 01:34:48,533 - INFO - Successfully performed the pre-processing step!
+2024-06-16 01:34:48,533 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 01:34:48,533 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 01:34:49,838 - INFO - Successfully performed the training step!
+2024-06-16 01:34:49,838 - INFO - Successfully performed the training step!
+2024-06-16 01:34:49,857 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 01:34:49,857 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 01:34:49,857 - INFO - Successfully performed the select best model step!
+2024-06-16 01:34:49,857 - INFO - Successfully performed the select best model step!
+2024-06-16 01:34:49,866 - INFO - Successfully saved the best model!
+2024-06-16 01:34:49,866 - INFO - Successfully saved the best model!
+2024-06-16 01:35:15,860 - INFO - Successfully performed the pre-processing step!
+2024-06-16 01:35:15,860 - INFO - Successfully performed the pre-processing step!
+2024-06-16 01:35:15,860 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 01:35:15,860 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 01:35:17,219 - INFO - Successfully performed the training step!
+2024-06-16 01:35:17,219 - INFO - Successfully performed the training step!
+2024-06-16 01:35:17,239 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 01:35:17,239 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 01:35:17,239 - INFO - Successfully performed the select best model step!
+2024-06-16 01:35:17,239 - INFO - Successfully performed the select best model step!
+2024-06-16 01:35:17,250 - INFO - Successfully saved the best model!
+2024-06-16 01:35:17,250 - INFO - Successfully saved the best model!
+2024-06-16 01:35:31,822 - INFO - Successfully performed the pre-processing step!
+2024-06-16 01:35:31,822 - INFO - Successfully performed the pre-processing step!
+2024-06-16 01:35:31,823 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 01:35:31,823 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 01:35:33,238 - INFO - Successfully performed the training step!
+2024-06-16 01:35:33,238 - INFO - Successfully performed the training step!
+2024-06-16 01:35:33,269 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 01:35:33,269 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 01:35:33,270 - INFO - Successfully performed the select best model step!
+2024-06-16 01:35:33,270 - INFO - Successfully performed the select best model step!
+2024-06-16 01:35:33,282 - INFO - Successfully saved the best model!
+2024-06-16 01:35:33,282 - INFO - Successfully saved the best model!
+2024-06-16 01:44:58,319 - INFO - Successfully performed the pre-processing step!
+2024-06-16 01:44:58,319 - INFO - Successfully performed the pre-processing step!
+2024-06-16 01:44:58,320 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 01:44:58,320 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 01:44:59,678 - INFO - Successfully performed the training step!
+2024-06-16 01:44:59,678 - INFO - Successfully performed the training step!
+2024-06-16 01:44:59,699 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 01:44:59,699 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 01:44:59,699 - INFO - Successfully performed the select best model step!
+2024-06-16 01:44:59,699 - INFO - Successfully performed the select best model step!
+2024-06-16 01:44:59,707 - INFO - Successfully saved the best model!
+2024-06-16 01:44:59,707 - INFO - Successfully saved the best model!
+2024-06-16 01:49:15,275 - INFO - Successfully performed the pre-processing step!
+2024-06-16 01:49:15,275 - INFO - Successfully performed the pre-processing step!
+2024-06-16 01:49:15,276 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 01:49:15,276 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 01:49:16,712 - INFO - Successfully performed the training step!
+2024-06-16 01:49:16,712 - INFO - Successfully performed the training step!
+2024-06-16 01:49:16,730 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 01:49:16,730 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 01:49:16,730 - INFO - Successfully performed the select best model step!
+2024-06-16 01:49:16,730 - INFO - Successfully performed the select best model step!
+2024-06-16 01:49:16,738 - INFO - Successfully saved the best model!
+2024-06-16 01:49:16,738 - INFO - Successfully saved the best model!
+2024-06-16 02:01:08,568 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:01:08,568 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:01:08,568 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:01:08,568 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:01:26,711 - INFO - Successfully performed the training step!
+2024-06-16 02:01:26,711 - INFO - Successfully performed the training step!
+2024-06-16 02:01:28,230 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:01:28,230 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:01:28,231 - INFO - Successfully performed the select best model step!
+2024-06-16 02:01:28,231 - INFO - Successfully performed the select best model step!
+2024-06-16 02:01:28,415 - INFO - Successfully saved the best model!
+2024-06-16 02:01:28,415 - INFO - Successfully saved the best model!
+2024-06-16 02:05:12,608 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:05:12,608 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:09:59,808 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:09:59,808 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:12:00,441 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:12:00,441 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:12:00,442 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:12:00,442 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:12:01,888 - INFO - Successfully performed the training step!
+2024-06-16 02:12:01,888 - INFO - Successfully performed the training step!
+2024-06-16 02:12:01,911 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:12:01,911 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:12:01,911 - INFO - Successfully performed the select best model step!
+2024-06-16 02:12:01,911 - INFO - Successfully performed the select best model step!
+2024-06-16 02:12:01,932 - INFO - Successfully saved the best model!
+2024-06-16 02:12:01,932 - INFO - Successfully saved the best model!
+2024-06-16 02:13:21,761 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:13:21,761 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:13:21,761 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:13:21,761 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:13:23,078 - INFO - Successfully performed the training step!
+2024-06-16 02:13:23,078 - INFO - Successfully performed the training step!
+2024-06-16 02:13:23,098 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:13:23,098 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:13:23,098 - INFO - Successfully performed the select best model step!
+2024-06-16 02:13:23,098 - INFO - Successfully performed the select best model step!
+2024-06-16 02:13:23,107 - INFO - Successfully saved the best model!
+2024-06-16 02:13:23,107 - INFO - Successfully saved the best model!
+2024-06-16 02:14:28,738 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:14:28,738 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:14:28,739 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:14:28,739 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:14:30,089 - INFO - Successfully performed the training step!
+2024-06-16 02:14:30,089 - INFO - Successfully performed the training step!
+2024-06-16 02:14:30,110 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:14:30,110 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:14:30,111 - INFO - Successfully performed the select best model step!
+2024-06-16 02:14:30,111 - INFO - Successfully performed the select best model step!
+2024-06-16 02:14:30,118 - INFO - Successfully saved the best model!
+2024-06-16 02:14:30,118 - INFO - Successfully saved the best model!
+2024-06-16 02:20:53,944 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:20:53,944 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:20:53,944 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:20:53,944 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:20:55,241 - INFO - Successfully performed the training step!
+2024-06-16 02:20:55,241 - INFO - Successfully performed the training step!
+2024-06-16 02:20:55,261 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:20:55,261 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:20:55,261 - INFO - Successfully performed the select best model step!
+2024-06-16 02:20:55,261 - INFO - Successfully performed the select best model step!
+2024-06-16 02:20:55,270 - INFO - Successfully saved the best model!
+2024-06-16 02:20:55,270 - INFO - Successfully saved the best model!
+2024-06-16 02:27:59,319 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:27:59,319 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:27:59,319 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:27:59,319 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:28:00,665 - INFO - Successfully performed the training step!
+2024-06-16 02:28:00,665 - INFO - Successfully performed the training step!
+2024-06-16 02:28:00,684 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:28:00,684 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:28:00,684 - INFO - Successfully performed the select best model step!
+2024-06-16 02:28:00,684 - INFO - Successfully performed the select best model step!
+2024-06-16 02:28:00,693 - INFO - Successfully saved the best model!
+2024-06-16 02:28:00,693 - INFO - Successfully saved the best model!
+2024-06-16 02:28:28,636 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:28:28,636 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:28:28,637 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:28:28,637 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:28:30,150 - INFO - Successfully performed the training step!
+2024-06-16 02:28:30,150 - INFO - Successfully performed the training step!
+2024-06-16 02:28:30,169 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:28:30,169 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:28:30,169 - INFO - Successfully performed the select best model step!
+2024-06-16 02:28:30,169 - INFO - Successfully performed the select best model step!
+2024-06-16 02:28:30,179 - INFO - Successfully saved the best model!
+2024-06-16 02:28:30,179 - INFO - Successfully saved the best model!
+2024-06-16 02:28:55,050 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:28:55,050 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:28:55,050 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:28:55,050 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:28:56,403 - INFO - Successfully performed the training step!
+2024-06-16 02:28:56,403 - INFO - Successfully performed the training step!
+2024-06-16 02:28:56,426 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:28:56,426 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:28:56,426 - INFO - Successfully performed the select best model step!
+2024-06-16 02:28:56,426 - INFO - Successfully performed the select best model step!
+2024-06-16 02:28:56,436 - INFO - Successfully saved the best model!
+2024-06-16 02:28:56,436 - INFO - Successfully saved the best model!
+2024-06-16 02:31:09,406 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:31:09,406 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:31:09,407 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:31:09,407 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:31:10,786 - INFO - Successfully performed the training step!
+2024-06-16 02:31:10,786 - INFO - Successfully performed the training step!
+2024-06-16 02:31:10,805 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:31:10,805 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:31:10,805 - INFO - Successfully performed the select best model step!
+2024-06-16 02:31:10,805 - INFO - Successfully performed the select best model step!
+2024-06-16 02:31:10,813 - INFO - Successfully saved the best model!
+2024-06-16 02:31:10,813 - INFO - Successfully saved the best model!
+2024-06-16 02:32:01,330 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:32:01,330 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:32:01,330 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:32:01,330 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:32:02,651 - INFO - Successfully performed the training step!
+2024-06-16 02:32:02,651 - INFO - Successfully performed the training step!
+2024-06-16 02:32:02,672 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:32:02,672 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:32:02,673 - INFO - Successfully performed the select best model step!
+2024-06-16 02:32:02,673 - INFO - Successfully performed the select best model step!
+2024-06-16 02:32:02,680 - INFO - Successfully saved the best model!
+2024-06-16 02:32:02,680 - INFO - Successfully saved the best model!
+2024-06-16 02:33:24,830 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:33:24,830 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:33:24,830 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:33:24,830 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:33:26,199 - INFO - Successfully performed the training step!
+2024-06-16 02:33:26,199 - INFO - Successfully performed the training step!
+2024-06-16 02:33:26,224 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:33:26,224 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:33:26,224 - INFO - Successfully performed the select best model step!
+2024-06-16 02:33:26,224 - INFO - Successfully performed the select best model step!
+2024-06-16 02:33:26,235 - INFO - Successfully saved the best model!
+2024-06-16 02:33:26,235 - INFO - Successfully saved the best model!
+2024-06-16 02:34:00,966 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:34:00,966 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:34:00,968 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:34:00,968 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:34:19,381 - INFO - Successfully performed the training step!
+2024-06-16 02:34:19,381 - INFO - Successfully performed the training step!
+2024-06-16 02:34:20,970 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:34:20,970 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:34:20,970 - INFO - Successfully performed the select best model step!
+2024-06-16 02:34:20,970 - INFO - Successfully performed the select best model step!
+2024-06-16 02:34:21,130 - INFO - Successfully saved the best model!
+2024-06-16 02:34:21,130 - INFO - Successfully saved the best model!
+2024-06-16 02:37:46,683 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:37:46,683 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:37:46,684 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:37:46,684 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:38:06,600 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:38:06,600 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:38:06,600 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:38:06,600 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:38:21,721 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:38:21,721 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:38:21,722 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:38:21,722 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:38:38,807 - INFO - Successfully performed the training step!
+2024-06-16 02:38:38,807 - INFO - Successfully performed the training step!
+2024-06-16 02:38:40,259 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:38:40,259 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:38:40,259 - INFO - Successfully performed the select best model step!
+2024-06-16 02:38:40,259 - INFO - Successfully performed the select best model step!
+2024-06-16 02:38:40,439 - INFO - Successfully saved the best model!
+2024-06-16 02:38:40,439 - INFO - Successfully saved the best model!
+2024-06-16 02:41:28,824 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:41:28,824 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:41:28,824 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:41:28,824 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:41:47,573 - INFO - Successfully performed the training step!
+2024-06-16 02:41:47,573 - INFO - Successfully performed the training step!
+2024-06-16 02:41:49,047 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:41:49,047 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:41:49,048 - INFO - Successfully performed the select best model step!
+2024-06-16 02:41:49,048 - INFO - Successfully performed the select best model step!
+2024-06-16 02:41:49,217 - INFO - Successfully saved the best model!
+2024-06-16 02:41:49,217 - INFO - Successfully saved the best model!
+2024-06-16 02:44:06,231 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:44:06,231 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:44:06,231 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:44:06,231 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:44:25,384 - INFO - Successfully performed the training step!
+2024-06-16 02:44:25,384 - INFO - Successfully performed the training step!
+2024-06-16 02:44:26,863 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:44:26,863 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:44:26,863 - INFO - Successfully performed the select best model step!
+2024-06-16 02:44:26,863 - INFO - Successfully performed the select best model step!
+2024-06-16 02:44:27,032 - INFO - Successfully saved the best model!
+2024-06-16 02:44:27,032 - INFO - Successfully saved the best model!
+2024-06-16 02:47:15,403 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:47:15,403 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:47:15,403 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:47:15,403 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:47:34,694 - INFO - Successfully performed the training step!
+2024-06-16 02:47:34,694 - INFO - Successfully performed the training step!
+2024-06-16 02:47:36,198 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:47:36,198 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:47:36,199 - INFO - Successfully performed the select best model step!
+2024-06-16 02:47:36,199 - INFO - Successfully performed the select best model step!
+2024-06-16 02:47:36,354 - INFO - Successfully saved the best model!
+2024-06-16 02:47:36,354 - INFO - Successfully saved the best model!
+2024-06-16 02:52:28,905 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:52:28,905 - INFO - Successfully performed the pre-processing step!
+2024-06-16 02:52:28,905 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:52:28,905 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-16 02:52:49,890 - INFO - Successfully performed the training step!
+2024-06-16 02:52:49,890 - INFO - Successfully performed the training step!
+2024-06-16 02:52:51,502 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:52:51,502 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-16 02:52:51,502 - INFO - Successfully performed the select best model step!
+2024-06-16 02:52:51,502 - INFO - Successfully performed the select best model step!
+2024-06-16 02:52:51,710 - INFO - Successfully saved the best model!
+2024-06-16 02:52:51,710 - INFO - Successfully saved the best model!
+2024-06-25 19:24:27,178 - INFO - Successfully performed the pre-processing step!
+2024-06-25 19:24:27,178 - INFO - Successfully performed the pre-processing step!
+2024-06-25 19:24:27,179 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-25 19:24:27,179 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-25 19:24:46,572 - INFO - Successfully performed the training step!
+2024-06-25 19:24:46,572 - INFO - Successfully performed the training step!
+2024-06-25 19:24:49,570 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-25 19:24:49,570 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-25 19:24:49,570 - INFO - Successfully performed the select best model step!
+2024-06-25 19:24:49,570 - INFO - Successfully performed the select best model step!
+2024-06-25 19:24:49,870 - INFO - Successfully saved the best model!
+2024-06-25 19:24:49,870 - INFO - Successfully saved the best model!
+2024-06-25 19:27:00,182 - INFO - Successfully performed the pre-processing step!
+2024-06-25 19:27:00,182 - INFO - Successfully performed the pre-processing step!
+2024-06-25 19:27:00,183 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-25 19:27:00,183 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-25 19:27:18,148 - INFO - Successfully performed the training step!
+2024-06-25 19:27:18,148 - INFO - Successfully performed the training step!
+2024-06-25 19:27:19,673 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-25 19:27:19,673 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-25 19:27:19,673 - INFO - Successfully performed the select best model step!
+2024-06-25 19:27:19,673 - INFO - Successfully performed the select best model step!
+2024-06-25 19:27:19,891 - INFO - Successfully saved the best model!
+2024-06-25 19:27:19,891 - INFO - Successfully saved the best model!
+2024-06-25 19:29:23,605 - INFO - Successfully performed the pre-processing step!
+2024-06-25 19:29:23,605 - INFO - Successfully performed the pre-processing step!
+2024-06-25 19:29:23,606 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-25 19:29:23,606 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-25 19:29:41,160 - INFO - Successfully performed the training step!
+2024-06-25 19:29:41,160 - INFO - Successfully performed the training step!
+2024-06-25 19:29:43,222 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-25 19:29:43,222 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-25 19:29:43,222 - INFO - Successfully performed the select best model step!
+2024-06-25 19:29:43,222 - INFO - Successfully performed the select best model step!
+2024-06-25 19:29:43,430 - INFO - Successfully saved the best model!
+2024-06-25 19:29:43,430 - INFO - Successfully saved the best model!
+2024-06-25 19:46:30,716 - INFO - Successfully performed the pre-processing step!
+2024-06-25 19:46:30,716 - INFO - Successfully performed the pre-processing step!
+2024-06-25 19:46:30,716 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-25 19:46:30,716 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-25 19:46:52,112 - INFO - Successfully performed the training step!
+2024-06-25 19:46:52,112 - INFO - Successfully performed the training step!
+2024-06-25 19:46:54,927 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-25 19:46:54,927 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-25 19:46:54,928 - INFO - Successfully performed the select best model step!
+2024-06-25 19:46:54,928 - INFO - Successfully performed the select best model step!
+2024-06-25 19:46:55,207 - INFO - Successfully saved the best model!
+2024-06-25 19:46:55,207 - INFO - Successfully saved the best model!
+2024-06-25 19:47:20,952 - INFO - Successfully performed the pre-processing step!
+2024-06-25 19:47:20,952 - INFO - Successfully performed the pre-processing step!
+2024-06-25 19:47:20,952 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-25 19:47:20,952 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-25 19:47:42,609 - INFO - Successfully performed the training step!
+2024-06-25 19:47:42,609 - INFO - Successfully performed the training step!
+2024-06-25 19:47:44,336 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-25 19:47:44,336 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-25 19:47:44,337 - INFO - Successfully performed the select best model step!
+2024-06-25 19:47:44,337 - INFO - Successfully performed the select best model step!
+2024-06-25 19:47:44,683 - INFO - Successfully saved the best model!
+2024-06-25 19:47:44,683 - INFO - Successfully saved the best model!
+2024-06-25 19:49:15,598 - INFO - Successfully performed the pre-processing step!
+2024-06-25 19:49:15,598 - INFO - Successfully performed the pre-processing step!
+2024-06-25 19:49:15,598 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-25 19:49:15,598 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-25 19:49:41,794 - INFO - Successfully performed the training step!
+2024-06-25 19:49:41,794 - INFO - Successfully performed the training step!
+2024-06-25 19:49:44,967 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-25 19:49:44,967 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-25 19:49:44,967 - INFO - Successfully performed the select best model step!
+2024-06-25 19:49:44,967 - INFO - Successfully performed the select best model step!
+2024-06-25 19:49:45,307 - INFO - Successfully saved the best model!
+2024-06-25 19:49:45,307 - INFO - Successfully saved the best model!
+2024-06-25 19:50:06,092 - INFO - Successfully performed the pre-processing step!
+2024-06-25 19:50:06,092 - INFO - Successfully performed the pre-processing step!
+2024-06-25 19:50:06,092 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-25 19:50:06,092 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-25 19:50:34,466 - INFO - Successfully performed the training step!
+2024-06-25 19:50:34,466 - INFO - Successfully performed the training step!
+2024-06-25 19:50:37,961 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-25 19:50:37,961 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-25 19:50:37,961 - INFO - Successfully performed the select best model step!
+2024-06-25 19:50:37,961 - INFO - Successfully performed the select best model step!
+2024-06-25 19:50:38,233 - INFO - Successfully saved the best model!
+2024-06-25 19:50:38,233 - INFO - Successfully saved the best model!
