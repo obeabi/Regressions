@@ -436,3 +436,321 @@
 2024-06-25 19:50:37,961 - INFO - Successfully performed the select best model step!
 2024-06-25 19:50:38,233 - INFO - Successfully saved the best model!
 2024-06-25 19:50:38,233 - INFO - Successfully saved the best model!
+2024-06-29 10:56:16,579 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 10:56:16,579 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 10:57:05,113 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 10:57:05,113 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 10:57:05,126 - INFO - Successfully performed the pre-processing step!
+2024-06-29 10:57:05,126 - INFO - Successfully performed the pre-processing step!
+2024-06-29 10:58:25,998 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 10:58:25,998 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 10:58:26,014 - INFO - Successfully performed the pre-processing step!
+2024-06-29 10:58:26,014 - INFO - Successfully performed the pre-processing step!
+2024-06-29 10:58:56,129 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 10:58:56,129 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 10:58:56,147 - INFO - Successfully performed the pre-processing step!
+2024-06-29 10:58:56,147 - INFO - Successfully performed the pre-processing step!
+2024-06-29 10:59:25,947 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 10:59:25,947 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 10:59:25,960 - INFO - Successfully performed the pre-processing step!
+2024-06-29 10:59:25,960 - INFO - Successfully performed the pre-processing step!
+2024-06-29 10:59:47,012 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 10:59:47,012 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 10:59:47,028 - INFO - Successfully performed the pre-processing step!
+2024-06-29 10:59:47,028 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:01:03,950 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:01:03,950 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:01:03,965 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:01:03,965 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:01:03,965 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:01:03,965 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:02:16,478 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:02:16,478 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:02:16,495 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:02:16,495 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:02:16,495 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:02:16,495 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:07:15,467 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:07:15,467 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:07:26,651 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:07:26,651 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:07:46,074 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:07:46,074 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:07:46,088 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:07:46,088 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:07:53,794 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:07:53,794 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:07:53,812 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:07:53,812 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:07:53,812 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:07:53,812 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:08:47,700 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:08:47,700 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:08:47,718 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:08:47,718 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:10:42,261 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:10:42,261 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:10:42,275 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:10:42,275 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:10:42,275 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:10:42,275 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:11:44,342 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:11:44,342 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:11:44,371 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:11:44,371 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:12:06,698 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:12:06,698 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:12:06,715 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:12:06,715 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:13:53,693 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:13:53,693 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:13:53,706 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:13:53,706 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:14:24,116 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:14:24,116 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:14:24,131 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:14:24,131 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:14:24,131 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:14:24,131 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:16:46,910 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:16:46,910 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:16:46,925 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:16:46,925 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:17:12,842 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:17:12,842 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:17:12,857 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:17:12,857 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:21:47,708 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:21:47,708 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:21:47,725 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:21:47,725 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:21:47,726 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:21:47,726 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:22:24,525 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:22:24,525 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:22:24,541 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:22:24,541 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:22:39,709 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:22:39,709 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:22:39,724 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:22:39,724 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:24:46,462 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:24:46,462 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:24:46,476 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:24:46,476 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:24:46,477 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:24:46,477 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:25:06,147 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:25:06,147 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:25:06,163 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:25:06,163 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:25:06,164 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:25:06,164 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:27:06,329 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:27:06,329 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:27:06,344 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:27:06,344 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:27:06,345 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:27:06,345 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:27:26,829 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:27:26,829 - INFO - Successfully performed the multi-collinearity check step!
+2024-06-29 11:27:26,844 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:27:26,844 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:27:26,845 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:27:26,845 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:27:42,524 - INFO - Successfully performed the training step!
+2024-06-29 11:27:42,524 - INFO - Successfully performed the training step!
+2024-06-29 11:27:44,080 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 11:27:44,080 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 11:29:15,080 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:29:15,080 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:29:15,081 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:29:15,081 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:29:33,012 - INFO - Successfully performed the training step!
+2024-06-29 11:29:33,012 - INFO - Successfully performed the training step!
+2024-06-29 11:29:34,461 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 11:29:34,461 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 11:31:33,014 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:31:33,014 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:31:33,014 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:31:33,014 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:31:49,735 - INFO - Successfully performed the training step!
+2024-06-29 11:31:49,735 - INFO - Successfully performed the training step!
+2024-06-29 11:31:51,375 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 11:31:51,375 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 11:31:51,375 - INFO - Successfully performed the select best model step!
+2024-06-29 11:31:51,375 - INFO - Successfully performed the select best model step!
+2024-06-29 11:33:30,796 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:33:30,796 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:33:30,797 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:33:30,797 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:33:50,023 - INFO - Successfully performed the training step!
+2024-06-29 11:33:50,023 - INFO - Successfully performed the training step!
+2024-06-29 11:33:51,700 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 11:33:51,700 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 11:33:51,700 - INFO - Successfully performed the select best model step!
+2024-06-29 11:33:51,700 - INFO - Successfully performed the select best model step!
+2024-06-29 11:42:31,005 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:42:31,005 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:42:31,006 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:42:31,006 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:42:48,706 - INFO - Successfully performed the training step!
+2024-06-29 11:42:48,706 - INFO - Successfully performed the training step!
+2024-06-29 11:42:50,272 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 11:42:50,272 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 11:42:51,815 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 11:42:51,815 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 11:42:51,815 - INFO - Successfully performed the select best model step!
+2024-06-29 11:42:51,815 - INFO - Successfully performed the select best model step!
+2024-06-29 11:46:14,858 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:46:14,858 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:46:14,858 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:46:14,858 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:46:36,877 - INFO - Successfully performed the training step!
+2024-06-29 11:46:36,877 - INFO - Successfully performed the training step!
+2024-06-29 11:46:38,461 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 11:46:38,461 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 11:51:22,608 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:51:22,608 - INFO - Successfully performed the pre-processing step!
+2024-06-29 11:51:22,608 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:51:22,608 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 11:51:41,807 - INFO - Successfully performed the training step!
+2024-06-29 11:51:41,807 - INFO - Successfully performed the training step!
+2024-06-29 11:51:43,954 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 11:51:43,954 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 11:51:46,876 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 11:51:46,876 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 11:51:46,877 - INFO - Successfully performed the select best model step!
+2024-06-29 11:51:46,877 - INFO - Successfully performed the select best model step!
+2024-06-29 12:05:57,290 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:05:57,290 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:05:57,291 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:05:57,291 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:06:15,084 - INFO - Successfully performed the training step!
+2024-06-29 12:06:15,084 - INFO - Successfully performed the training step!
+2024-06-29 12:06:16,544 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:06:16,544 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:06:32,178 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:06:32,178 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:06:32,179 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:06:32,179 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:06:50,044 - INFO - Successfully performed the training step!
+2024-06-29 12:06:50,044 - INFO - Successfully performed the training step!
+2024-06-29 12:06:51,520 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:06:51,520 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:06:51,521 - INFO - Successfully performed the select best model step!
+2024-06-29 12:06:51,521 - INFO - Successfully performed the select best model step!
+2024-06-29 12:07:39,624 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:07:39,624 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:07:39,624 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:07:39,624 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:07:58,466 - INFO - Successfully performed the training step!
+2024-06-29 12:07:58,466 - INFO - Successfully performed the training step!
+2024-06-29 12:07:59,922 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:07:59,922 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:07:59,922 - INFO - Successfully performed the select best model step!
+2024-06-29 12:07:59,922 - INFO - Successfully performed the select best model step!
+2024-06-29 12:08:58,831 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:08:58,831 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:08:58,832 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:08:58,832 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:09:16,961 - INFO - Successfully performed the training step!
+2024-06-29 12:09:16,961 - INFO - Successfully performed the training step!
+2024-06-29 12:09:18,580 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:09:18,580 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:09:18,581 - INFO - Successfully performed the select best model step!
+2024-06-29 12:09:18,581 - INFO - Successfully performed the select best model step!
+2024-06-29 12:13:30,129 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:13:30,129 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:13:30,129 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:13:30,129 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:13:48,439 - INFO - Successfully performed the training step!
+2024-06-29 12:13:48,439 - INFO - Successfully performed the training step!
+2024-06-29 12:13:49,955 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:13:49,955 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:13:49,955 - INFO - Successfully performed the select best model step!
+2024-06-29 12:13:49,955 - INFO - Successfully performed the select best model step!
+2024-06-29 12:16:43,698 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:16:43,698 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:16:43,698 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:16:43,698 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:17:00,371 - INFO - Successfully performed the training step!
+2024-06-29 12:17:00,371 - INFO - Successfully performed the training step!
+2024-06-29 12:17:01,923 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:17:01,923 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:17:01,923 - INFO - Successfully performed the select best model step!
+2024-06-29 12:17:01,923 - INFO - Successfully performed the select best model step!
+2024-06-29 12:19:11,614 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:19:11,614 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:19:11,614 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:19:11,614 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:19:29,670 - INFO - Successfully performed the training step!
+2024-06-29 12:19:29,670 - INFO - Successfully performed the training step!
+2024-06-29 12:19:31,144 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:19:31,144 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:19:31,145 - INFO - Successfully performed the select best model step!
+2024-06-29 12:19:31,145 - INFO - Successfully performed the select best model step!
+2024-06-29 12:30:54,703 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:30:54,703 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:30:54,704 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:30:54,704 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:31:11,486 - INFO - Successfully performed the training step!
+2024-06-29 12:31:11,486 - INFO - Successfully performed the training step!
+2024-06-29 12:31:13,014 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:31:13,014 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:31:13,014 - INFO - Successfully performed the select best model step!
+2024-06-29 12:31:13,014 - INFO - Successfully performed the select best model step!
+2024-06-29 12:31:24,158 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:31:24,158 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:31:24,158 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:31:24,158 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:31:25,629 - INFO - Successfully performed the training step!
+2024-06-29 12:31:25,629 - INFO - Successfully performed the training step!
+2024-06-29 12:31:25,657 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:31:25,657 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:31:25,657 - INFO - Successfully performed the select best model step!
+2024-06-29 12:31:25,657 - INFO - Successfully performed the select best model step!
+2024-06-29 12:32:32,744 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:32:32,744 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:32:32,744 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:32:32,744 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:32:34,205 - INFO - Successfully performed the training step!
+2024-06-29 12:32:34,205 - INFO - Successfully performed the training step!
+2024-06-29 12:32:34,234 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:32:34,234 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:32:34,235 - INFO - Successfully performed the select best model step!
+2024-06-29 12:32:34,235 - INFO - Successfully performed the select best model step!
+2024-06-29 12:34:59,924 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:34:59,924 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:34:59,924 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:34:59,924 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:35:01,383 - INFO - Successfully performed the training step!
+2024-06-29 12:35:01,383 - INFO - Successfully performed the training step!
+2024-06-29 12:35:01,404 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:35:01,404 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:35:01,404 - INFO - Successfully performed the select best model step!
+2024-06-29 12:35:01,404 - INFO - Successfully performed the select best model step!
+2024-06-29 12:37:14,051 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:37:14,051 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:37:14,051 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:37:14,051 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:37:15,486 - INFO - Successfully performed the training step!
+2024-06-29 12:37:15,486 - INFO - Successfully performed the training step!
+2024-06-29 12:37:15,514 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:37:15,514 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:37:15,514 - INFO - Successfully performed the select best model step!
+2024-06-29 12:37:15,514 - INFO - Successfully performed the select best model step!
+2024-06-29 12:38:23,408 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:38:23,408 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:38:23,409 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:38:23,409 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:38:49,059 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:38:49,059 - INFO - Successfully performed the pre-processing step!
+2024-06-29 12:38:49,060 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:38:49,060 - INFO - Successfully splitted the dataset to train-test set!
+2024-06-29 12:38:50,458 - INFO - Successfully performed the training step!
+2024-06-29 12:38:50,458 - INFO - Successfully performed the training step!
+2024-06-29 12:38:50,478 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:38:50,478 - INFO - Successfully performed the evaluation of all trained models!
+2024-06-29 12:38:50,479 - INFO - Successfully performed the select best model step!
+2024-06-29 12:38:50,479 - INFO - Successfully performed the select best model step!

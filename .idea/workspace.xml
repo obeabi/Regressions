@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfa8f17c-9722-4149-bf4f-b78a94bf8d4b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/statsModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RegressorClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/RegressorClass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catboost_info/catboost_training.json" beforeDir="false" afterPath="$PROJECT_DIR$/catboost_info/catboost_training.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catboost_info/learn/events.out.tfevents" beforeDir="false" afterPath="$PROJECT_DIR$/catboost_info/learn/events.out.tfevents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catboost_info/learn_error.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/catboost_info/learn_error.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catboost_info/time_left.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/catboost_info/time_left.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testlogs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testlogs.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,8 +110,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="statsModel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Regressions" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/statsModel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.statsModel" />
         <item itemvalue="Python.ExploratoryAnalysis" />
         <item itemvalue="Python.RegressorClass" />
       </list>

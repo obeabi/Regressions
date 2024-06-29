@@ -38,21 +38,35 @@ class regressor:
             "XGBRegressor": XGBRegressor(random_state=self.random_state, verbosity=1)
         }
         self.best_model = None
+        self.test_best_model = None
         self.preprocessor = None
         self.scaler = StandardScaler()
         self.trained_models = {}
         self.results = {}
+        self.evaluation_results = {}
         self.wcss = None
 
-    def pre_process(self, X, categorical_features):
+    def find_numericategory_columns (self, X):
+        """
+        :param X:
+        :return: numeric and categorical column names
+        """
+        try:
+            numeric_columns = X.select_dtypes(include=[float, int]).columns.tolist()
+            categorical_columns = X.select_dtypes(exclude=[float, int]).columns.tolist()
+            return numeric_columns, categorical_columns
+        except Exception as e:
+            raise ValueError(f"Something went wrong while finding the numeric and categorical columns: {e}")
+            logs.log("Something went wrong while finding the numeric and categorical columns", level='ERROR')
+
+    def pre_process(self, X):
         """
 
         :param X:
-        :param categorical_features:
         :return:
         """
         try:
-            numeric_features = [col for col in X.columns if col not in categorical_features]
+            numeric_features, categorical_features = self.find_numericategory_columns(X)
             numeric_transformer = Pipeline(steps=[
                 ('imputer', SimpleImputer(strategy='median')),
                 ('scaler', StandardScaler())
@@ -146,36 +160,55 @@ class regressor:
             raise ValueError(f"Error in splitting dataset into train-test sets {e}")
             logs.log("Something went wrong while splitting dataset into train-test sets", level='ERROR')
 
-    def check_multicollinearity(self, X, threshold=10.0):
+    def vif_multicollinearity(self, X, threshold=10.0):
         """
+        Checks for multi-collinearity between features doesn't work well
 
         :param X:
         :param threshold:
-        :return:
+        :return: non-collinear features
         """
         try:
+            numeric_features, _ = self.find_numericategory_columns(X)
+            x_num = X[numeric_features].dropna()
             vif_data = pd.DataFrame()
-            vif_data["feature"] = X.columns
-            vif_data["VIF"] = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
+            vif_data["feature"] = x_num.columns
+            vif_data["VIF"] = [variance_inflation_factor(x_num.values, i) for i in range(x_num.shape[1])]
 
             # Drop columns with VIF above the threshold
             high_vif_features = vif_data[vif_data["VIF"] > threshold]["feature"].tolist()
-            X_dropped = X.drop(columns=high_vif_features)
+            x_dropped = X.drop(columns=high_vif_features)
             logs.log("Successfully performed the multi-collinearity check step!")
 
-            return X_dropped, vif_data
+            return x_dropped.columns, high_vif_features
         except Exception as e:
             raise ValueError(f"Error in checking multi-collinearity: {e}")
+            logs.log("Something went wrong while checking multi-collinearity:", level='ERROR')
+
+    def correlation_multicollinearity(self, X, threshold=0.8):
+        try:
+            numeric_features, _ = self.find_numericategory_columns(X)
+            x_num = X[numeric_features].dropna()
+            correlation_matrix = x_num.corr().abs()
+            upper_triangle = correlation_matrix.where(np.triu(np.ones(correlation_matrix.shape), k=1).astype(bool))
+            high_correlation_pairs = [(column, row) for row in upper_triangle.index for column in upper_triangle.columns if upper_triangle.loc[row, column] > threshold]
+            columns_to_drop = {column for column, row in high_correlation_pairs}
+            df_reduced = X.drop(columns=columns_to_drop)
+            return df_reduced.columns, columns_to_drop
+        except Exception as e:
+            raise ValueError(f"Error in checking multi-collinearity: {e}")
+            logs.log("Something went wrong while checking multi-collinearity:", level='ERROR')
 
     def adjusted_r2(self, r2, n, p):
         """
+        calculates the adjusted r-squared for regression model(s)
         :param r2:
         :param n:
         :param p:
         :return:
         """
         try:
-            return 1 - (1 - r2) * (n - 1) / (n - p - 1)
+            return 1 - ((1 - r2) * (n - 1) / (n - p - 1))
         except Exception as e:
             raise ValueError(f"Error in preprocessing data: {e}")
             logs.log("Something went wrong while estimating adjusted r-squared", level='ERROR')
@@ -194,7 +227,7 @@ class regressor:
                 self.results[name] = {'mse': mse, 'rmse': rmse, 'r2': r2, 'adj_r2': adj_r2}
 
             logs.log("Successfully performed the training step!")
-            # self.select_best_model()
+            return self.results
         except Exception as e:
             raise ValueError(f"Error in training models: {e}")
             logs.log("Something went wrong while training the models", level='ERROR')
@@ -207,16 +240,16 @@ class regressor:
         """
         try:
             n, p = X_test.shape
-            evaluation_results = {}
+            #evaluation_results = {}
             for name, model in self.trained_models.items():
                 y_pred = model.predict(X_test)
                 mse = mean_squared_error(y_test, y_pred)
                 rmse = root_mean_squared_error(y_test, y_pred)
                 r2 = r2_score(y_test, y_pred)
                 adj_r2 = self.adjusted_r2(r2, n, p)
-                evaluation_results[name] = {'mse': mse, 'rmse': rmse, 'r2': r2, 'adj_r2': adj_r2}
+                self.evaluation_results[name] = {'mse': mse, 'rmse': rmse, 'r2': r2, 'adj_r2': adj_r2}
             logs.log("Successfully performed the evaluation of all trained models!")
-            return evaluation_results
+            return self.evaluation_results
         except Exception as e:
             raise ValueError(f"Error in evaluating models: {e}")
             logs.log("Something went wrong while evaluating models ", level='ERROR')
@@ -226,9 +259,9 @@ class regressor:
         :return:
         """
         try:
-            self.best_model = max(self.trained_models, key=lambda k: self.results[k]['adj_r2'])
+            self.test_best_model = max(self.trained_models, key=lambda k: self.evaluation_results[k]['adj_r2'])
             logs.log("Successfully performed the select best model step!")
-            return self.best_model
+            return self.test_best_model, self.evaluation_results[self.test_best_model]
         except Exception as e:
             raise ValueError(f"Error in selecting the best model: {e}")
             logs.log("Something went wrong while selecting the best saved model ", level='ERROR')
@@ -239,7 +272,7 @@ class regressor:
         :return:
         """
         try:
-            best_model_instance = self.trained_models[self.best_model]
+            best_model_instance = self.trained_models[self.test_best_model]
             joblib.dump(best_model_instance, filename)
             pickle.dump(best_model_instance, open(filename, 'wb'))
             logs.log("Successfully saved the best model!")
@@ -264,7 +297,6 @@ class regressor:
         try:
             feature_names = []
             if self.preprocessor is not None:
-                #self.preprocessor.fit(X)
                 for name, transformer, columns in self.preprocessor.transformers_:
                     if transformer == 'drop' or transformer is None:
                         continue
@@ -296,8 +328,8 @@ class regressor:
         :return:
         """
         try:
-            if self.best_model in ["RandomForestRegressor", "CatBoostRegressor", "XGBRegressor"]:
-                model = self.trained_models[self.best_model]
+            if self.test_best_model in ["RandomForestRegressor", "CatBoostRegressor", "XGBRegressor"]:
+                model = self.trained_models[self.test_best_model]
                 feature_importances = model.feature_importances_
 
                 # Extract feature names from the preprocessor
@@ -328,10 +360,10 @@ class regressor:
                 plt.barh(original_features, importance_scores)
                 plt.xlabel('Feature Importance')
                 plt.ylabel('Feature')
-                plt.title(f'Feature Importance in {self.best_model}')
+                plt.title(f'Feature Importance in {self.test_best_model}')
                 plt.show(block=True)
             else:
-                raise ValueError(f"Feature importance are not available for the best model: {self.best_model}")
+                raise ValueError(f"Feature importance are not available for the best model: {self.test_best_model}")
         except Exception as e:
             raise ValueError(f"Error in plotting feature importance: {e}")
             logs.log("Something went wrong while plotting feature importance ", level='ERROR')
