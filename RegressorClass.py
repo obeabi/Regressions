@@ -9,7 +9,7 @@ from sklearn.cluster import KMeans
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression, Ridge, Lasso, RidgeCV, LassoCV, ElasticNet, ElasticNetCV
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.svm import SVR
 from catboost import CatBoostRegressor
@@ -41,9 +41,14 @@ class regressor:
         self.test_best_model = None
         self.preprocessor = None
         self.scaler = StandardScaler()
+        self.max_scaler = MinMaxScaler()
         self.trained_models = {}
         self.results = {}
         self.evaluation_results = {}
+        self.lasso_alpha = None
+        self.ridge_alpha = None
+        self.elasticnet_alpha = None
+        self.elasticnet_l1_ratio = None
         self.wcss = None
 
     def find_numericategory_columns (self, X):
@@ -59,6 +64,28 @@ class regressor:
             raise ValueError(f"Something went wrong while finding the numeric and categorical columns: {e}")
             logs.log("Something went wrong while finding the numeric and categorical columns", level='ERROR')
 
+    def standard_scale_features(self, X):
+        """
+        :param X:
+        :return: standard scaled features
+        """
+        try:
+            return self.scaler.fit_transform(X)
+        except Exception as e:
+            raise ValueError(f"Error in scaling features: {e}")
+            logs.log("Something went wrong while scaling features", level='ERROR')
+
+    def minmax_scale_features(self, X):
+        """
+        :param X:
+        :return: min-max scaled features
+        """
+        try:
+            return self.max_scaler.fit_transform(X)
+        except Exception as e:
+            raise ValueError(f"Error in scaling features: {e}")
+            logs.log("Something went wrong while scaling features", level='ERROR')
+
     def pre_process(self, X):
         """
 
@@ -67,20 +94,35 @@ class regressor:
         """
         try:
             numeric_features, categorical_features = self.find_numericategory_columns(X)
-            numeric_transformer = Pipeline(steps=[
-                ('imputer', SimpleImputer(strategy='median')),
-                ('scaler', StandardScaler())
-            ])
-            categorical_transformer = Pipeline(steps=[
-                ('imputer', SimpleImputer(strategy='constant', fill_value='missing')),
-                ('encoder', OneHotEncoder(handle_unknown='ignore'))
-                #('encoder', LabelEncoder())
-            ])
-            self.preprocessor = ColumnTransformer(
-                transformers=[
-                    ('num', numeric_transformer, numeric_features),
-                    ('cat', categorical_transformer, categorical_features)
+            if (len(numeric_features) > 0) and (len(categorical_features) > 0):
+                numeric_transformer = Pipeline(steps=[
+                    ('imputer', SimpleImputer(strategy='median')),
+                    ('scaler', StandardScaler())])
+                categorical_transformer = Pipeline(steps=[
+                    ('imputer', SimpleImputer(strategy='constant', fill_value='missing')),
+                    ('encoder', OneHotEncoder(handle_unknown='ignore'))
+                    #('encoder', LabelEncoder())
+                    ])
+                self.preprocessor = ColumnTransformer(
+                        transformers=[('num', numeric_transformer, numeric_features),
+                                      ('cat', categorical_transformer, categorical_features)])
+
+            elif (len(numeric_features) > 0) and (len(categorical_features) == 0):
+                numeric_transformer = Pipeline(steps=[
+                     ('imputer', SimpleImputer(strategy='median')),
+                     ('scaler', StandardScaler())])
+                self.preprocessor = ColumnTransformer(
+                        transformers=[('num', numeric_transformer, numeric_features)])
+
+            elif (len(numeric_features) == 0 ) and (len(categorical_features) > 0):
+                categorical_transformer = Pipeline(steps=[
+                    ('imputer', SimpleImputer(strategy='constant', fill_value='missing')),
+                    ('encoder', OneHotEncoder(handle_unknown='ignore'))
+                   # ('encoder', LabelEncoder())
                 ])
+                self.preprocessor = ColumnTransformer(
+                        transformers=[('cat', categorical_transformer, categorical_features)])
+
             x_preprocessed = self.preprocessor.fit_transform(X)
             logs.log("Successfully performed the pre-processing step!")
             return x_preprocessed
@@ -170,22 +212,29 @@ class regressor:
         """
         try:
             numeric_features, _ = self.find_numericategory_columns(X)
-            x_num = X[numeric_features].dropna()
+            x_num = self.pre_process(X[numeric_features])
             vif_data = pd.DataFrame()
-            vif_data["feature"] = x_num.columns
-            vif_data["VIF"] = [variance_inflation_factor(x_num.values, i) for i in range(x_num.shape[1])]
+            vif_data["feature"] = X[numeric_features].columns
+            vif_data["VIF"] = [variance_inflation_factor(x_num, i) for i in range(X[numeric_features].shape[1])]
 
             # Drop columns with VIF above the threshold
             high_vif_features = vif_data[vif_data["VIF"] > threshold]["feature"].tolist()
             x_dropped = X.drop(columns=high_vif_features)
             logs.log("Successfully performed the multi-collinearity check step!")
 
-            return x_dropped.columns, high_vif_features
+            return x_dropped.columns, high_vif_features, vif_data
         except Exception as e:
             raise ValueError(f"Error in checking multi-collinearity: {e}")
             logs.log("Something went wrong while checking multi-collinearity:", level='ERROR')
 
     def correlation_multicollinearity(self, X, threshold=0.8):
+        """
+        Checks for multi-collinearity between features using pearson correlation
+
+        :param X:
+        :param threshold:
+        :return: non-collinear features
+        """
         try:
             numeric_features, _ = self.find_numericategory_columns(X)
             x_num = X[numeric_features].dropna()
@@ -198,6 +247,89 @@ class regressor:
         except Exception as e:
             raise ValueError(f"Error in checking multi-collinearity: {e}")
             logs.log("Something went wrong while checking multi-collinearity:", level='ERROR')
+
+    def fit_lasso_cv(self, X, y):
+        """
+        Perform lasso regression on train-set using specified cross validation
+
+        :param X:
+        :param y
+        :return: trained model
+        """
+        try:
+            lasso_cv = LassoCV(cv=10, random_state=self.random_state)
+            lasso_cv.fit(X, y)
+            self.lasso_alpha = lasso_cv.alpha_
+            self.models["Lasso"] = Lasso(alpha=self.lasso_alpha, random_state=self.random_state)
+            logs.log("Successfully found the best alpha for Lasso regression")
+        except Exception as e:
+            raise ValueError(f"Error in fitting LassoCV: {e}")
+            logs.log("Something went wrong while fitting LassoCV", level='ERROR')
+
+    def fit_ridge_cv(self, X, y):
+        """
+         Perform rIDGE regression on train-set using specified cross validation
+        :param X:
+        :param y
+        :return: trained model
+
+        """
+        try:
+            ridge_cv = RidgeCV(alphas=np.random.uniform(0, 10, 50), cv=10)
+            ridge_cv.fit(X, y)
+            self.ridge_alpha = ridge_cv.alpha_
+            self.models["Ridge"] = Ridge(alpha=self.ridge_alpha, random_state=self.random_state)
+            logs.log("Successfully found the best alpha for Lasso regression")
+        except Exception as e:
+            raise ValueError(f"Error in fitting RidgeCV: {e}")
+            logs.log("Something went wrong while fitting RidgeCV", level='ERROR')
+
+    def fit_elasticnet_cv(self, X, y):
+        """
+         Perform ElasticNet regression on train-set using specified cross validation
+        :param X:
+        :param y
+        :return: trained model
+
+        """
+        try:
+            elastic_cv = ElasticNetCV(alphas=None, cv=10)
+            elastic_cv.fit(X, y)
+            self.elasticnet_alpha = elastic_cv.alpha_
+            self.elasticnet_l1_ratio = elastic_cv.l1_ratio_
+            self.models["ElasticNet"] = ElasticNet(alpha=self.elasticnet_alpha, l1_ratio=self.elasticnet_l1_ratio, random_state=self.random_state)
+            logs.log("Successfully found the best alpha and l1 for ElasticNet regression")
+        except Exception as e:
+            raise ValueError(f"Error in fitting ElasticNetCV: {e}")
+            logs.log("Something went wrong while fitting ElasticNetCV", level='ERROR')
+
+    def fit_model(self, X, y, model):
+        """
+         Perform  regression on train-set using specified model
+        :param X:
+        :param y
+        :param model
+        :return: trained model
+        """
+        try:
+            model.fit(X, y)
+            logs.log("Successfully trained the model")
+        except Exception as e:
+            raise ValueError(f"Error in fitting model: {e}")
+            logs.log("Something went wrong while training model", level='ERROR')
+
+    def predict(self, X, model):
+        """
+         Perform  prediction on trained regression model
+        :param X:
+        :param model
+        :return: prediction
+        """
+        try:
+            return model.predict(X)
+        except Exception as e:
+            raise ValueError(f"Error in making predictions: {e}")
+            logs.log("Something went wrong while making predictions", level='ERROR')
 
     def adjusted_r2(self, r2, n, p):
         """
@@ -213,74 +345,88 @@ class regressor:
             raise ValueError(f"Error in preprocessing data: {e}")
             logs.log("Something went wrong while estimating adjusted r-squared", level='ERROR')
 
-    def train_models(self, X, y):
-        try:
-            n, p = X.shape
-            for name, model in self.models.items():
-                model.fit(X, y)
-                self.trained_models[name] = model
-                y_pred = model.predict(X)
-                mse = mean_squared_error(y, y_pred)
-                rmse = root_mean_squared_error(y, y_pred)
-                r2 = r2_score(y, y_pred)
-                adj_r2 = self.adjusted_r2(r2, n, p)
-                self.results[name] = {'mse': mse, 'rmse': rmse, 'r2': r2, 'adj_r2': adj_r2}
-
-            logs.log("Successfully performed the training step!")
-            return self.results
-        except Exception as e:
-            raise ValueError(f"Error in training models: {e}")
-            logs.log("Something went wrong while training the models", level='ERROR')
-
-    def evaluate_models(self, X_test, y_test):
+    def evaluate_model(self, y_true, y_pred, X=None):
         """
+        :param y_true:
+        :param y_pred:
+        :param X: Optional, required for Adjusted R2 calculation
+        :return:
+        """
+        try:
+            mse = mean_squared_error(y_true, y_pred)
+            rmse = np.sqrt(mse)
+            r2 = r2_score(y_true, y_pred)
+            adj_r2 = None
+            if X is not None:
+                adj_r2 = 1 - (1 - r2) * (len(y_true) - 1) / (len(y_true) - len(X[0, :]) - 1)
+            return {
+                "MSE": mse,
+                "RMSE": rmse,
+                "R2": r2,
+                "Adjusted R2": adj_r2
+            }
+        except Exception as e:
+            raise ValueError(f"Error in evaluating model: {e}")
+            logs.log("Something went wrong while evaluating model", level='ERROR')
+
+    def fit_all_models(self, X, y):
+        """ """
+        try:
+            self.fit_lasso_cv(X, y)  # Fit LassoCV and add Lasso using best alpha to models
+            self.fit_ridge_cv(X, y)  # Fit RidgeCV and add Ridge using best alpha to models
+            self.fit_elasticnet_cv(X, y)  # Fit ElasticNetCV and add ElasticNet using best alpha and l1_ratio to models
+            for model_name, model in self.models.items():
+                self.fit_model(X, y, model)
+                self.trained_models[model_name] = model
+            logs.log("Successfully trained all models")
+        except Exception as e:
+            raise ValueError(f"Error in fitting all models: {e}")
+            logs.log("Something went wrong while training all models", level='ERROR')
+
+    def select_best_model(self, X_train, X_test, y_train, y_test):
+        """
+        :param X_train:
         :param X_test:
+        :param y_train:
         :param y_test:
         :return:
         """
         try:
-            n, p = X_test.shape
-            #evaluation_results = {}
-            for name, model in self.trained_models.items():
-                y_pred = model.predict(X_test)
-                mse = mean_squared_error(y_test, y_pred)
-                rmse = root_mean_squared_error(y_test, y_pred)
-                r2 = r2_score(y_test, y_pred)
-                adj_r2 = self.adjusted_r2(r2, n, p)
-                self.evaluation_results[name] = {'mse': mse, 'rmse': rmse, 'r2': r2, 'adj_r2': adj_r2}
-            logs.log("Successfully performed the evaluation of all trained models!")
-            return self.evaluation_results
-        except Exception as e:
-            raise ValueError(f"Error in evaluating models: {e}")
-            logs.log("Something went wrong while evaluating models ", level='ERROR')
-
-    def select_best_model(self):
-        """
-        :return:
-        """
-        try:
-            self.test_best_model = max(self.trained_models, key=lambda k: self.evaluation_results[k]['adj_r2'])
-            logs.log("Successfully performed the select best model step!")
-            return self.test_best_model, self.evaluation_results[self.test_best_model]
+            best_score = -np.inf
+            best_model_name = None
+            best_model = None
+            for model_name, model in self.trained_models.items():
+                y_train_pred = self.predict(X_train, model)
+                y_test_pred = self.predict(X_test, model)
+                train_scores = self.evaluate_model(y_train, y_train_pred, X_train)
+                test_scores = self.evaluate_model(y_test, y_test_pred, X_test)
+                self.evaluation_results[model_name] = {"Train": train_scores, "Test": test_scores}
+                if test_scores["Adjusted R2"] > best_score:
+                    best_score = test_scores["Adjusted R2"]
+                    best_model_name = model_name
+                    best_model = model
+            self.best_model = best_model
+            self.test_best_model = self.evaluation_results[best_model_name]["Test"]
+            logs.log("Successfully selected the best model")
+            return best_model_name, best_model
         except Exception as e:
             raise ValueError(f"Error in selecting the best model: {e}")
-            logs.log("Something went wrong while selecting the best saved model ", level='ERROR')
+            logs.log("Something went wrong while selecting the best model", level='ERROR')
 
-    def save_best_model(self, filename='linear_reg.sav'):
+    def save_best_model(self, file_path='linear_reg.pickle'):
         """
-        :param filename:
+        :param file_path:
         :return:
         """
         try:
-            best_model_instance = self.trained_models[self.test_best_model]
-            joblib.dump(best_model_instance, filename)
-            pickle.dump(best_model_instance, open(filename, 'wb'))
-            logs.log("Successfully saved the best model!")
+            with open(file_path, 'wb') as file:
+                pickle.dump(self.best_model, file)
+            logs.log("Successfully saved the best model")
         except Exception as e:
             raise ValueError(f"Error in saving the best model: {e}")
-            logs.log("Something went wrong while saving the best saved model ", level='ERROR')
+            logs.log("Something went wrong while saving the best model", level='ERROR')
 
-    def load_saved_best_model(self, filename='linear_reg.sav'):
+    def load_model(self, filename='linear_reg.pickle'):
         """
         :param filename:
         :return : saved model
@@ -291,36 +437,6 @@ class regressor:
         except Exception as e:
             raise ValueError(f"Error in loading the best saved model: {e}")
             logs.log("Something went wrong while loading the best saved model ", level='ERROR')
-
-    def get_feature_names(self):
-        """Extract feature names from the preprocessing pipeline."""
-        try:
-            feature_names = []
-            if self.preprocessor is not None:
-                for name, transformer, columns in self.preprocessor.transformers_:
-                    if transformer == 'drop' or transformer is None:
-                        continue
-                    if hasattr(transformer, 'named_seps'):
-                        # OneHotEncoder
-                        if 'onehot' in transformer.named_seps:
-                            encoder = transformer.named_seps['onehot']
-                            if hasattr(encoder, 'get_feature_names_out'):
-                                feature_names.extend(encoder.get_feature_names_out(columns))
-                            else:
-                                feature_names.extend(encoder.get_feature_names(columns))
-                        else:
-                            feature_names.extend(columns)
-                    else:
-                        if hasattr(transformer, 'get_feature_names_out'):
-                            feature_names.extend(transformer.get_feature_names_out(columns))
-                        else:
-                            feature_names.extend(columns)
-            else:
-                raise ValueError("Preprocessor is not defined or improperly configured.")
-            return feature_names
-        except Exception as e:
-            raise ValueError(f"Error in getting feature names from pre-processing pipeline: {e}")
-            logs.log("Something went wrong while getting feature names from pre-processing pipeline ", level='ERROR')
 
     def plot_features_importance(self, X):
         """
@@ -368,44 +484,108 @@ class regressor:
             raise ValueError(f"Error in plotting feature importance: {e}")
             logs.log("Something went wrong while plotting feature importance ", level='ERROR')
 
-    def tune_parameters(self, param_grid, X, y):
+    def get_feature_importance(self, model_name='LinearRegression'):
         try:
-            model = self.models[self.best_model]
-            grid_search = GridSearchCV(model, param_grid, cv=5, scoring='neg_mean_squared_error')
+            if model_name not in self.trained_models:
+                raise ValueError(f"Model {model_name} not found. Train the model first.")
+            model = self.trained_models[model_name]
+            if model_name == 'LinearRegression':
+                # Coefficients as feature importance for linear regression
+                importances = model.coef_
+            elif model_name == 'Lasso':
+                # Coeffcients as feature importance for Lasso Regression
+                importances = model.coef_
+            elif hasattr(model, 'feature_importances_'):
+                # Feature importances for tree-based models
+                importances = model.feature_importances_
+            else:
+                raise ValueError(f"Feature importance not supported for {model_name}")
+
+            feature_names = self.get_feature_names()
+            feature_importances = pd.Series(importances, index=feature_names)
+            sorted_importances = feature_importances.sort_values(ascending=False)
+            return sorted_importances
+        except Exception as e:
+            raise ValueError(f"Error in getting feature importance: {e}")
+            logs.log("Something went wrong while getting feature importance", level='ERROR')
+
+    def tune_parameters(self, model, param_grid, X, y, cv=5, scoring='r2'):
+        try:
+            grid_search = GridSearchCV(estimator=model, param_grid=param_grid, cv=cv, scoring=scoring)
             grid_search.fit(X, y)
-            self.best_model = grid_search.best_estimator_
-            self.trained_models[self.best_model.__class__.__name__] = self.best_model
-            self.results[self.best_model.__class__.__name__] = {
-                'mse': -grid_search.best_score_,
-                'rmse': root_mean_squared_error(y, self.best_model.predict(X)),
-                'r2': r2_score(y, self.best_model.predict(X)),
-                'adj_r2': self.adjusted_r2(r2_score(y, self.best_model.predict(X)), X.shape[0], X.shape[1])
-            }
-            self.select_best_model()
+            logs.log("Successfully tuned the parameters")
+            return grid_search.best_params_, grid_search.best_score_
         except Exception as e:
             raise ValueError(f"Error in tuning parameters: {e}")
+            logs.log("Something went wrong while tuning parameters", level='ERROR')
 
-    def cross_validate_models(self, X, y, cv=5):
+    def cross_validate_models(self, model, X, y, cv=5):
         """
         :param X:
         :param y:
         :param cv:
+        :param model:
         :return:
         """
         try:
-            cv_results = {}
             kf = KFold(n_splits=cv, shuffle=True, random_state=self.random_state)
-            for name, model in self.models.items():
-                mse_scores = -cross_val_score(model, X, y, cv=kf, scoring='neg_mean_squared_error')
-                rmse_scores = -cross_val_score(model, X, y, cv=kf, scoring='neg_root_mean_squared_error')
-                r2_scores = cross_val_score(model, X, y, cv=kf, scoring='r2')
-                n, p = X.shape
-                adj_r2_scores = [self.adjusted_r2(r2, n, p) for r2 in r2_scores]
-                cv_results[name] = {'mse': mse_scores.mean(), 'rmse': rmse_scores.mean(), 'r2': r2_scores.mean(),
-                                    'adj_r2': np.mean(adj_r2_scores)}
-            return cv_results
+            r2_scores = cross_val_score(model, X, y, cv=kf, scoring='r2')
+            adj_r2_scores = 1 - (1 - r2_scores) * (len(y) - 1) / (len(y) - len(X[0, :]) - 1)
+            logs.log("Successfully performed cross-validation")
+            return np.mean(adj_r2_scores), np.std(adj_r2_scores)
         except Exception as e:
             raise ValueError(f"Error in cross-validating models: {e}")
+
+    def get_feature_names(self):
+        """This method extracts feature names from the preprocessing pipeline."""
+        try:
+            feature_names = []
+            for name, transformer, columns in self.preprocessor.transformers:
+                if transformer == 'drop' or transformer is None:
+                    continue
+
+                # Check if the transformer is a pipeline
+                if hasattr(transformer, 'named_steps'):
+                    steps = transformer.named_steps
+
+                    # Handle case where OneHotEncoder is in the pipeline
+                    if 'encoder' in steps and isinstance(steps['encoder'], OneHotEncoder):
+                        encoder = steps['encoder']
+                        feature_names.extend(encoder.get_feature_names_out(columns))
+
+                    # Handle case where LabelEncoder or OrdinalEncoder is in the pipeline
+                    elif 'encoder' in steps and isinstance(steps['encoder'], (LabelEncoder, OrdinalEncoder)):
+                        feature_names.extend(columns)
+                    # Handle case where SimpleImputer is in the pipeline
+                    elif 'imputer' in steps and isinstance(steps['imputer'], SimpleImputer):
+                        feature_names.extend(columns)
+
+                    # Handle case where StandardScaler is in the pipeline
+                    elif 'scaler' in steps and isinstance(steps['scaler'], (StandardScaler, MinMaxScaler)):
+                        feature_names.extend(columns)
+                    else:
+                        feature_names.extend(columns)
+
+                # Handle standalone OneHotEncoder
+                elif isinstance(transformer, OneHotEncoder):
+                    feature_names.extend(transformer.get_feature_names_out(columns))
+
+                # Handle standalone LabelEncoder or OrdinalEncoder
+                elif isinstance(transformer, (LabelEncoder, OrdinalEncoder)):
+                    feature_names.extend(columns)
+
+                # Handle standalone StandardScaler
+                elif isinstance(transformer, (StandardScaler, MinMaxScaler)):
+                    feature_names.extend(columns)
+
+                # Default case: For transformers like SimpleImputer or others that don't change feature names
+                else:
+                    feature_names.extend(columns)
+
+            return feature_names
+        except Exception as e:
+            raise ValueError(f"Error in getting feature names: {e}")
+            logs.log("Something went wrong while getting feature names", level='ERROR')
 
     def __str__(self):
         return "This is my custom regressor class object"

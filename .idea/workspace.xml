@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfa8f17c-9722-4149-bf4f-b78a94bf8d4b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/statsModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admission_Prediction.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EDA_Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/EDA_Report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RegressorClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/RegressorClass.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catboost_info/catboost_training.json" beforeDir="false" afterPath="$PROJECT_DIR$/catboost_info/catboost_training.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catboost_info/learn/events.out.tfevents" beforeDir="false" afterPath="$PROJECT_DIR$/catboost_info/learn/events.out.tfevents" afterDir="false" />
@@ -46,6 +47,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\obemb\PycharmProjects\Regressions" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="ExploratoryAnalysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Regressions" />
