@@ -47,7 +47,7 @@ if __name__ == '__main__':
     print("\nThe best model to put in production based on test-set is: ", best_model_name)
     print("\nThe evaluation metrics from the best model based on train set are :", model.evaluation_results[best_model_name]["Train"])
     print("\nThe evaluation metrics from the best model based on test set are :", model.evaluation_results[best_model_name]["Test"])
-    #model.save_best_model()
+    model.save_best_model()
     #print("\nFinal feature names are :", model.get_feature_names())
     #model.plot_features_importance(X_train)
     #print(model.get_feature_importance())

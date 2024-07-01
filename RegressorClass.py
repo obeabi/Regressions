@@ -53,6 +53,7 @@ class regressor:
 
     def find_numericategory_columns (self, X):
         """
+        Find numerical and categorical columns from dataset
         :param X:
         :return: numeric and categorical column names
         """
@@ -66,6 +67,7 @@ class regressor:
 
     def standard_scale_features(self, X):
         """
+        Perform standardization of the dataset using Standard Scaler
         :param X:
         :return: standard scaled features
         """
@@ -77,6 +79,7 @@ class regressor:
 
     def minmax_scale_features(self, X):
         """
+        Perform standardization of the dataset using MinMax Scaler
         :param X:
         :return: min-max scaled features
         """
@@ -88,7 +91,7 @@ class regressor:
 
     def pre_process(self, X):
         """
-
+        Create data pre-processing pipeline
         :param X:
         :return:
         """
@@ -133,7 +136,7 @@ class regressor:
 
     def find_optimal_clusters(self, X, max_k=5):
         """
-
+        Find optimal number of clusters using the K-means and WCSS method
         :param X:
         :param max_k:
         :return:
@@ -156,6 +159,7 @@ class regressor:
 
     def plot_elbow_curve(self, max_k=5):
         """
+        Plot elbow plot to visualize optimal number of clusters
         :param max_k:
         :return:
         """
@@ -174,7 +178,7 @@ class regressor:
 
     def find_clusters(self, X, n_clusters=4):
         """
-
+        Fit dataset to specified number of clusters using KMeans algorithm
         :param X:
         :param n_clusters:
         :return:
@@ -189,7 +193,7 @@ class regressor:
 
     def split_train_test(self, X, y, test_size=0.2):
         """
-
+        Split dataset into tain and test split using test size of 20%
         :param X:
         :param y:
         :param test_size:
@@ -205,7 +209,6 @@ class regressor:
     def vif_multicollinearity(self, X, threshold=10.0):
         """
         Checks for multi-collinearity between features doesn't work well
-
         :param X:
         :param threshold:
         :return: non-collinear features
@@ -230,7 +233,6 @@ class regressor:
     def correlation_multicollinearity(self, X, threshold=0.8):
         """
         Checks for multi-collinearity between features using pearson correlation
-
         :param X:
         :param threshold:
         :return: non-collinear features
@@ -251,7 +253,6 @@ class regressor:
     def fit_lasso_cv(self, X, y):
         """
         Perform lasso regression on train-set using specified cross validation
-
         :param X:
         :param y
         :return: trained model
@@ -347,6 +348,7 @@ class regressor:
 
     def evaluate_model(self, y_true, y_pred, X=None):
         """
+        Evaluate all trained models
         :param y_true:
         :param y_pred:
         :param X: Optional, required for Adjusted R2 calculation
@@ -370,7 +372,11 @@ class regressor:
             logs.log("Something went wrong while evaluating model", level='ERROR')
 
     def fit_all_models(self, X, y):
-        """ """
+        """
+        Fit all specified ML model at once
+        :param X:
+        :param y:
+        """
         try:
             self.fit_lasso_cv(X, y)  # Fit LassoCV and add Lasso using best alpha to models
             self.fit_ridge_cv(X, y)  # Fit RidgeCV and add Ridge using best alpha to models
@@ -385,6 +391,7 @@ class regressor:
 
     def select_best_model(self, X_train, X_test, y_train, y_test):
         """
+        Select the best ML model based on adjusted r2 score
         :param X_train:
         :param X_test:
         :param y_train:
@@ -415,12 +422,14 @@ class regressor:
 
     def save_best_model(self, file_path='linear_reg.pickle'):
         """
+        Save the trained ML model as a pickle or sav file.
         :param file_path:
         :return:
         """
         try:
             with open(file_path, 'wb') as file:
                 pickle.dump(self.best_model, file)
+            print("\nModel saved as a pickle file successfully!")
             logs.log("Successfully saved the best model")
         except Exception as e:
             raise ValueError(f"Error in saving the best model: {e}")
@@ -428,6 +437,7 @@ class regressor:
 
     def load_model(self, filename='linear_reg.pickle'):
         """
+        Load the saved model file.
         :param filename:
         :return : saved model
         """
@@ -441,6 +451,7 @@ class regressor:
     def plot_features_importance(self, X):
         """
         Plot features importance for the best model.
+        : param X:
         :return:
         """
         try:
@@ -485,6 +496,11 @@ class regressor:
             logs.log("Something went wrong while plotting feature importance ", level='ERROR')
 
     def get_feature_importance(self, model_name='LinearRegression'):
+        """
+        Establish feature importance
+        :param model_name:
+        :return:
+        """
         try:
             if model_name not in self.trained_models:
                 raise ValueError(f"Model {model_name} not found. Train the model first.")
@@ -510,6 +526,17 @@ class regressor:
             logs.log("Something went wrong while getting feature importance", level='ERROR')
 
     def tune_parameters(self, model, param_grid, X, y, cv=5, scoring='r2'):
+        """
+        Perform parameter tuning of parameters
+        :param model:
+        :param param_grid:
+        :param X:
+        :param y:
+        :param cv:
+        :param scoring:
+        :return:
+
+        """
         try:
             grid_search = GridSearchCV(estimator=model, param_grid=param_grid, cv=cv, scoring=scoring)
             grid_search.fit(X, y)
@@ -521,6 +548,7 @@ class regressor:
 
     def cross_validate_models(self, model, X, y, cv=5):
         """
+        Perform cross validation of specified model
         :param X:
         :param y:
         :param cv:

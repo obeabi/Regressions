@@ -1340,3 +1340,39 @@
 2024-07-01 17:17:58,881 - INFO - Successfully trained all models
 2024-07-01 17:18:09,093 - INFO - Successfully selected the best model
 2024-07-01 17:18:09,093 - INFO - Successfully selected the best model
+2024-07-01 17:25:39,081 - INFO - Successfully performed the pre-processing step!
+2024-07-01 17:25:39,081 - INFO - Successfully performed the pre-processing step!
+2024-07-01 17:25:39,150 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-01 17:25:39,150 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-01 17:25:39,171 - INFO - Successfully performed the pre-processing step!
+2024-07-01 17:25:39,171 - INFO - Successfully performed the pre-processing step!
+2024-07-01 17:25:39,171 - INFO - Successfully splitted the dataset to train-test set!
+2024-07-01 17:25:39,171 - INFO - Successfully splitted the dataset to train-test set!
+2024-07-01 17:25:39,316 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-01 17:25:39,316 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-01 17:25:40,929 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-01 17:25:40,929 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-01 17:25:41,074 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-01 17:25:41,074 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-01 17:25:41,078 - INFO - Successfully trained the model
+2024-07-01 17:25:41,078 - INFO - Successfully trained the model
+2024-07-01 17:25:44,690 - INFO - Successfully trained the model
+2024-07-01 17:25:44,690 - INFO - Successfully trained the model
+2024-07-01 17:25:47,911 - INFO - Successfully trained the model
+2024-07-01 17:25:47,911 - INFO - Successfully trained the model
+2024-07-01 17:25:51,564 - INFO - Successfully trained the model
+2024-07-01 17:25:51,564 - INFO - Successfully trained the model
+2024-07-01 17:25:51,705 - INFO - Successfully trained the model
+2024-07-01 17:25:51,705 - INFO - Successfully trained the model
+2024-07-01 17:25:51,710 - INFO - Successfully trained the model
+2024-07-01 17:25:51,710 - INFO - Successfully trained the model
+2024-07-01 17:25:51,715 - INFO - Successfully trained the model
+2024-07-01 17:25:51,715 - INFO - Successfully trained the model
+2024-07-01 17:25:51,718 - INFO - Successfully trained the model
+2024-07-01 17:25:51,718 - INFO - Successfully trained the model
+2024-07-01 17:25:51,718 - INFO - Successfully trained all models
+2024-07-01 17:25:51,718 - INFO - Successfully trained all models
+2024-07-01 17:26:02,062 - INFO - Successfully selected the best model
+2024-07-01 17:26:02,062 - INFO - Successfully selected the best model
+2024-07-01 17:26:02,080 - INFO - Successfully saved the best model
+2024-07-01 17:26:02,080 - INFO - Successfully saved the best model
