@@ -1376,3 +1376,1059 @@
 2024-07-01 17:26:02,062 - INFO - Successfully selected the best model
 2024-07-01 17:26:02,080 - INFO - Successfully saved the best model
 2024-07-01 17:26:02,080 - INFO - Successfully saved the best model
+2024-07-13 18:08:49,119 - INFO - Successfully performed the pre-processing step!
+2024-07-13 18:08:49,119 - INFO - Successfully performed the pre-processing step!
+2024-07-13 18:08:49,140 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 18:08:49,140 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 18:08:49,146 - INFO - Successfully performed the pre-processing step!
+2024-07-13 18:08:49,146 - INFO - Successfully performed the pre-processing step!
+2024-07-13 18:08:49,146 - INFO - Successfully splitted the dataset to train-test set!
+2024-07-13 18:08:49,146 - INFO - Successfully splitted the dataset to train-test set!
+2024-07-13 18:08:49,268 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 18:08:49,268 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 18:08:50,157 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 18:08:50,157 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 18:08:50,259 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 18:08:50,259 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 18:08:50,279 - INFO - Successfully trained the model
+2024-07-13 18:08:50,279 - INFO - Successfully trained the model
+2024-07-13 18:08:50,461 - INFO - Successfully trained the model
+2024-07-13 18:08:50,461 - INFO - Successfully trained the model
+2024-07-13 18:08:50,473 - INFO - Successfully trained the model
+2024-07-13 18:08:50,473 - INFO - Successfully trained the model
+2024-07-13 18:08:52,096 - INFO - Successfully trained the model
+2024-07-13 18:08:52,096 - INFO - Successfully trained the model
+2024-07-13 18:08:52,196 - INFO - Successfully trained the model
+2024-07-13 18:08:52,196 - INFO - Successfully trained the model
+2024-07-13 18:08:52,199 - INFO - Successfully trained the model
+2024-07-13 18:08:52,199 - INFO - Successfully trained the model
+2024-07-13 18:08:52,200 - INFO - Successfully trained the model
+2024-07-13 18:08:52,200 - INFO - Successfully trained the model
+2024-07-13 18:08:52,202 - INFO - Successfully trained the model
+2024-07-13 18:08:52,202 - INFO - Successfully trained the model
+2024-07-13 18:08:52,202 - INFO - Successfully trained all models
+2024-07-13 18:08:52,202 - INFO - Successfully trained all models
+2024-07-13 18:08:52,280 - INFO - Successfully selected the best model
+2024-07-13 18:08:52,280 - INFO - Successfully selected the best model
+2024-07-13 18:08:52,283 - INFO - Successfully saved the best model
+2024-07-13 18:08:52,283 - INFO - Successfully saved the best model
+2024-07-13 18:12:36,109 - INFO - Successfully performed the pre-processing step!
+2024-07-13 18:12:36,109 - INFO - Successfully performed the pre-processing step!
+2024-07-13 18:12:36,116 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 18:12:36,116 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 18:12:36,122 - INFO - Successfully performed the pre-processing step!
+2024-07-13 18:12:36,122 - INFO - Successfully performed the pre-processing step!
+2024-07-13 18:12:36,122 - INFO - Successfully splitted the dataset to train-test set!
+2024-07-13 18:12:36,122 - INFO - Successfully splitted the dataset to train-test set!
+2024-07-13 18:12:36,230 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 18:12:36,230 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 18:12:37,294 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 18:12:37,294 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 18:12:37,439 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 18:12:37,439 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 18:12:37,441 - INFO - Successfully trained the model
+2024-07-13 18:12:37,441 - INFO - Successfully trained the model
+2024-07-13 18:12:37,687 - INFO - Successfully trained the model
+2024-07-13 18:12:37,687 - INFO - Successfully trained the model
+2024-07-13 18:12:37,693 - INFO - Successfully trained the model
+2024-07-13 18:12:37,693 - INFO - Successfully trained the model
+2024-07-13 18:12:39,259 - INFO - Successfully trained the model
+2024-07-13 18:12:39,259 - INFO - Successfully trained the model
+2024-07-13 18:12:39,339 - INFO - Successfully trained the model
+2024-07-13 18:12:39,339 - INFO - Successfully trained the model
+2024-07-13 18:12:39,341 - INFO - Successfully trained the model
+2024-07-13 18:12:39,341 - INFO - Successfully trained the model
+2024-07-13 18:12:39,343 - INFO - Successfully trained the model
+2024-07-13 18:12:39,343 - INFO - Successfully trained the model
+2024-07-13 18:12:39,346 - INFO - Successfully trained the model
+2024-07-13 18:12:39,346 - INFO - Successfully trained the model
+2024-07-13 18:12:39,346 - INFO - Successfully trained all models
+2024-07-13 18:12:39,346 - INFO - Successfully trained all models
+2024-07-13 18:12:39,424 - INFO - Successfully selected the best model
+2024-07-13 18:12:39,424 - INFO - Successfully selected the best model
+2024-07-13 18:12:39,425 - INFO - Successfully saved the best model
+2024-07-13 18:12:39,425 - INFO - Successfully saved the best model
+2024-07-13 21:13:20,032 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:13:20,032 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:13:20,049 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:13:20,049 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:13:20,056 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:13:20,056 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:13:20,056 - INFO - Successfully splitted the dataset to train-test set!
+2024-07-13 21:13:20,056 - INFO - Successfully splitted the dataset to train-test set!
+2024-07-13 21:13:20,196 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:13:20,196 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:13:21,117 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:13:21,117 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:13:21,226 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 21:13:21,226 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 21:13:21,236 - INFO - Successfully trained the model
+2024-07-13 21:13:21,236 - INFO - Successfully trained the model
+2024-07-13 21:13:21,441 - INFO - Successfully trained the model
+2024-07-13 21:13:21,441 - INFO - Successfully trained the model
+2024-07-13 21:13:21,448 - INFO - Successfully trained the model
+2024-07-13 21:13:21,448 - INFO - Successfully trained the model
+2024-07-13 21:13:23,140 - INFO - Successfully trained the model
+2024-07-13 21:13:23,140 - INFO - Successfully trained the model
+2024-07-13 21:13:23,226 - INFO - Successfully trained the model
+2024-07-13 21:13:23,226 - INFO - Successfully trained the model
+2024-07-13 21:13:23,229 - INFO - Successfully trained the model
+2024-07-13 21:13:23,229 - INFO - Successfully trained the model
+2024-07-13 21:13:23,231 - INFO - Successfully trained the model
+2024-07-13 21:13:23,231 - INFO - Successfully trained the model
+2024-07-13 21:13:23,233 - INFO - Successfully trained the model
+2024-07-13 21:13:23,233 - INFO - Successfully trained the model
+2024-07-13 21:13:23,233 - INFO - Successfully trained all models
+2024-07-13 21:13:23,233 - INFO - Successfully trained all models
+2024-07-13 21:13:23,299 - INFO - Successfully selected the best model
+2024-07-13 21:13:23,299 - INFO - Successfully selected the best model
+2024-07-13 21:14:16,966 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:14:16,966 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:14:16,973 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:14:16,973 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:14:16,979 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:14:16,979 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:14:16,979 - INFO - Successfully splitted the dataset to train-test set!
+2024-07-13 21:14:16,979 - INFO - Successfully splitted the dataset to train-test set!
+2024-07-13 21:14:17,086 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:14:17,086 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:14:17,886 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:14:17,886 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:14:17,991 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 21:14:17,991 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 21:14:17,992 - INFO - Successfully trained the model
+2024-07-13 21:14:17,992 - INFO - Successfully trained the model
+2024-07-13 21:14:18,179 - INFO - Successfully trained the model
+2024-07-13 21:14:18,179 - INFO - Successfully trained the model
+2024-07-13 21:14:18,183 - INFO - Successfully trained the model
+2024-07-13 21:14:18,183 - INFO - Successfully trained the model
+2024-07-13 21:14:19,582 - INFO - Successfully trained the model
+2024-07-13 21:14:19,582 - INFO - Successfully trained the model
+2024-07-13 21:14:19,638 - INFO - Successfully trained the model
+2024-07-13 21:14:19,638 - INFO - Successfully trained the model
+2024-07-13 21:14:19,641 - INFO - Successfully trained the model
+2024-07-13 21:14:19,641 - INFO - Successfully trained the model
+2024-07-13 21:14:19,642 - INFO - Successfully trained the model
+2024-07-13 21:14:19,642 - INFO - Successfully trained the model
+2024-07-13 21:14:19,644 - INFO - Successfully trained the model
+2024-07-13 21:14:19,644 - INFO - Successfully trained the model
+2024-07-13 21:14:19,644 - INFO - Successfully trained all models
+2024-07-13 21:14:19,644 - INFO - Successfully trained all models
+2024-07-13 21:14:19,698 - INFO - Successfully selected the best model
+2024-07-13 21:14:19,698 - INFO - Successfully selected the best model
+2024-07-13 21:16:03,022 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:16:03,022 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:16:03,028 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:16:03,028 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:16:03,035 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:16:03,035 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:16:03,036 - INFO - Successfully splitted the dataset to train-test set!
+2024-07-13 21:16:03,036 - INFO - Successfully splitted the dataset to train-test set!
+2024-07-13 21:16:03,152 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:16:03,152 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:16:04,024 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:16:04,024 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:16:04,127 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 21:16:04,127 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 21:16:04,128 - INFO - Successfully trained the model
+2024-07-13 21:16:04,128 - INFO - Successfully trained the model
+2024-07-13 21:16:04,301 - INFO - Successfully trained the model
+2024-07-13 21:16:04,301 - INFO - Successfully trained the model
+2024-07-13 21:16:04,305 - INFO - Successfully trained the model
+2024-07-13 21:16:04,305 - INFO - Successfully trained the model
+2024-07-13 21:16:05,828 - INFO - Successfully trained the model
+2024-07-13 21:16:05,828 - INFO - Successfully trained the model
+2024-07-13 21:16:05,910 - INFO - Successfully trained the model
+2024-07-13 21:16:05,910 - INFO - Successfully trained the model
+2024-07-13 21:16:05,913 - INFO - Successfully trained the model
+2024-07-13 21:16:05,913 - INFO - Successfully trained the model
+2024-07-13 21:16:05,915 - INFO - Successfully trained the model
+2024-07-13 21:16:05,915 - INFO - Successfully trained the model
+2024-07-13 21:16:05,917 - INFO - Successfully trained the model
+2024-07-13 21:16:05,917 - INFO - Successfully trained the model
+2024-07-13 21:16:05,918 - INFO - Successfully trained all models
+2024-07-13 21:16:05,918 - INFO - Successfully trained all models
+2024-07-13 21:16:06,016 - INFO - Successfully selected the best model
+2024-07-13 21:16:06,016 - INFO - Successfully selected the best model
+2024-07-13 21:26:23,260 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:26:23,260 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:26:23,267 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:26:23,267 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:26:23,270 - INFO - Successfully created the train-test set!
+2024-07-13 21:26:23,270 - INFO - Successfully created the train-test set!
+2024-07-13 21:33:38,402 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:33:38,402 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:33:38,407 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:33:38,407 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:33:52,846 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:33:52,846 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:33:52,851 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:33:52,851 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:33:52,858 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:33:52,858 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:33:52,858 - INFO - Successfully created the train-test set!
+2024-07-13 21:33:52,858 - INFO - Successfully created the train-test set!
+2024-07-13 21:33:52,958 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:33:52,958 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:33:53,721 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:33:53,721 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:33:53,823 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 21:33:53,823 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 21:33:53,824 - INFO - Successfully trained the model
+2024-07-13 21:33:53,824 - INFO - Successfully trained the model
+2024-07-13 21:33:53,996 - INFO - Successfully trained the model
+2024-07-13 21:33:53,996 - INFO - Successfully trained the model
+2024-07-13 21:33:54,000 - INFO - Successfully trained the model
+2024-07-13 21:33:54,000 - INFO - Successfully trained the model
+2024-07-13 21:33:55,482 - INFO - Successfully trained the model
+2024-07-13 21:33:55,482 - INFO - Successfully trained the model
+2024-07-13 21:33:55,551 - INFO - Successfully trained the model
+2024-07-13 21:33:55,551 - INFO - Successfully trained the model
+2024-07-13 21:33:55,553 - INFO - Successfully trained the model
+2024-07-13 21:33:55,553 - INFO - Successfully trained the model
+2024-07-13 21:33:55,555 - INFO - Successfully trained the model
+2024-07-13 21:33:55,555 - INFO - Successfully trained the model
+2024-07-13 21:33:55,557 - INFO - Successfully trained the model
+2024-07-13 21:33:55,557 - INFO - Successfully trained the model
+2024-07-13 21:33:55,557 - INFO - Successfully trained all models
+2024-07-13 21:33:55,557 - INFO - Successfully trained all models
+2024-07-13 21:33:55,619 - INFO - Successfully selected the best model
+2024-07-13 21:33:55,619 - INFO - Successfully selected the best model
+2024-07-13 21:36:22,284 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:36:22,284 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:36:22,290 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:36:22,290 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:36:22,295 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:36:22,295 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:36:22,295 - INFO - Successfully created the train-test set!
+2024-07-13 21:36:22,295 - INFO - Successfully created the train-test set!
+2024-07-13 21:36:22,400 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:36:22,400 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:36:23,147 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:36:23,147 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:36:23,252 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 21:36:23,252 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 21:36:23,253 - INFO - Successfully trained the model
+2024-07-13 21:36:23,253 - INFO - Successfully trained the model
+2024-07-13 21:36:23,420 - INFO - Successfully trained the model
+2024-07-13 21:36:23,420 - INFO - Successfully trained the model
+2024-07-13 21:36:23,424 - INFO - Successfully trained the model
+2024-07-13 21:36:23,424 - INFO - Successfully trained the model
+2024-07-13 21:36:24,781 - INFO - Successfully trained the model
+2024-07-13 21:36:24,781 - INFO - Successfully trained the model
+2024-07-13 21:36:24,860 - INFO - Successfully trained the model
+2024-07-13 21:36:24,860 - INFO - Successfully trained the model
+2024-07-13 21:36:24,863 - INFO - Successfully trained the model
+2024-07-13 21:36:24,863 - INFO - Successfully trained the model
+2024-07-13 21:36:24,865 - INFO - Successfully trained the model
+2024-07-13 21:36:24,865 - INFO - Successfully trained the model
+2024-07-13 21:36:24,867 - INFO - Successfully trained the model
+2024-07-13 21:36:24,867 - INFO - Successfully trained the model
+2024-07-13 21:36:24,868 - INFO - Successfully trained all models
+2024-07-13 21:36:24,868 - INFO - Successfully trained all models
+2024-07-13 21:36:24,941 - INFO - Successfully selected the best model
+2024-07-13 21:36:24,941 - INFO - Successfully selected the best model
+2024-07-13 21:37:52,095 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:37:52,095 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:37:52,100 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:37:52,100 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:37:52,106 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:37:52,106 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:37:52,106 - INFO - Successfully created the train-test set!
+2024-07-13 21:37:52,106 - INFO - Successfully created the train-test set!
+2024-07-13 21:37:52,208 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:37:52,208 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:37:52,952 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:37:52,952 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:37:53,047 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 21:37:53,047 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 21:37:53,048 - INFO - Successfully trained the model
+2024-07-13 21:37:53,048 - INFO - Successfully trained the model
+2024-07-13 21:37:53,213 - INFO - Successfully trained the model
+2024-07-13 21:37:53,213 - INFO - Successfully trained the model
+2024-07-13 21:37:53,217 - INFO - Successfully trained the model
+2024-07-13 21:37:53,217 - INFO - Successfully trained the model
+2024-07-13 21:37:54,559 - INFO - Successfully trained the model
+2024-07-13 21:37:54,559 - INFO - Successfully trained the model
+2024-07-13 21:37:54,640 - INFO - Successfully trained the model
+2024-07-13 21:37:54,640 - INFO - Successfully trained the model
+2024-07-13 21:37:54,642 - INFO - Successfully trained the model
+2024-07-13 21:37:54,642 - INFO - Successfully trained the model
+2024-07-13 21:37:54,644 - INFO - Successfully trained the model
+2024-07-13 21:37:54,644 - INFO - Successfully trained the model
+2024-07-13 21:37:54,647 - INFO - Successfully trained the model
+2024-07-13 21:37:54,647 - INFO - Successfully trained the model
+2024-07-13 21:37:54,647 - INFO - Successfully trained all models
+2024-07-13 21:37:54,647 - INFO - Successfully trained all models
+2024-07-13 21:37:54,722 - INFO - Successfully selected the best model
+2024-07-13 21:37:54,722 - INFO - Successfully selected the best model
+2024-07-13 21:41:07,469 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:41:07,469 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:41:07,475 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:41:07,475 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:41:07,482 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:41:07,482 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:41:07,482 - INFO - Successfully created the train-test set!
+2024-07-13 21:41:07,482 - INFO - Successfully created the train-test set!
+2024-07-13 21:41:07,584 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:41:07,584 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:41:08,318 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:41:08,318 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:41:08,413 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 21:41:08,413 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 21:41:08,414 - INFO - Successfully trained the model
+2024-07-13 21:41:08,414 - INFO - Successfully trained the model
+2024-07-13 21:41:08,620 - INFO - Successfully trained the model
+2024-07-13 21:41:08,620 - INFO - Successfully trained the model
+2024-07-13 21:41:08,623 - INFO - Successfully trained the model
+2024-07-13 21:41:08,623 - INFO - Successfully trained the model
+2024-07-13 21:41:09,925 - INFO - Successfully trained the model
+2024-07-13 21:41:09,925 - INFO - Successfully trained the model
+2024-07-13 21:41:09,977 - INFO - Successfully trained the model
+2024-07-13 21:41:09,977 - INFO - Successfully trained the model
+2024-07-13 21:41:09,980 - INFO - Successfully trained the model
+2024-07-13 21:41:09,980 - INFO - Successfully trained the model
+2024-07-13 21:41:09,981 - INFO - Successfully trained the model
+2024-07-13 21:41:09,981 - INFO - Successfully trained the model
+2024-07-13 21:41:09,982 - INFO - Successfully trained the model
+2024-07-13 21:41:09,982 - INFO - Successfully trained the model
+2024-07-13 21:41:09,983 - INFO - Successfully trained all models
+2024-07-13 21:41:09,983 - INFO - Successfully trained all models
+2024-07-13 21:41:10,037 - INFO - Successfully selected the best model
+2024-07-13 21:41:10,037 - INFO - Successfully selected the best model
+2024-07-13 21:41:30,019 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:41:30,019 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:41:30,026 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:41:30,026 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 21:41:30,031 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:41:30,031 - INFO - Successfully performed the pre-processing step!
+2024-07-13 21:41:30,032 - INFO - Successfully created the train-test set!
+2024-07-13 21:41:30,032 - INFO - Successfully created the train-test set!
+2024-07-13 21:41:30,132 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:41:30,132 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:41:31,031 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:41:31,031 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 21:41:31,129 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 21:41:31,129 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 21:41:31,130 - INFO - Successfully trained the model
+2024-07-13 21:41:31,130 - INFO - Successfully trained the model
+2024-07-13 21:41:31,298 - INFO - Successfully trained the model
+2024-07-13 21:41:31,298 - INFO - Successfully trained the model
+2024-07-13 21:41:31,302 - INFO - Successfully trained the model
+2024-07-13 21:41:31,302 - INFO - Successfully trained the model
+2024-07-13 21:41:32,695 - INFO - Successfully trained the model
+2024-07-13 21:41:32,695 - INFO - Successfully trained the model
+2024-07-13 21:41:32,804 - INFO - Successfully trained the model
+2024-07-13 21:41:32,804 - INFO - Successfully trained the model
+2024-07-13 21:41:32,806 - INFO - Successfully trained the model
+2024-07-13 21:41:32,806 - INFO - Successfully trained the model
+2024-07-13 21:41:32,808 - INFO - Successfully trained the model
+2024-07-13 21:41:32,808 - INFO - Successfully trained the model
+2024-07-13 21:41:32,811 - INFO - Successfully trained the model
+2024-07-13 21:41:32,811 - INFO - Successfully trained the model
+2024-07-13 21:41:32,812 - INFO - Successfully trained all models
+2024-07-13 21:41:32,812 - INFO - Successfully trained all models
+2024-07-13 21:41:32,895 - INFO - Successfully selected the best model
+2024-07-13 21:41:32,895 - INFO - Successfully selected the best model
+2024-07-13 22:16:12,399 - INFO - Successfully created the train-test set!
+2024-07-13 22:16:12,399 - INFO - Successfully created the train-test set!
+2024-07-13 22:16:46,294 - INFO - Successfully created the train-test set!
+2024-07-13 22:16:46,294 - INFO - Successfully created the train-test set!
+2024-07-13 22:16:58,489 - INFO - Successfully created the train-test set!
+2024-07-13 22:16:58,489 - INFO - Successfully created the train-test set!
+2024-07-13 22:18:27,684 - INFO - Successfully created the train-test set!
+2024-07-13 22:18:27,684 - INFO - Successfully created the train-test set!
+2024-07-13 22:19:09,109 - INFO - Successfully created the train-test set!
+2024-07-13 22:19:09,109 - INFO - Successfully created the train-test set!
+2024-07-13 22:22:48,226 - INFO - Successfully created the train-test set!
+2024-07-13 22:22:48,226 - INFO - Successfully created the train-test set!
+2024-07-13 22:23:14,798 - INFO - Successfully created the train-test set!
+2024-07-13 22:23:14,798 - INFO - Successfully created the train-test set!
+2024-07-13 22:25:30,856 - INFO - Successfully created the train-test set!
+2024-07-13 22:25:30,856 - INFO - Successfully created the train-test set!
+2024-07-13 22:25:45,542 - INFO - Successfully created the train-test set!
+2024-07-13 22:25:45,542 - INFO - Successfully created the train-test set!
+2024-07-13 22:27:19,233 - INFO - Successfully created the train-test set!
+2024-07-13 22:27:19,233 - INFO - Successfully created the train-test set!
+2024-07-13 22:33:48,478 - INFO - Successfully created the train-test set!
+2024-07-13 22:33:48,478 - INFO - Successfully created the train-test set!
+2024-07-13 22:34:01,657 - INFO - Successfully created the train-test set!
+2024-07-13 22:34:01,657 - INFO - Successfully created the train-test set!
+2024-07-13 22:40:55,782 - INFO - Successfully created the train-test set!
+2024-07-13 22:40:55,782 - INFO - Successfully created the train-test set!
+2024-07-13 22:44:17,877 - INFO - Successfully created the train-test set!
+2024-07-13 22:44:17,877 - INFO - Successfully created the train-test set!
+2024-07-13 22:45:13,764 - INFO - Successfully created the train-test set!
+2024-07-13 22:45:13,764 - INFO - Successfully created the train-test set!
+2024-07-13 22:46:09,960 - INFO - Successfully created the train-test set!
+2024-07-13 22:46:09,960 - INFO - Successfully created the train-test set!
+2024-07-13 22:46:48,847 - INFO - Successfully created the train-test set!
+2024-07-13 22:46:48,847 - INFO - Successfully created the train-test set!
+2024-07-13 22:47:26,146 - INFO - Successfully created the train-test set!
+2024-07-13 22:47:26,146 - INFO - Successfully created the train-test set!
+2024-07-13 22:58:37,025 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 22:58:37,025 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 23:02:08,218 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 23:02:08,218 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 23:03:30,550 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 23:03:30,550 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 23:06:27,995 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 23:06:27,995 - INFO - Successfully performed the multi-collinearity check step!
+2024-07-13 23:21:29,165 - INFO - Successfully created the train-test set!
+2024-07-13 23:21:29,165 - INFO - Successfully created the train-test set!
+2024-07-13 23:22:01,494 - INFO - Successfully created the train-test set!
+2024-07-13 23:22:01,494 - INFO - Successfully created the train-test set!
+2024-07-13 23:24:07,117 - INFO - Successfully created the train-test set!
+2024-07-13 23:24:07,117 - INFO - Successfully created the train-test set!
+2024-07-13 23:25:34,521 - INFO - Successfully created the train-test set!
+2024-07-13 23:25:34,521 - INFO - Successfully created the train-test set!
+2024-07-13 23:25:34,626 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:25:34,626 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:25:36,162 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:25:36,162 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:25:36,259 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:25:36,259 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:25:36,260 - INFO - Successfully trained the model
+2024-07-13 23:25:36,260 - INFO - Successfully trained the model
+2024-07-13 23:25:36,427 - INFO - Successfully trained the model
+2024-07-13 23:25:36,427 - INFO - Successfully trained the model
+2024-07-13 23:25:36,431 - INFO - Successfully trained the model
+2024-07-13 23:25:36,431 - INFO - Successfully trained the model
+2024-07-13 23:25:37,685 - INFO - Successfully trained the model
+2024-07-13 23:25:37,685 - INFO - Successfully trained the model
+2024-07-13 23:25:37,740 - INFO - Successfully trained the model
+2024-07-13 23:25:37,740 - INFO - Successfully trained the model
+2024-07-13 23:25:37,743 - INFO - Successfully trained the model
+2024-07-13 23:25:37,743 - INFO - Successfully trained the model
+2024-07-13 23:25:37,745 - INFO - Successfully trained the model
+2024-07-13 23:25:37,745 - INFO - Successfully trained the model
+2024-07-13 23:25:37,747 - INFO - Successfully trained the model
+2024-07-13 23:25:37,747 - INFO - Successfully trained the model
+2024-07-13 23:25:37,747 - INFO - Successfully trained all models
+2024-07-13 23:25:37,747 - INFO - Successfully trained all models
+2024-07-13 23:27:42,993 - INFO - Successfully created the train-test set!
+2024-07-13 23:27:42,993 - INFO - Successfully created the train-test set!
+2024-07-13 23:27:43,112 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:27:43,112 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:27:44,959 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:27:44,959 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:27:45,089 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:27:45,089 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:27:45,091 - INFO - Successfully trained the model
+2024-07-13 23:27:45,091 - INFO - Successfully trained the model
+2024-07-13 23:27:45,294 - INFO - Successfully trained the model
+2024-07-13 23:27:45,294 - INFO - Successfully trained the model
+2024-07-13 23:27:45,301 - INFO - Successfully trained the model
+2024-07-13 23:27:45,301 - INFO - Successfully trained the model
+2024-07-13 23:27:46,579 - INFO - Successfully trained the model
+2024-07-13 23:27:46,579 - INFO - Successfully trained the model
+2024-07-13 23:27:46,646 - INFO - Successfully trained the model
+2024-07-13 23:27:46,646 - INFO - Successfully trained the model
+2024-07-13 23:27:46,649 - INFO - Successfully trained the model
+2024-07-13 23:27:46,649 - INFO - Successfully trained the model
+2024-07-13 23:27:46,652 - INFO - Successfully trained the model
+2024-07-13 23:27:46,652 - INFO - Successfully trained the model
+2024-07-13 23:27:46,655 - INFO - Successfully trained the model
+2024-07-13 23:27:46,655 - INFO - Successfully trained the model
+2024-07-13 23:27:46,655 - INFO - Successfully trained all models
+2024-07-13 23:27:46,655 - INFO - Successfully trained all models
+2024-07-13 23:28:17,640 - INFO - Successfully created the train-test set!
+2024-07-13 23:28:17,640 - INFO - Successfully created the train-test set!
+2024-07-13 23:28:17,749 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:28:17,749 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:28:19,275 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:28:19,275 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:28:19,375 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:28:19,375 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:28:19,376 - INFO - Successfully trained the model
+2024-07-13 23:28:19,376 - INFO - Successfully trained the model
+2024-07-13 23:28:19,545 - INFO - Successfully trained the model
+2024-07-13 23:28:19,545 - INFO - Successfully trained the model
+2024-07-13 23:28:19,550 - INFO - Successfully trained the model
+2024-07-13 23:28:19,550 - INFO - Successfully trained the model
+2024-07-13 23:28:20,888 - INFO - Successfully trained the model
+2024-07-13 23:28:20,888 - INFO - Successfully trained the model
+2024-07-13 23:28:20,972 - INFO - Successfully trained the model
+2024-07-13 23:28:20,972 - INFO - Successfully trained the model
+2024-07-13 23:28:20,976 - INFO - Successfully trained the model
+2024-07-13 23:28:20,976 - INFO - Successfully trained the model
+2024-07-13 23:28:20,980 - INFO - Successfully trained the model
+2024-07-13 23:28:20,980 - INFO - Successfully trained the model
+2024-07-13 23:28:20,984 - INFO - Successfully trained the model
+2024-07-13 23:28:20,984 - INFO - Successfully trained the model
+2024-07-13 23:28:20,984 - INFO - Successfully trained all models
+2024-07-13 23:28:20,984 - INFO - Successfully trained all models
+2024-07-13 23:30:48,391 - INFO - Successfully created the train-test set!
+2024-07-13 23:30:48,391 - INFO - Successfully created the train-test set!
+2024-07-13 23:31:31,575 - INFO - Successfully created the train-test set!
+2024-07-13 23:31:31,575 - INFO - Successfully created the train-test set!
+2024-07-13 23:32:04,318 - INFO - Successfully created the train-test set!
+2024-07-13 23:32:04,318 - INFO - Successfully created the train-test set!
+2024-07-13 23:33:08,374 - INFO - Successfully created the train-test set!
+2024-07-13 23:33:08,374 - INFO - Successfully created the train-test set!
+2024-07-13 23:33:08,483 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:33:08,483 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:33:09,268 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:33:09,268 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:33:09,370 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:33:09,370 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:33:09,371 - INFO - Successfully trained the model
+2024-07-13 23:33:09,371 - INFO - Successfully trained the model
+2024-07-13 23:33:09,552 - INFO - Successfully trained the model
+2024-07-13 23:33:09,552 - INFO - Successfully trained the model
+2024-07-13 23:33:09,556 - INFO - Successfully trained the model
+2024-07-13 23:33:09,556 - INFO - Successfully trained the model
+2024-07-13 23:33:10,828 - INFO - Successfully trained the model
+2024-07-13 23:33:10,828 - INFO - Successfully trained the model
+2024-07-13 23:33:10,880 - INFO - Successfully trained the model
+2024-07-13 23:33:10,880 - INFO - Successfully trained the model
+2024-07-13 23:33:10,882 - INFO - Successfully trained the model
+2024-07-13 23:33:10,882 - INFO - Successfully trained the model
+2024-07-13 23:33:10,883 - INFO - Successfully trained the model
+2024-07-13 23:33:10,883 - INFO - Successfully trained the model
+2024-07-13 23:33:10,884 - INFO - Successfully trained the model
+2024-07-13 23:33:10,884 - INFO - Successfully trained the model
+2024-07-13 23:33:10,885 - INFO - Successfully trained all models
+2024-07-13 23:33:10,885 - INFO - Successfully trained all models
+2024-07-13 23:33:40,075 - INFO - Successfully created the train-test set!
+2024-07-13 23:33:40,075 - INFO - Successfully created the train-test set!
+2024-07-13 23:33:40,183 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:33:40,183 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:33:41,044 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:33:41,044 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:33:41,164 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:33:41,164 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:33:41,165 - INFO - Successfully trained the model
+2024-07-13 23:33:41,165 - INFO - Successfully trained the model
+2024-07-13 23:33:41,351 - INFO - Successfully trained the model
+2024-07-13 23:33:41,351 - INFO - Successfully trained the model
+2024-07-13 23:33:41,355 - INFO - Successfully trained the model
+2024-07-13 23:33:41,355 - INFO - Successfully trained the model
+2024-07-13 23:33:42,893 - INFO - Successfully trained the model
+2024-07-13 23:33:42,893 - INFO - Successfully trained the model
+2024-07-13 23:33:42,964 - INFO - Successfully trained the model
+2024-07-13 23:33:42,964 - INFO - Successfully trained the model
+2024-07-13 23:33:42,966 - INFO - Successfully trained the model
+2024-07-13 23:33:42,966 - INFO - Successfully trained the model
+2024-07-13 23:33:42,967 - INFO - Successfully trained the model
+2024-07-13 23:33:42,967 - INFO - Successfully trained the model
+2024-07-13 23:33:42,969 - INFO - Successfully trained the model
+2024-07-13 23:33:42,969 - INFO - Successfully trained the model
+2024-07-13 23:33:42,969 - INFO - Successfully trained all models
+2024-07-13 23:33:42,969 - INFO - Successfully trained all models
+2024-07-13 23:33:43,029 - INFO - Successfully selected the best model
+2024-07-13 23:33:43,029 - INFO - Successfully selected the best model
+2024-07-13 23:33:58,673 - INFO - Successfully created the train-test set!
+2024-07-13 23:33:58,673 - INFO - Successfully created the train-test set!
+2024-07-13 23:33:58,778 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:33:58,778 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:33:59,497 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:33:59,497 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:33:59,593 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:33:59,593 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:33:59,594 - INFO - Successfully trained the model
+2024-07-13 23:33:59,594 - INFO - Successfully trained the model
+2024-07-13 23:33:59,760 - INFO - Successfully trained the model
+2024-07-13 23:33:59,760 - INFO - Successfully trained the model
+2024-07-13 23:33:59,764 - INFO - Successfully trained the model
+2024-07-13 23:33:59,764 - INFO - Successfully trained the model
+2024-07-13 23:34:01,118 - INFO - Successfully trained the model
+2024-07-13 23:34:01,118 - INFO - Successfully trained the model
+2024-07-13 23:34:01,192 - INFO - Successfully trained the model
+2024-07-13 23:34:01,192 - INFO - Successfully trained the model
+2024-07-13 23:34:01,194 - INFO - Successfully trained the model
+2024-07-13 23:34:01,194 - INFO - Successfully trained the model
+2024-07-13 23:34:01,196 - INFO - Successfully trained the model
+2024-07-13 23:34:01,196 - INFO - Successfully trained the model
+2024-07-13 23:34:01,198 - INFO - Successfully trained the model
+2024-07-13 23:34:01,198 - INFO - Successfully trained the model
+2024-07-13 23:34:01,198 - INFO - Successfully trained all models
+2024-07-13 23:34:01,198 - INFO - Successfully trained all models
+2024-07-13 23:34:01,273 - INFO - Successfully selected the best model
+2024-07-13 23:34:01,273 - INFO - Successfully selected the best model
+2024-07-13 23:35:33,528 - INFO - Successfully created the train-test set!
+2024-07-13 23:35:33,528 - INFO - Successfully created the train-test set!
+2024-07-13 23:35:33,635 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:35:33,635 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:35:34,613 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:35:34,613 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:35:34,740 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:35:34,740 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:35:34,741 - INFO - Successfully trained the model
+2024-07-13 23:35:34,741 - INFO - Successfully trained the model
+2024-07-13 23:35:34,972 - INFO - Successfully trained the model
+2024-07-13 23:35:34,972 - INFO - Successfully trained the model
+2024-07-13 23:35:34,979 - INFO - Successfully trained the model
+2024-07-13 23:35:34,979 - INFO - Successfully trained the model
+2024-07-13 23:35:36,326 - INFO - Successfully trained the model
+2024-07-13 23:35:36,326 - INFO - Successfully trained the model
+2024-07-13 23:35:36,424 - INFO - Successfully trained the model
+2024-07-13 23:35:36,424 - INFO - Successfully trained the model
+2024-07-13 23:35:36,427 - INFO - Successfully trained the model
+2024-07-13 23:35:36,427 - INFO - Successfully trained the model
+2024-07-13 23:35:36,429 - INFO - Successfully trained the model
+2024-07-13 23:35:36,429 - INFO - Successfully trained the model
+2024-07-13 23:35:36,430 - INFO - Successfully trained the model
+2024-07-13 23:35:36,430 - INFO - Successfully trained the model
+2024-07-13 23:35:36,431 - INFO - Successfully trained all models
+2024-07-13 23:35:36,431 - INFO - Successfully trained all models
+2024-07-13 23:35:36,501 - INFO - Successfully selected the best model
+2024-07-13 23:35:36,501 - INFO - Successfully selected the best model
+2024-07-13 23:40:51,692 - INFO - Successfully created the train-test set!
+2024-07-13 23:40:51,692 - INFO - Successfully created the train-test set!
+2024-07-13 23:40:51,795 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:40:51,795 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:40:52,538 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:40:52,538 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:40:52,637 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:40:52,637 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:40:52,639 - INFO - Successfully trained the model
+2024-07-13 23:40:52,639 - INFO - Successfully trained the model
+2024-07-13 23:40:52,806 - INFO - Successfully trained the model
+2024-07-13 23:40:52,806 - INFO - Successfully trained the model
+2024-07-13 23:40:52,809 - INFO - Successfully trained the model
+2024-07-13 23:40:52,809 - INFO - Successfully trained the model
+2024-07-13 23:40:54,078 - INFO - Successfully trained the model
+2024-07-13 23:40:54,078 - INFO - Successfully trained the model
+2024-07-13 23:40:54,130 - INFO - Successfully trained the model
+2024-07-13 23:40:54,130 - INFO - Successfully trained the model
+2024-07-13 23:40:54,132 - INFO - Successfully trained the model
+2024-07-13 23:40:54,132 - INFO - Successfully trained the model
+2024-07-13 23:40:54,133 - INFO - Successfully trained the model
+2024-07-13 23:40:54,133 - INFO - Successfully trained the model
+2024-07-13 23:40:54,134 - INFO - Successfully trained the model
+2024-07-13 23:40:54,134 - INFO - Successfully trained the model
+2024-07-13 23:40:54,135 - INFO - Successfully trained all models
+2024-07-13 23:40:54,135 - INFO - Successfully trained all models
+2024-07-13 23:40:54,193 - INFO - Successfully selected the best model
+2024-07-13 23:40:54,193 - INFO - Successfully selected the best model
+2024-07-13 23:41:33,763 - INFO - Successfully created the train-test set!
+2024-07-13 23:41:33,763 - INFO - Successfully created the train-test set!
+2024-07-13 23:41:33,870 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:41:33,870 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:41:34,612 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:41:34,612 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:41:34,704 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:41:34,704 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:41:34,705 - INFO - Successfully trained the model
+2024-07-13 23:41:34,705 - INFO - Successfully trained the model
+2024-07-13 23:41:34,870 - INFO - Successfully trained the model
+2024-07-13 23:41:34,870 - INFO - Successfully trained the model
+2024-07-13 23:41:34,874 - INFO - Successfully trained the model
+2024-07-13 23:41:34,874 - INFO - Successfully trained the model
+2024-07-13 23:41:36,283 - INFO - Successfully trained the model
+2024-07-13 23:41:36,283 - INFO - Successfully trained the model
+2024-07-13 23:41:36,356 - INFO - Successfully trained the model
+2024-07-13 23:41:36,356 - INFO - Successfully trained the model
+2024-07-13 23:41:36,359 - INFO - Successfully trained the model
+2024-07-13 23:41:36,359 - INFO - Successfully trained the model
+2024-07-13 23:41:36,361 - INFO - Successfully trained the model
+2024-07-13 23:41:36,361 - INFO - Successfully trained the model
+2024-07-13 23:41:36,363 - INFO - Successfully trained the model
+2024-07-13 23:41:36,363 - INFO - Successfully trained the model
+2024-07-13 23:41:36,363 - INFO - Successfully trained all models
+2024-07-13 23:41:36,363 - INFO - Successfully trained all models
+2024-07-13 23:41:36,437 - INFO - Successfully selected the best model
+2024-07-13 23:41:36,437 - INFO - Successfully selected the best model
+2024-07-13 23:41:55,822 - INFO - Successfully created the train-test set!
+2024-07-13 23:41:55,822 - INFO - Successfully created the train-test set!
+2024-07-13 23:41:55,934 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:41:55,934 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:41:56,801 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:41:56,801 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:41:56,902 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:41:56,902 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:41:56,903 - INFO - Successfully trained the model
+2024-07-13 23:41:56,903 - INFO - Successfully trained the model
+2024-07-13 23:41:57,089 - INFO - Successfully trained the model
+2024-07-13 23:41:57,089 - INFO - Successfully trained the model
+2024-07-13 23:41:57,094 - INFO - Successfully trained the model
+2024-07-13 23:41:57,094 - INFO - Successfully trained the model
+2024-07-13 23:41:58,431 - INFO - Successfully trained the model
+2024-07-13 23:41:58,431 - INFO - Successfully trained the model
+2024-07-13 23:41:58,487 - INFO - Successfully trained the model
+2024-07-13 23:41:58,487 - INFO - Successfully trained the model
+2024-07-13 23:41:58,489 - INFO - Successfully trained the model
+2024-07-13 23:41:58,489 - INFO - Successfully trained the model
+2024-07-13 23:41:58,491 - INFO - Successfully trained the model
+2024-07-13 23:41:58,491 - INFO - Successfully trained the model
+2024-07-13 23:41:58,493 - INFO - Successfully trained the model
+2024-07-13 23:41:58,493 - INFO - Successfully trained the model
+2024-07-13 23:41:58,493 - INFO - Successfully trained all models
+2024-07-13 23:41:58,493 - INFO - Successfully trained all models
+2024-07-13 23:41:58,552 - INFO - Successfully selected the best model
+2024-07-13 23:41:58,552 - INFO - Successfully selected the best model
+2024-07-13 23:44:01,348 - INFO - Successfully created the train-test set!
+2024-07-13 23:44:01,348 - INFO - Successfully created the train-test set!
+2024-07-13 23:44:01,461 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:44:01,461 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:44:02,198 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:44:02,198 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:44:02,297 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:44:02,297 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:44:02,298 - INFO - Successfully trained the model
+2024-07-13 23:44:02,298 - INFO - Successfully trained the model
+2024-07-13 23:44:02,461 - INFO - Successfully trained the model
+2024-07-13 23:44:02,461 - INFO - Successfully trained the model
+2024-07-13 23:44:02,464 - INFO - Successfully trained the model
+2024-07-13 23:44:02,464 - INFO - Successfully trained the model
+2024-07-13 23:44:03,749 - INFO - Successfully trained the model
+2024-07-13 23:44:03,749 - INFO - Successfully trained the model
+2024-07-13 23:44:03,807 - INFO - Successfully trained the model
+2024-07-13 23:44:03,807 - INFO - Successfully trained the model
+2024-07-13 23:44:03,809 - INFO - Successfully trained the model
+2024-07-13 23:44:03,809 - INFO - Successfully trained the model
+2024-07-13 23:44:03,810 - INFO - Successfully trained the model
+2024-07-13 23:44:03,810 - INFO - Successfully trained the model
+2024-07-13 23:44:03,812 - INFO - Successfully trained the model
+2024-07-13 23:44:03,812 - INFO - Successfully trained the model
+2024-07-13 23:44:03,812 - INFO - Successfully trained all models
+2024-07-13 23:44:03,812 - INFO - Successfully trained all models
+2024-07-13 23:44:03,869 - INFO - Successfully selected the best model
+2024-07-13 23:44:03,869 - INFO - Successfully selected the best model
+2024-07-13 23:44:47,925 - INFO - Successfully created the train-test set!
+2024-07-13 23:44:47,925 - INFO - Successfully created the train-test set!
+2024-07-13 23:44:48,036 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:44:48,036 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:44:48,777 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:44:48,777 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:44:48,875 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:44:48,875 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:44:48,876 - INFO - Successfully trained the model
+2024-07-13 23:44:48,876 - INFO - Successfully trained the model
+2024-07-13 23:44:49,044 - INFO - Successfully trained the model
+2024-07-13 23:44:49,044 - INFO - Successfully trained the model
+2024-07-13 23:44:49,047 - INFO - Successfully trained the model
+2024-07-13 23:44:49,047 - INFO - Successfully trained the model
+2024-07-13 23:44:50,341 - INFO - Successfully trained the model
+2024-07-13 23:44:50,341 - INFO - Successfully trained the model
+2024-07-13 23:44:50,412 - INFO - Successfully trained the model
+2024-07-13 23:44:50,412 - INFO - Successfully trained the model
+2024-07-13 23:44:50,414 - INFO - Successfully trained the model
+2024-07-13 23:44:50,414 - INFO - Successfully trained the model
+2024-07-13 23:44:50,416 - INFO - Successfully trained the model
+2024-07-13 23:44:50,416 - INFO - Successfully trained the model
+2024-07-13 23:44:50,418 - INFO - Successfully trained the model
+2024-07-13 23:44:50,418 - INFO - Successfully trained the model
+2024-07-13 23:44:50,418 - INFO - Successfully trained all models
+2024-07-13 23:44:50,418 - INFO - Successfully trained all models
+2024-07-13 23:44:50,496 - INFO - Successfully selected the best model
+2024-07-13 23:44:50,496 - INFO - Successfully selected the best model
+2024-07-13 23:46:34,622 - INFO - Successfully created the train-test set!
+2024-07-13 23:46:34,622 - INFO - Successfully created the train-test set!
+2024-07-13 23:46:34,774 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:46:34,774 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:46:35,515 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:46:35,515 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:46:35,615 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:46:35,615 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:46:35,616 - INFO - Successfully trained the model
+2024-07-13 23:46:35,616 - INFO - Successfully trained the model
+2024-07-13 23:46:35,820 - INFO - Successfully trained the model
+2024-07-13 23:46:35,820 - INFO - Successfully trained the model
+2024-07-13 23:46:35,826 - INFO - Successfully trained the model
+2024-07-13 23:46:35,826 - INFO - Successfully trained the model
+2024-07-13 23:46:37,298 - INFO - Successfully trained the model
+2024-07-13 23:46:37,298 - INFO - Successfully trained the model
+2024-07-13 23:46:37,369 - INFO - Successfully trained the model
+2024-07-13 23:46:37,369 - INFO - Successfully trained the model
+2024-07-13 23:46:37,371 - INFO - Successfully trained the model
+2024-07-13 23:46:37,371 - INFO - Successfully trained the model
+2024-07-13 23:46:37,372 - INFO - Successfully trained the model
+2024-07-13 23:46:37,372 - INFO - Successfully trained the model
+2024-07-13 23:46:37,374 - INFO - Successfully trained the model
+2024-07-13 23:46:37,374 - INFO - Successfully trained the model
+2024-07-13 23:46:37,374 - INFO - Successfully trained all models
+2024-07-13 23:46:37,374 - INFO - Successfully trained all models
+2024-07-13 23:46:37,447 - INFO - Successfully selected the best model
+2024-07-13 23:46:37,447 - INFO - Successfully selected the best model
+2024-07-13 23:46:37,455 - INFO - Successfully saved the best model
+2024-07-13 23:46:37,455 - INFO - Successfully saved the best model
+2024-07-13 23:50:41,358 - INFO - Successfully created the train-test set!
+2024-07-13 23:50:41,358 - INFO - Successfully created the train-test set!
+2024-07-13 23:50:41,485 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:50:41,485 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:50:42,411 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:50:42,411 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:50:42,521 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:50:42,521 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:50:42,522 - INFO - Successfully trained the model
+2024-07-13 23:50:42,522 - INFO - Successfully trained the model
+2024-07-13 23:50:42,714 - INFO - Successfully trained the model
+2024-07-13 23:50:42,714 - INFO - Successfully trained the model
+2024-07-13 23:50:42,718 - INFO - Successfully trained the model
+2024-07-13 23:50:42,718 - INFO - Successfully trained the model
+2024-07-13 23:50:44,035 - INFO - Successfully trained the model
+2024-07-13 23:50:44,035 - INFO - Successfully trained the model
+2024-07-13 23:50:44,104 - INFO - Successfully trained the model
+2024-07-13 23:50:44,104 - INFO - Successfully trained the model
+2024-07-13 23:50:44,107 - INFO - Successfully trained the model
+2024-07-13 23:50:44,107 - INFO - Successfully trained the model
+2024-07-13 23:50:44,109 - INFO - Successfully trained the model
+2024-07-13 23:50:44,109 - INFO - Successfully trained the model
+2024-07-13 23:50:44,111 - INFO - Successfully trained the model
+2024-07-13 23:50:44,111 - INFO - Successfully trained the model
+2024-07-13 23:50:44,111 - INFO - Successfully trained all models
+2024-07-13 23:50:44,111 - INFO - Successfully trained all models
+2024-07-13 23:50:44,180 - INFO - Successfully selected the best model
+2024-07-13 23:50:44,180 - INFO - Successfully selected the best model
+2024-07-13 23:50:44,185 - INFO - Successfully saved the best model
+2024-07-13 23:50:44,185 - INFO - Successfully saved the best model
+2024-07-13 23:51:40,589 - INFO - Successfully created the train-test set!
+2024-07-13 23:51:40,589 - INFO - Successfully created the train-test set!
+2024-07-13 23:51:40,685 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:51:40,685 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:51:41,413 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:51:41,413 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:51:41,498 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:51:41,498 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:51:41,499 - INFO - Successfully trained the model
+2024-07-13 23:51:41,499 - INFO - Successfully trained the model
+2024-07-13 23:51:41,600 - INFO - Successfully trained the model
+2024-07-13 23:51:41,600 - INFO - Successfully trained the model
+2024-07-13 23:51:41,602 - INFO - Successfully trained the model
+2024-07-13 23:51:41,602 - INFO - Successfully trained the model
+2024-07-13 23:51:42,739 - INFO - Successfully trained the model
+2024-07-13 23:51:42,739 - INFO - Successfully trained the model
+2024-07-13 23:51:42,790 - INFO - Successfully trained the model
+2024-07-13 23:51:42,790 - INFO - Successfully trained the model
+2024-07-13 23:51:42,793 - INFO - Successfully trained the model
+2024-07-13 23:51:42,793 - INFO - Successfully trained the model
+2024-07-13 23:51:42,794 - INFO - Successfully trained the model
+2024-07-13 23:51:42,794 - INFO - Successfully trained the model
+2024-07-13 23:51:42,796 - INFO - Successfully trained the model
+2024-07-13 23:51:42,796 - INFO - Successfully trained the model
+2024-07-13 23:51:42,796 - INFO - Successfully trained all models
+2024-07-13 23:51:42,796 - INFO - Successfully trained all models
+2024-07-13 23:51:42,846 - INFO - Successfully selected the best model
+2024-07-13 23:51:42,846 - INFO - Successfully selected the best model
+2024-07-13 23:51:59,975 - INFO - Successfully created the train-test set!
+2024-07-13 23:51:59,975 - INFO - Successfully created the train-test set!
+2024-07-13 23:52:00,134 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:52:00,134 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:52:01,624 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:52:01,624 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:52:01,755 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:52:01,755 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:52:01,758 - INFO - Successfully trained the model
+2024-07-13 23:52:01,758 - INFO - Successfully trained the model
+2024-07-13 23:52:04,698 - INFO - Successfully trained the model
+2024-07-13 23:52:04,698 - INFO - Successfully trained the model
+2024-07-13 23:52:07,263 - INFO - Successfully trained the model
+2024-07-13 23:52:07,263 - INFO - Successfully trained the model
+2024-07-13 23:52:10,131 - INFO - Successfully trained the model
+2024-07-13 23:52:10,131 - INFO - Successfully trained the model
+2024-07-13 23:52:10,246 - INFO - Successfully trained the model
+2024-07-13 23:52:10,246 - INFO - Successfully trained the model
+2024-07-13 23:52:10,249 - INFO - Successfully trained the model
+2024-07-13 23:52:10,249 - INFO - Successfully trained the model
+2024-07-13 23:52:10,252 - INFO - Successfully trained the model
+2024-07-13 23:52:10,252 - INFO - Successfully trained the model
+2024-07-13 23:52:10,254 - INFO - Successfully trained the model
+2024-07-13 23:52:10,254 - INFO - Successfully trained the model
+2024-07-13 23:52:10,254 - INFO - Successfully trained all models
+2024-07-13 23:52:10,254 - INFO - Successfully trained all models
+2024-07-13 23:52:20,217 - INFO - Successfully selected the best model
+2024-07-13 23:52:20,217 - INFO - Successfully selected the best model
+2024-07-13 23:55:51,980 - INFO - Successfully created the train-test set!
+2024-07-13 23:55:51,980 - INFO - Successfully created the train-test set!
+2024-07-13 23:55:52,126 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:55:52,126 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:55:53,447 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:55:53,447 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-13 23:55:53,582 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:55:53,582 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-13 23:55:53,584 - INFO - Successfully trained the model
+2024-07-13 23:55:53,584 - INFO - Successfully trained the model
+2024-07-13 23:55:56,406 - INFO - Successfully trained the model
+2024-07-13 23:55:56,406 - INFO - Successfully trained the model
+2024-07-13 23:55:59,184 - INFO - Successfully trained the model
+2024-07-13 23:55:59,184 - INFO - Successfully trained the model
+2024-07-13 23:56:02,249 - INFO - Successfully trained the model
+2024-07-13 23:56:02,249 - INFO - Successfully trained the model
+2024-07-13 23:56:02,360 - INFO - Successfully trained the model
+2024-07-13 23:56:02,360 - INFO - Successfully trained the model
+2024-07-13 23:56:02,363 - INFO - Successfully trained the model
+2024-07-13 23:56:02,363 - INFO - Successfully trained the model
+2024-07-13 23:56:02,365 - INFO - Successfully trained the model
+2024-07-13 23:56:02,365 - INFO - Successfully trained the model
+2024-07-13 23:56:02,367 - INFO - Successfully trained the model
+2024-07-13 23:56:02,367 - INFO - Successfully trained the model
+2024-07-13 23:56:02,368 - INFO - Successfully trained all models
+2024-07-13 23:56:02,368 - INFO - Successfully trained all models
+2024-07-13 23:56:12,022 - INFO - Successfully selected the best model
+2024-07-13 23:56:12,022 - INFO - Successfully selected the best model
+2024-07-13 23:56:30,405 - INFO - Successfully created the train-test set!
+2024-07-13 23:56:30,405 - INFO - Successfully created the train-test set!
+2024-07-13 23:58:06,414 - INFO - Successfully created the train-test set!
+2024-07-13 23:58:06,414 - INFO - Successfully created the train-test set!
+2024-07-13 23:59:14,060 - INFO - Successfully created the train-test set!
+2024-07-13 23:59:14,060 - INFO - Successfully created the train-test set!
+2024-07-14 00:02:51,747 - INFO - Successfully created the train-test set!
+2024-07-14 00:02:51,747 - INFO - Successfully created the train-test set!
+2024-07-14 00:03:23,341 - INFO - Successfully created the train-test set!
+2024-07-14 00:03:23,341 - INFO - Successfully created the train-test set!
+2024-07-14 00:08:31,749 - INFO - Successfully created the train-test set!
+2024-07-14 00:08:31,749 - INFO - Successfully created the train-test set!
+2024-07-14 00:12:07,144 - INFO - Successfully created the train-test set!
+2024-07-14 00:12:07,144 - INFO - Successfully created the train-test set!
+2024-07-14 00:12:25,957 - INFO - Successfully created the train-test set!
+2024-07-14 00:12:25,957 - INFO - Successfully created the train-test set!
+2024-07-14 00:17:30,848 - INFO - Successfully created the train-test set!
+2024-07-14 00:17:30,848 - INFO - Successfully created the train-test set!
+2024-07-14 00:18:17,122 - INFO - Successfully created the train-test set!
+2024-07-14 00:18:17,122 - INFO - Successfully created the train-test set!
+2024-07-14 00:18:40,531 - INFO - Successfully created the train-test set!
+2024-07-14 00:18:40,531 - INFO - Successfully created the train-test set!
+2024-07-14 00:21:25,682 - INFO - Successfully created the train-test set!
+2024-07-14 00:21:25,682 - INFO - Successfully created the train-test set!
+2024-07-14 00:21:53,293 - INFO - Successfully created the train-test set!
+2024-07-14 00:21:53,293 - INFO - Successfully created the train-test set!
+2024-07-14 00:22:12,911 - INFO - Successfully created the train-test set!
+2024-07-14 00:22:12,911 - INFO - Successfully created the train-test set!
+2024-07-14 00:23:21,092 - INFO - Successfully created the train-test set!
+2024-07-14 00:23:21,092 - INFO - Successfully created the train-test set!
+2024-07-14 00:25:22,716 - INFO - Successfully created the train-test set!
+2024-07-14 00:25:22,716 - INFO - Successfully created the train-test set!
+2024-07-14 00:26:53,912 - INFO - Successfully created the train-test set!
+2024-07-14 00:26:53,912 - INFO - Successfully created the train-test set!
+2024-07-14 00:27:09,277 - INFO - Successfully created the train-test set!
+2024-07-14 00:27:09,277 - INFO - Successfully created the train-test set!
+2024-07-14 00:27:25,941 - INFO - Successfully created the train-test set!
+2024-07-14 00:27:25,941 - INFO - Successfully created the train-test set!
+2024-07-14 00:27:45,183 - INFO - Successfully created the train-test set!
+2024-07-14 00:27:45,183 - INFO - Successfully created the train-test set!
+2024-07-14 00:27:45,398 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:27:45,398 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:27:46,848 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:27:46,848 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:27:47,000 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:27:47,000 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:27:47,004 - INFO - Successfully trained the model
+2024-07-14 00:27:47,004 - INFO - Successfully trained the model
+2024-07-14 00:27:50,123 - INFO - Successfully trained the model
+2024-07-14 00:27:50,123 - INFO - Successfully trained the model
+2024-07-14 00:27:52,854 - INFO - Successfully trained the model
+2024-07-14 00:27:52,854 - INFO - Successfully trained the model
+2024-07-14 00:27:56,049 - INFO - Successfully trained the model
+2024-07-14 00:27:56,049 - INFO - Successfully trained the model
+2024-07-14 00:27:56,216 - INFO - Successfully trained the model
+2024-07-14 00:27:56,216 - INFO - Successfully trained the model
+2024-07-14 00:27:56,220 - INFO - Successfully trained the model
+2024-07-14 00:27:56,220 - INFO - Successfully trained the model
+2024-07-14 00:27:56,223 - INFO - Successfully trained the model
+2024-07-14 00:27:56,223 - INFO - Successfully trained the model
+2024-07-14 00:27:56,227 - INFO - Successfully trained the model
+2024-07-14 00:27:56,227 - INFO - Successfully trained the model
+2024-07-14 00:27:56,228 - INFO - Successfully trained all models
+2024-07-14 00:27:56,228 - INFO - Successfully trained all models
+2024-07-14 00:28:38,977 - INFO - Successfully created the train-test set!
+2024-07-14 00:28:38,977 - INFO - Successfully created the train-test set!
+2024-07-14 00:28:39,165 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:28:39,165 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:28:40,721 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:28:40,721 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:28:40,887 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:28:40,887 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:28:40,892 - INFO - Successfully trained the model
+2024-07-14 00:28:40,892 - INFO - Successfully trained the model
+2024-07-14 00:28:44,185 - INFO - Successfully trained the model
+2024-07-14 00:28:44,185 - INFO - Successfully trained the model
+2024-07-14 00:28:47,019 - INFO - Successfully trained the model
+2024-07-14 00:28:47,019 - INFO - Successfully trained the model
+2024-07-14 00:28:49,914 - INFO - Successfully trained the model
+2024-07-14 00:28:49,914 - INFO - Successfully trained the model
+2024-07-14 00:28:50,033 - INFO - Successfully trained the model
+2024-07-14 00:28:50,033 - INFO - Successfully trained the model
+2024-07-14 00:28:50,038 - INFO - Successfully trained the model
+2024-07-14 00:28:50,038 - INFO - Successfully trained the model
+2024-07-14 00:28:50,041 - INFO - Successfully trained the model
+2024-07-14 00:28:50,041 - INFO - Successfully trained the model
+2024-07-14 00:28:50,044 - INFO - Successfully trained the model
+2024-07-14 00:28:50,044 - INFO - Successfully trained the model
+2024-07-14 00:28:50,044 - INFO - Successfully trained all models
+2024-07-14 00:28:50,044 - INFO - Successfully trained all models
+2024-07-14 00:29:33,924 - INFO - Successfully created the train-test set!
+2024-07-14 00:29:33,924 - INFO - Successfully created the train-test set!
+2024-07-14 00:29:34,085 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:29:34,085 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:29:35,734 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:29:35,734 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:29:35,948 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:29:35,948 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:29:35,951 - INFO - Successfully trained the model
+2024-07-14 00:29:35,951 - INFO - Successfully trained the model
+2024-07-14 00:29:38,936 - INFO - Successfully trained the model
+2024-07-14 00:29:38,936 - INFO - Successfully trained the model
+2024-07-14 00:29:43,480 - INFO - Successfully trained the model
+2024-07-14 00:29:43,480 - INFO - Successfully trained the model
+2024-07-14 00:29:46,197 - INFO - Successfully trained the model
+2024-07-14 00:29:46,197 - INFO - Successfully trained the model
+2024-07-14 00:29:46,314 - INFO - Successfully trained the model
+2024-07-14 00:29:46,314 - INFO - Successfully trained the model
+2024-07-14 00:29:46,318 - INFO - Successfully trained the model
+2024-07-14 00:29:46,318 - INFO - Successfully trained the model
+2024-07-14 00:29:46,320 - INFO - Successfully trained the model
+2024-07-14 00:29:46,320 - INFO - Successfully trained the model
+2024-07-14 00:29:46,323 - INFO - Successfully trained the model
+2024-07-14 00:29:46,323 - INFO - Successfully trained the model
+2024-07-14 00:29:46,323 - INFO - Successfully trained all models
+2024-07-14 00:29:46,323 - INFO - Successfully trained all models
+2024-07-14 00:29:56,632 - INFO - Successfully selected the best model
+2024-07-14 00:29:56,632 - INFO - Successfully selected the best model
+2024-07-14 00:30:25,312 - INFO - Successfully created the train-test set!
+2024-07-14 00:30:25,312 - INFO - Successfully created the train-test set!
+2024-07-14 00:30:25,479 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:30:25,479 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:30:27,089 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:30:27,089 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:30:27,222 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:30:27,222 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:30:27,225 - INFO - Successfully trained the model
+2024-07-14 00:30:27,225 - INFO - Successfully trained the model
+2024-07-14 00:30:31,003 - INFO - Successfully trained the model
+2024-07-14 00:30:31,003 - INFO - Successfully trained the model
+2024-07-14 00:30:35,351 - INFO - Successfully trained the model
+2024-07-14 00:30:35,351 - INFO - Successfully trained the model
+2024-07-14 00:30:39,267 - INFO - Successfully trained the model
+2024-07-14 00:30:39,267 - INFO - Successfully trained the model
+2024-07-14 00:30:39,435 - INFO - Successfully trained the model
+2024-07-14 00:30:39,435 - INFO - Successfully trained the model
+2024-07-14 00:30:39,440 - INFO - Successfully trained the model
+2024-07-14 00:30:39,440 - INFO - Successfully trained the model
+2024-07-14 00:30:39,444 - INFO - Successfully trained the model
+2024-07-14 00:30:39,444 - INFO - Successfully trained the model
+2024-07-14 00:30:39,448 - INFO - Successfully trained the model
+2024-07-14 00:30:39,448 - INFO - Successfully trained the model
+2024-07-14 00:30:39,449 - INFO - Successfully trained all models
+2024-07-14 00:30:39,449 - INFO - Successfully trained all models
+2024-07-14 00:30:50,161 - INFO - Successfully selected the best model
+2024-07-14 00:30:50,161 - INFO - Successfully selected the best model
+2024-07-14 00:31:28,848 - INFO - Successfully created the train-test set!
+2024-07-14 00:31:28,848 - INFO - Successfully created the train-test set!
+2024-07-14 00:31:29,023 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:31:29,023 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:31:30,781 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:31:30,781 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:31:30,923 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:31:30,923 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:31:30,927 - INFO - Successfully trained the model
+2024-07-14 00:31:30,927 - INFO - Successfully trained the model
+2024-07-14 00:31:34,576 - INFO - Successfully trained the model
+2024-07-14 00:31:34,576 - INFO - Successfully trained the model
+2024-07-14 00:31:37,892 - INFO - Successfully trained the model
+2024-07-14 00:31:37,892 - INFO - Successfully trained the model
+2024-07-14 00:31:41,701 - INFO - Successfully trained the model
+2024-07-14 00:31:41,701 - INFO - Successfully trained the model
+2024-07-14 00:31:41,866 - INFO - Successfully trained the model
+2024-07-14 00:31:41,866 - INFO - Successfully trained the model
+2024-07-14 00:31:41,870 - INFO - Successfully trained the model
+2024-07-14 00:31:41,870 - INFO - Successfully trained the model
+2024-07-14 00:31:41,873 - INFO - Successfully trained the model
+2024-07-14 00:31:41,873 - INFO - Successfully trained the model
+2024-07-14 00:31:41,879 - INFO - Successfully trained the model
+2024-07-14 00:31:41,879 - INFO - Successfully trained the model
+2024-07-14 00:31:41,879 - INFO - Successfully trained all models
+2024-07-14 00:31:41,879 - INFO - Successfully trained all models
+2024-07-14 00:31:52,675 - INFO - Successfully selected the best model
+2024-07-14 00:31:52,675 - INFO - Successfully selected the best model
