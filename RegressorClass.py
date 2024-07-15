@@ -298,7 +298,7 @@ class regressor:
 
     def fit_ridge_cv(self, X, y):
         """
-         Perform rIDGE regression on train-set using specified cross validation
+         Perform Ridge regression on train-set using specified cross validation
         :param X:
         :param y
         :return: trained model
@@ -316,7 +316,7 @@ class regressor:
 
     def fit_elasticnet_cv(self, X, y):
         """
-         Perform ElasticNet regression on train-set using specified cross validation
+         Perform Elastic-Net regression on train-set using specified cross validation
         :param X:
         :param y
         :return: trained model
@@ -472,24 +472,28 @@ class regressor:
         """
         try:
             saved_model = pickle.load(open(filename, 'rb'))
+            logs.log("Model loaded successfully!")
             return saved_model
         except Exception as e:
             raise ValueError(f"Error in loading the best saved model: {e}")
             logs.log("Something went wrong while loading the best saved model ", level='ERROR')
 
-    def plot_features_importance(self, X):
+    def plot_features_importance(self, model_name='LinearRegression'):
         """
         Plot features importance for the best model.
-        : param X:
+        : param model_name:
         :return:
         """
         try:
-            if self.test_best_model in ["RandomForestRegressor", "CatBoostRegressor", "XGBRegressor"]:
-                model = self.trained_models[self.test_best_model]
+            if model_name in ["RandomForestRegressor", "CatBoostRegressor", "XGBRegressor"]:
+                model = self.trained_models[model_name]
                 feature_importances = model.feature_importances_
+            elif model_name in ["LinearRegression", "Lasso", "Ridge", "ElasticNet"]:
+                model = self.trained_models[model_name]
+                feature_importances = np.abs(model.coef_)  # Use absolute values of coefficients
 
                 # Extract feature names from the preprocessor
-                features = self.get_feature_names()
+                features = self.get_feature_names_out()
                 print(f"Features: {features}")
                 print(f"Feature Importances: {feature_importances}")
 
@@ -516,7 +520,7 @@ class regressor:
                 plt.barh(original_features, importance_scores)
                 plt.xlabel('Feature Importance')
                 plt.ylabel('Feature')
-                plt.title(f'Feature Importance in {self.test_best_model}')
+                plt.title(f'Feature Importance in {model_name }')
                 plt.show(block=True)
             else:
                 raise ValueError(f"Feature importance are not available for the best model: {self.test_best_model}")
@@ -540,13 +544,19 @@ class regressor:
             elif model_name == 'Lasso':
                 # Coeffcients as feature importance for Lasso Regression
                 importances = model.coef_
+            elif model_name == 'Ridge':
+                # Coeffcients as feature importance for Ridge Regression
+                importances = model.coef_
+            elif model_name == 'ElasticNet':
+                # Coeffcients as feature importance for ElasticNet Regression
+                importances = model.coef_
             elif hasattr(model, 'feature_importances_'):
                 # Feature importances for tree-based models
                 importances = model.feature_importances_
             else:
                 raise ValueError(f"Feature importance not supported for {model_name}")
 
-            feature_names = self.get_feature_names()
+            feature_names = self.get_feature_names_out()
             feature_importances = pd.Series(importances, index=feature_names)
             sorted_importances = feature_importances.sort_values(ascending=False)
             return sorted_importances

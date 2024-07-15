@@ -2,8 +2,8 @@ from RegressorClass import regressor
 from ExploratoryAnalysis import extensive_eda
 import pandas as pd
 
-file = 'Advertisin'
-# file = 'Admission'
+# file = 'Advertising'
+file = 'Admission'
 if file == 'Advertising':
     df = pd.read_csv('Advertising.csv')
     df = df.drop(df.columns[0], axis=1)
@@ -37,8 +37,8 @@ if __name__ == '__main__':
     print(
         f"\nImportant columns after performing the mult-collinearity test using CORRELATION approach are :{new_columns}\n")
     print("\nCategorical columns in the dataset are ", categroical_cols)
-    #label_encode_cols = ['Type']
-    #one_hot_encode_cols = ['Type']
+    # label_encode_cols = ['Type']
+    # one_hot_encode_cols = ['Type']
     X_m = X[new_columns]
     X_train, X_test, y_train, y_test = model.split_train_test(X_m, y, test_size=0.2)
     model.preprocessor_fit(X_train, one_hot_encode_cols=categroical_cols, label_encode_cols=None)
@@ -54,17 +54,22 @@ if __name__ == '__main__':
     print(f"\nThe evaluation metrics from the {best_model_name} based on test set are :",
           model.evaluation_results[best_model_name]["Test"])
     # Make Prediction
-    # test1 = pd.DataFrame({
-    #     'GRE Score': [324.000000],
-    #     'TOEFL Score': [107.0],
-    #     'University Rating': [4.0],
-    #     'SOP': [4.0],
-    #     'LOR': [4.5],
-    #     'CGPA': [8.87],
-    #     'Research': [1]})
-    #
-    # test1 = model.preprocessor_transform(test1).values
-    # print(test1)
-    # y_pred = model.predict(test1, model.best_model)
-    # print("The chance of admission is :", y_pred[0])
-    # model.save_best_model()
+    test1 = pd.DataFrame({
+        'GRE Score': [324.000000],
+        'TOEFL Score': [107.0],
+        'University Rating': [4.0],
+        'SOP': [4.0],
+        'LOR': [4.5],
+        'CGPA': [8.87],
+        'Research': [1]})
+
+    test1 = model.preprocessor_transform(test1).values
+    print(test1)
+    y_pred = model.predict(test1, model.best_model)
+    print("The chance of admission is :", y_pred[0])
+    model.save_best_model()
+    regr = model.load_model()
+    print(model.get_feature_names_out())
+    sorted_importances = model.get_feature_importance(model_name=best_model_name)
+    print(sorted_importances)
+    model.plot_features_importance(best_model_name)

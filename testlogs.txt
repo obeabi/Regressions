@@ -2432,3 +2432,635 @@
 2024-07-14 00:31:41,879 - INFO - Successfully trained all models
 2024-07-14 00:31:52,675 - INFO - Successfully selected the best model
 2024-07-14 00:31:52,675 - INFO - Successfully selected the best model
+2024-07-14 00:41:05,839 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 00:41:05,839 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 00:41:05,840 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 00:41:05,840 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 00:41:05,840 - INFO - Successfully created the train-test set!
+2024-07-14 00:41:05,840 - INFO - Successfully created the train-test set!
+2024-07-14 00:41:05,860 - INFO - Successfully retrieved features name!
+2024-07-14 00:41:05,860 - INFO - Successfully retrieved features name!
+2024-07-14 00:41:05,861 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 00:41:05,861 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 00:41:05,869 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:41:05,869 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:41:06,035 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:41:06,035 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:41:07,951 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:41:07,951 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:41:08,101 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:41:08,101 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:41:08,105 - INFO - Successfully trained the model
+2024-07-14 00:41:08,105 - INFO - Successfully trained the model
+2024-07-14 00:41:12,055 - INFO - Successfully trained the model
+2024-07-14 00:41:12,055 - INFO - Successfully trained the model
+2024-07-14 00:41:15,775 - INFO - Successfully trained the model
+2024-07-14 00:41:15,775 - INFO - Successfully trained the model
+2024-07-14 00:41:20,958 - INFO - Successfully trained the model
+2024-07-14 00:41:20,958 - INFO - Successfully trained the model
+2024-07-14 00:41:21,174 - INFO - Successfully trained the model
+2024-07-14 00:41:21,174 - INFO - Successfully trained the model
+2024-07-14 00:41:21,180 - INFO - Successfully trained the model
+2024-07-14 00:41:21,180 - INFO - Successfully trained the model
+2024-07-14 00:41:21,184 - INFO - Successfully trained the model
+2024-07-14 00:41:21,184 - INFO - Successfully trained the model
+2024-07-14 00:41:21,189 - INFO - Successfully trained the model
+2024-07-14 00:41:21,189 - INFO - Successfully trained the model
+2024-07-14 00:41:21,189 - INFO - Successfully trained all models
+2024-07-14 00:41:21,189 - INFO - Successfully trained all models
+2024-07-14 00:41:21,199 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:41:21,199 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:41:33,079 - INFO - Successfully selected the best model
+2024-07-14 00:41:33,079 - INFO - Successfully selected the best model
+2024-07-14 00:41:33,080 - INFO - Error during transform: columns are missing: {'Tool wear [min]', 'PWF', 'Rotational speed [rpm]', 'Process temperature [K]', 'Machine failure', 'HDF', 'Torque [Nm]', 'OSF', 'Type', 'TWF', 'RNF'}
+2024-07-14 00:41:33,080 - INFO - Error during transform: columns are missing: {'Tool wear [min]', 'PWF', 'Rotational speed [rpm]', 'Process temperature [K]', 'Machine failure', 'HDF', 'Torque [Nm]', 'OSF', 'Type', 'TWF', 'RNF'}
+2024-07-14 00:42:22,239 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 00:42:22,239 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 00:42:22,239 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 00:42:22,239 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 00:42:22,240 - INFO - Successfully created the train-test set!
+2024-07-14 00:42:22,240 - INFO - Successfully created the train-test set!
+2024-07-14 00:42:22,247 - INFO - Successfully retrieved features name!
+2024-07-14 00:42:22,247 - INFO - Successfully retrieved features name!
+2024-07-14 00:42:22,247 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 00:42:22,247 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 00:42:22,249 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:42:22,249 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:42:22,357 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:42:22,357 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:42:23,144 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:42:23,144 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:42:23,245 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:42:23,245 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:42:23,246 - INFO - Successfully trained the model
+2024-07-14 00:42:23,246 - INFO - Successfully trained the model
+2024-07-14 00:42:23,358 - INFO - Successfully trained the model
+2024-07-14 00:42:23,358 - INFO - Successfully trained the model
+2024-07-14 00:42:23,361 - INFO - Successfully trained the model
+2024-07-14 00:42:23,361 - INFO - Successfully trained the model
+2024-07-14 00:42:24,546 - INFO - Successfully trained the model
+2024-07-14 00:42:24,546 - INFO - Successfully trained the model
+2024-07-14 00:42:24,601 - INFO - Successfully trained the model
+2024-07-14 00:42:24,601 - INFO - Successfully trained the model
+2024-07-14 00:42:24,603 - INFO - Successfully trained the model
+2024-07-14 00:42:24,603 - INFO - Successfully trained the model
+2024-07-14 00:42:24,604 - INFO - Successfully trained the model
+2024-07-14 00:42:24,604 - INFO - Successfully trained the model
+2024-07-14 00:42:24,606 - INFO - Successfully trained the model
+2024-07-14 00:42:24,606 - INFO - Successfully trained the model
+2024-07-14 00:42:24,606 - INFO - Successfully trained all models
+2024-07-14 00:42:24,606 - INFO - Successfully trained all models
+2024-07-14 00:42:24,609 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:42:24,609 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:42:24,655 - INFO - Successfully selected the best model
+2024-07-14 00:42:24,655 - INFO - Successfully selected the best model
+2024-07-14 00:42:24,656 - INFO - Error during transform: columns are missing: {'radio', 'newspaper', 'TV'}
+2024-07-14 00:42:24,656 - INFO - Error during transform: columns are missing: {'radio', 'newspaper', 'TV'}
+2024-07-14 00:43:02,724 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 00:43:02,724 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 00:43:02,725 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 00:43:02,725 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 00:43:02,725 - INFO - Successfully created the train-test set!
+2024-07-14 00:43:02,725 - INFO - Successfully created the train-test set!
+2024-07-14 00:43:02,732 - INFO - Successfully retrieved features name!
+2024-07-14 00:43:02,732 - INFO - Successfully retrieved features name!
+2024-07-14 00:43:02,732 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 00:43:02,732 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 00:43:02,735 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:43:02,735 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:43:02,844 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:43:02,844 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:43:03,753 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:43:03,753 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:43:03,862 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:43:03,862 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:43:03,863 - INFO - Successfully trained the model
+2024-07-14 00:43:03,863 - INFO - Successfully trained the model
+2024-07-14 00:43:04,039 - INFO - Successfully trained the model
+2024-07-14 00:43:04,039 - INFO - Successfully trained the model
+2024-07-14 00:43:04,042 - INFO - Successfully trained the model
+2024-07-14 00:43:04,042 - INFO - Successfully trained the model
+2024-07-14 00:43:05,544 - INFO - Successfully trained the model
+2024-07-14 00:43:05,544 - INFO - Successfully trained the model
+2024-07-14 00:43:05,634 - INFO - Successfully trained the model
+2024-07-14 00:43:05,634 - INFO - Successfully trained the model
+2024-07-14 00:43:05,637 - INFO - Successfully trained the model
+2024-07-14 00:43:05,637 - INFO - Successfully trained the model
+2024-07-14 00:43:05,639 - INFO - Successfully trained the model
+2024-07-14 00:43:05,639 - INFO - Successfully trained the model
+2024-07-14 00:43:05,642 - INFO - Successfully trained the model
+2024-07-14 00:43:05,642 - INFO - Successfully trained the model
+2024-07-14 00:43:05,642 - INFO - Successfully trained all models
+2024-07-14 00:43:05,642 - INFO - Successfully trained all models
+2024-07-14 00:43:05,648 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:43:05,648 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:43:05,736 - INFO - Successfully selected the best model
+2024-07-14 00:43:05,736 - INFO - Successfully selected the best model
+2024-07-14 00:43:05,742 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:43:05,742 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:43:05,745 - INFO - Successfully saved the best model
+2024-07-14 00:43:05,745 - INFO - Successfully saved the best model
+2024-07-14 00:45:43,787 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 00:45:43,787 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 00:45:43,788 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 00:45:43,788 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 00:45:43,788 - INFO - Successfully created the train-test set!
+2024-07-14 00:45:43,788 - INFO - Successfully created the train-test set!
+2024-07-14 00:45:43,794 - INFO - Successfully retrieved features name!
+2024-07-14 00:45:43,794 - INFO - Successfully retrieved features name!
+2024-07-14 00:45:43,794 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 00:45:43,794 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 00:45:43,797 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:45:43,797 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:45:43,906 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:45:43,906 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:45:44,736 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:45:44,736 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:45:44,843 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:45:44,843 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:45:44,844 - INFO - Successfully trained the model
+2024-07-14 00:45:44,844 - INFO - Successfully trained the model
+2024-07-14 00:45:45,019 - INFO - Successfully trained the model
+2024-07-14 00:45:45,019 - INFO - Successfully trained the model
+2024-07-14 00:45:45,023 - INFO - Successfully trained the model
+2024-07-14 00:45:45,023 - INFO - Successfully trained the model
+2024-07-14 00:45:46,385 - INFO - Successfully trained the model
+2024-07-14 00:45:46,385 - INFO - Successfully trained the model
+2024-07-14 00:45:46,445 - INFO - Successfully trained the model
+2024-07-14 00:45:46,445 - INFO - Successfully trained the model
+2024-07-14 00:45:46,448 - INFO - Successfully trained the model
+2024-07-14 00:45:46,448 - INFO - Successfully trained the model
+2024-07-14 00:45:46,450 - INFO - Successfully trained the model
+2024-07-14 00:45:46,450 - INFO - Successfully trained the model
+2024-07-14 00:45:46,451 - INFO - Successfully trained the model
+2024-07-14 00:45:46,451 - INFO - Successfully trained the model
+2024-07-14 00:45:46,451 - INFO - Successfully trained all models
+2024-07-14 00:45:46,451 - INFO - Successfully trained all models
+2024-07-14 00:45:46,454 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:45:46,454 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:45:46,510 - INFO - Successfully selected the best model
+2024-07-14 00:45:46,510 - INFO - Successfully selected the best model
+2024-07-14 00:45:46,513 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:45:46,513 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:45:46,515 - INFO - Successfully saved the best model
+2024-07-14 00:45:46,515 - INFO - Successfully saved the best model
+2024-07-14 00:46:49,824 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 00:46:49,824 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 00:46:49,824 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 00:46:49,824 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 00:46:49,825 - INFO - Successfully created the train-test set!
+2024-07-14 00:46:49,825 - INFO - Successfully created the train-test set!
+2024-07-14 00:46:49,831 - INFO - Successfully retrieved features name!
+2024-07-14 00:46:49,831 - INFO - Successfully retrieved features name!
+2024-07-14 00:46:49,832 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 00:46:49,832 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 00:46:49,835 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:46:49,835 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:46:49,943 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:46:49,943 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:46:50,768 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:46:50,768 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:46:50,877 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:46:50,877 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:46:50,878 - INFO - Successfully trained the model
+2024-07-14 00:46:50,878 - INFO - Successfully trained the model
+2024-07-14 00:46:51,059 - INFO - Successfully trained the model
+2024-07-14 00:46:51,059 - INFO - Successfully trained the model
+2024-07-14 00:46:51,063 - INFO - Successfully trained the model
+2024-07-14 00:46:51,063 - INFO - Successfully trained the model
+2024-07-14 00:46:52,378 - INFO - Successfully trained the model
+2024-07-14 00:46:52,378 - INFO - Successfully trained the model
+2024-07-14 00:46:52,442 - INFO - Successfully trained the model
+2024-07-14 00:46:52,442 - INFO - Successfully trained the model
+2024-07-14 00:46:52,443 - INFO - Successfully trained the model
+2024-07-14 00:46:52,443 - INFO - Successfully trained the model
+2024-07-14 00:46:52,445 - INFO - Successfully trained the model
+2024-07-14 00:46:52,445 - INFO - Successfully trained the model
+2024-07-14 00:46:52,447 - INFO - Successfully trained the model
+2024-07-14 00:46:52,447 - INFO - Successfully trained the model
+2024-07-14 00:46:52,447 - INFO - Successfully trained all models
+2024-07-14 00:46:52,447 - INFO - Successfully trained all models
+2024-07-14 00:46:52,453 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:46:52,453 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:46:52,509 - INFO - Successfully selected the best model
+2024-07-14 00:46:52,509 - INFO - Successfully selected the best model
+2024-07-14 00:46:52,513 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:46:52,513 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:46:52,514 - INFO - Successfully saved the best model
+2024-07-14 00:46:52,514 - INFO - Successfully saved the best model
+2024-07-14 00:46:52,515 - INFO - Model loaded successfully!
+2024-07-14 00:46:52,515 - INFO - Model loaded successfully!
+2024-07-14 00:46:52,515 - INFO - Successfully retrieved features name!
+2024-07-14 00:46:52,515 - INFO - Successfully retrieved features name!
+2024-07-14 00:51:45,035 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 00:51:45,035 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 00:51:45,036 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 00:51:45,036 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 00:51:45,036 - INFO - Successfully created the train-test set!
+2024-07-14 00:51:45,036 - INFO - Successfully created the train-test set!
+2024-07-14 00:51:45,043 - INFO - Successfully retrieved features name!
+2024-07-14 00:51:45,043 - INFO - Successfully retrieved features name!
+2024-07-14 00:51:45,043 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 00:51:45,043 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 00:51:45,045 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:51:45,045 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:51:45,152 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:51:45,152 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:51:45,949 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:51:45,949 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:51:46,054 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:51:46,054 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:51:46,056 - INFO - Successfully trained the model
+2024-07-14 00:51:46,056 - INFO - Successfully trained the model
+2024-07-14 00:51:46,233 - INFO - Successfully trained the model
+2024-07-14 00:51:46,233 - INFO - Successfully trained the model
+2024-07-14 00:51:46,237 - INFO - Successfully trained the model
+2024-07-14 00:51:46,237 - INFO - Successfully trained the model
+2024-07-14 00:51:47,703 - INFO - Successfully trained the model
+2024-07-14 00:51:47,703 - INFO - Successfully trained the model
+2024-07-14 00:51:47,784 - INFO - Successfully trained the model
+2024-07-14 00:51:47,784 - INFO - Successfully trained the model
+2024-07-14 00:51:47,787 - INFO - Successfully trained the model
+2024-07-14 00:51:47,787 - INFO - Successfully trained the model
+2024-07-14 00:51:47,789 - INFO - Successfully trained the model
+2024-07-14 00:51:47,789 - INFO - Successfully trained the model
+2024-07-14 00:51:47,791 - INFO - Successfully trained the model
+2024-07-14 00:51:47,791 - INFO - Successfully trained the model
+2024-07-14 00:51:47,791 - INFO - Successfully trained all models
+2024-07-14 00:51:47,791 - INFO - Successfully trained all models
+2024-07-14 00:51:47,795 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:51:47,795 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:51:47,874 - INFO - Successfully selected the best model
+2024-07-14 00:51:47,874 - INFO - Successfully selected the best model
+2024-07-14 00:51:47,880 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:51:47,880 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:51:47,882 - INFO - Successfully saved the best model
+2024-07-14 00:51:47,882 - INFO - Successfully saved the best model
+2024-07-14 00:51:47,883 - INFO - Model loaded successfully!
+2024-07-14 00:51:47,883 - INFO - Model loaded successfully!
+2024-07-14 00:51:47,883 - INFO - Successfully retrieved features name!
+2024-07-14 00:51:47,883 - INFO - Successfully retrieved features name!
+2024-07-14 00:53:41,252 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 00:53:41,252 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 00:53:41,252 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 00:53:41,252 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 00:53:41,253 - INFO - Successfully created the train-test set!
+2024-07-14 00:53:41,253 - INFO - Successfully created the train-test set!
+2024-07-14 00:53:41,259 - INFO - Successfully retrieved features name!
+2024-07-14 00:53:41,259 - INFO - Successfully retrieved features name!
+2024-07-14 00:53:41,260 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 00:53:41,260 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 00:53:41,261 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:53:41,261 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:53:41,370 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:53:41,370 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:53:42,163 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:53:42,163 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:53:42,268 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:53:42,268 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:53:42,269 - INFO - Successfully trained the model
+2024-07-14 00:53:42,269 - INFO - Successfully trained the model
+2024-07-14 00:53:42,449 - INFO - Successfully trained the model
+2024-07-14 00:53:42,449 - INFO - Successfully trained the model
+2024-07-14 00:53:42,453 - INFO - Successfully trained the model
+2024-07-14 00:53:42,453 - INFO - Successfully trained the model
+2024-07-14 00:53:43,831 - INFO - Successfully trained the model
+2024-07-14 00:53:43,831 - INFO - Successfully trained the model
+2024-07-14 00:53:43,913 - INFO - Successfully trained the model
+2024-07-14 00:53:43,913 - INFO - Successfully trained the model
+2024-07-14 00:53:43,916 - INFO - Successfully trained the model
+2024-07-14 00:53:43,916 - INFO - Successfully trained the model
+2024-07-14 00:53:43,918 - INFO - Successfully trained the model
+2024-07-14 00:53:43,918 - INFO - Successfully trained the model
+2024-07-14 00:53:43,921 - INFO - Successfully trained the model
+2024-07-14 00:53:43,921 - INFO - Successfully trained the model
+2024-07-14 00:53:43,921 - INFO - Successfully trained all models
+2024-07-14 00:53:43,921 - INFO - Successfully trained all models
+2024-07-14 00:53:43,926 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:53:43,926 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:53:44,003 - INFO - Successfully selected the best model
+2024-07-14 00:53:44,003 - INFO - Successfully selected the best model
+2024-07-14 00:53:44,009 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:53:44,009 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:53:44,011 - INFO - Successfully saved the best model
+2024-07-14 00:53:44,011 - INFO - Successfully saved the best model
+2024-07-14 00:53:44,012 - INFO - Model loaded successfully!
+2024-07-14 00:53:44,012 - INFO - Model loaded successfully!
+2024-07-14 00:53:44,012 - INFO - Successfully retrieved features name!
+2024-07-14 00:53:44,012 - INFO - Successfully retrieved features name!
+2024-07-14 00:53:44,012 - INFO - Successfully retrieved features name!
+2024-07-14 00:53:44,012 - INFO - Successfully retrieved features name!
+2024-07-14 00:54:33,660 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 00:54:33,660 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 00:54:33,660 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 00:54:33,660 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 00:54:33,661 - INFO - Successfully created the train-test set!
+2024-07-14 00:54:33,661 - INFO - Successfully created the train-test set!
+2024-07-14 00:54:33,667 - INFO - Successfully retrieved features name!
+2024-07-14 00:54:33,667 - INFO - Successfully retrieved features name!
+2024-07-14 00:54:33,667 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 00:54:33,667 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 00:54:33,670 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:54:33,670 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:54:33,775 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:54:33,775 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:54:34,560 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:54:34,560 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 00:54:34,662 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:54:34,662 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 00:54:34,663 - INFO - Successfully trained the model
+2024-07-14 00:54:34,663 - INFO - Successfully trained the model
+2024-07-14 00:54:34,839 - INFO - Successfully trained the model
+2024-07-14 00:54:34,839 - INFO - Successfully trained the model
+2024-07-14 00:54:34,844 - INFO - Successfully trained the model
+2024-07-14 00:54:34,844 - INFO - Successfully trained the model
+2024-07-14 00:54:36,334 - INFO - Successfully trained the model
+2024-07-14 00:54:36,334 - INFO - Successfully trained the model
+2024-07-14 00:54:36,405 - INFO - Successfully trained the model
+2024-07-14 00:54:36,405 - INFO - Successfully trained the model
+2024-07-14 00:54:36,407 - INFO - Successfully trained the model
+2024-07-14 00:54:36,407 - INFO - Successfully trained the model
+2024-07-14 00:54:36,409 - INFO - Successfully trained the model
+2024-07-14 00:54:36,409 - INFO - Successfully trained the model
+2024-07-14 00:54:36,412 - INFO - Successfully trained the model
+2024-07-14 00:54:36,412 - INFO - Successfully trained the model
+2024-07-14 00:54:36,412 - INFO - Successfully trained all models
+2024-07-14 00:54:36,412 - INFO - Successfully trained all models
+2024-07-14 00:54:36,417 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:54:36,417 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:54:36,491 - INFO - Successfully selected the best model
+2024-07-14 00:54:36,491 - INFO - Successfully selected the best model
+2024-07-14 00:54:36,495 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:54:36,495 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 00:54:36,497 - INFO - Successfully saved the best model
+2024-07-14 00:54:36,497 - INFO - Successfully saved the best model
+2024-07-14 00:54:36,497 - INFO - Model loaded successfully!
+2024-07-14 00:54:36,497 - INFO - Model loaded successfully!
+2024-07-14 00:54:36,497 - INFO - Successfully retrieved features name!
+2024-07-14 00:54:36,497 - INFO - Successfully retrieved features name!
+2024-07-14 00:54:36,498 - INFO - Successfully retrieved features name!
+2024-07-14 00:54:36,498 - INFO - Successfully retrieved features name!
+2024-07-14 01:01:27,850 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 01:01:27,850 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 01:01:27,850 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 01:01:27,850 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 01:01:27,851 - INFO - Successfully created the train-test set!
+2024-07-14 01:01:27,851 - INFO - Successfully created the train-test set!
+2024-07-14 01:01:27,857 - INFO - Successfully retrieved features name!
+2024-07-14 01:01:27,857 - INFO - Successfully retrieved features name!
+2024-07-14 01:01:27,857 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 01:01:27,857 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 01:01:27,861 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 01:01:27,861 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 01:02:11,079 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 01:02:11,079 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 01:02:11,080 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 01:02:11,080 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 01:02:11,080 - INFO - Successfully created the train-test set!
+2024-07-14 01:02:11,080 - INFO - Successfully created the train-test set!
+2024-07-14 01:02:11,088 - INFO - Successfully retrieved features name!
+2024-07-14 01:02:11,088 - INFO - Successfully retrieved features name!
+2024-07-14 01:02:11,088 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 01:02:11,088 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 01:02:11,091 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 01:02:11,091 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 01:02:11,215 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 01:02:11,215 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 01:02:12,077 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 01:02:12,077 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 01:02:12,191 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 01:02:12,191 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 01:02:12,192 - INFO - Successfully trained the model
+2024-07-14 01:02:12,192 - INFO - Successfully trained the model
+2024-07-14 01:02:12,399 - INFO - Successfully trained the model
+2024-07-14 01:02:12,399 - INFO - Successfully trained the model
+2024-07-14 01:02:12,405 - INFO - Successfully trained the model
+2024-07-14 01:02:12,405 - INFO - Successfully trained the model
+2024-07-14 01:02:13,941 - INFO - Successfully trained the model
+2024-07-14 01:02:13,941 - INFO - Successfully trained the model
+2024-07-14 01:02:14,035 - INFO - Successfully trained the model
+2024-07-14 01:02:14,035 - INFO - Successfully trained the model
+2024-07-14 01:02:14,037 - INFO - Successfully trained the model
+2024-07-14 01:02:14,037 - INFO - Successfully trained the model
+2024-07-14 01:02:14,039 - INFO - Successfully trained the model
+2024-07-14 01:02:14,039 - INFO - Successfully trained the model
+2024-07-14 01:02:14,042 - INFO - Successfully trained the model
+2024-07-14 01:02:14,042 - INFO - Successfully trained the model
+2024-07-14 01:02:14,042 - INFO - Successfully trained all models
+2024-07-14 01:02:14,042 - INFO - Successfully trained all models
+2024-07-14 01:02:14,047 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 01:02:14,047 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 01:02:14,126 - INFO - Successfully selected the best model
+2024-07-14 01:02:14,126 - INFO - Successfully selected the best model
+2024-07-14 01:02:14,130 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 01:02:14,130 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 01:02:14,133 - INFO - Successfully saved the best model
+2024-07-14 01:02:14,133 - INFO - Successfully saved the best model
+2024-07-14 01:02:14,134 - INFO - Model loaded successfully!
+2024-07-14 01:02:14,134 - INFO - Model loaded successfully!
+2024-07-14 01:02:14,134 - INFO - Successfully retrieved features name!
+2024-07-14 01:02:14,134 - INFO - Successfully retrieved features name!
+2024-07-14 01:02:14,134 - INFO - Successfully retrieved features name!
+2024-07-14 01:02:14,134 - INFO - Successfully retrieved features name!
+2024-07-14 22:27:02,863 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 22:27:02,863 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 22:27:02,864 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 22:27:02,864 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 22:27:02,866 - INFO - Successfully created the train-test set!
+2024-07-14 22:27:02,866 - INFO - Successfully created the train-test set!
+2024-07-14 22:27:02,879 - INFO - Successfully retrieved features name!
+2024-07-14 22:27:02,879 - INFO - Successfully retrieved features name!
+2024-07-14 22:27:02,879 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 22:27:02,879 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 22:27:02,883 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:27:02,883 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:27:03,003 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 22:27:03,003 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 22:27:03,942 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 22:27:03,942 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 22:27:04,049 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 22:27:04,049 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 22:27:04,063 - INFO - Successfully trained the model
+2024-07-14 22:27:04,063 - INFO - Successfully trained the model
+2024-07-14 22:27:04,249 - INFO - Successfully trained the model
+2024-07-14 22:27:04,249 - INFO - Successfully trained the model
+2024-07-14 22:27:04,253 - INFO - Successfully trained the model
+2024-07-14 22:27:04,253 - INFO - Successfully trained the model
+2024-07-14 22:27:05,766 - INFO - Successfully trained the model
+2024-07-14 22:27:05,766 - INFO - Successfully trained the model
+2024-07-14 22:27:05,899 - INFO - Successfully trained the model
+2024-07-14 22:27:05,899 - INFO - Successfully trained the model
+2024-07-14 22:27:05,901 - INFO - Successfully trained the model
+2024-07-14 22:27:05,901 - INFO - Successfully trained the model
+2024-07-14 22:27:05,903 - INFO - Successfully trained the model
+2024-07-14 22:27:05,903 - INFO - Successfully trained the model
+2024-07-14 22:27:05,904 - INFO - Successfully trained the model
+2024-07-14 22:27:05,904 - INFO - Successfully trained the model
+2024-07-14 22:27:05,904 - INFO - Successfully trained all models
+2024-07-14 22:27:05,904 - INFO - Successfully trained all models
+2024-07-14 22:27:05,909 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:27:05,909 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:27:05,983 - INFO - Successfully selected the best model
+2024-07-14 22:27:05,983 - INFO - Successfully selected the best model
+2024-07-14 22:27:05,986 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:27:05,986 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:27:05,988 - INFO - Successfully saved the best model
+2024-07-14 22:27:05,988 - INFO - Successfully saved the best model
+2024-07-14 22:27:05,989 - INFO - Model loaded successfully!
+2024-07-14 22:27:05,989 - INFO - Model loaded successfully!
+2024-07-14 22:27:05,989 - INFO - Successfully retrieved features name!
+2024-07-14 22:27:05,989 - INFO - Successfully retrieved features name!
+2024-07-14 22:27:05,990 - INFO - Successfully retrieved features name!
+2024-07-14 22:27:05,990 - INFO - Successfully retrieved features name!
+2024-07-14 22:28:38,847 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 22:28:38,847 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 22:28:38,848 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 22:28:38,848 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 22:28:38,848 - INFO - Successfully created the train-test set!
+2024-07-14 22:28:38,848 - INFO - Successfully created the train-test set!
+2024-07-14 22:28:38,854 - INFO - Successfully retrieved features name!
+2024-07-14 22:28:38,854 - INFO - Successfully retrieved features name!
+2024-07-14 22:28:38,854 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 22:28:38,854 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 22:28:38,857 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:28:38,857 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:28:38,963 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 22:28:38,963 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 22:28:39,757 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 22:28:39,757 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 22:28:39,865 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 22:28:39,865 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 22:28:39,866 - INFO - Successfully trained the model
+2024-07-14 22:28:39,866 - INFO - Successfully trained the model
+2024-07-14 22:28:40,044 - INFO - Successfully trained the model
+2024-07-14 22:28:40,044 - INFO - Successfully trained the model
+2024-07-14 22:28:40,048 - INFO - Successfully trained the model
+2024-07-14 22:28:40,048 - INFO - Successfully trained the model
+2024-07-14 22:28:41,400 - INFO - Successfully trained the model
+2024-07-14 22:28:41,400 - INFO - Successfully trained the model
+2024-07-14 22:28:41,461 - INFO - Successfully trained the model
+2024-07-14 22:28:41,461 - INFO - Successfully trained the model
+2024-07-14 22:28:41,463 - INFO - Successfully trained the model
+2024-07-14 22:28:41,463 - INFO - Successfully trained the model
+2024-07-14 22:28:41,464 - INFO - Successfully trained the model
+2024-07-14 22:28:41,464 - INFO - Successfully trained the model
+2024-07-14 22:28:41,466 - INFO - Successfully trained the model
+2024-07-14 22:28:41,466 - INFO - Successfully trained the model
+2024-07-14 22:28:41,466 - INFO - Successfully trained all models
+2024-07-14 22:28:41,466 - INFO - Successfully trained all models
+2024-07-14 22:28:41,470 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:28:41,470 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:28:41,525 - INFO - Successfully selected the best model
+2024-07-14 22:28:41,525 - INFO - Successfully selected the best model
+2024-07-14 22:28:41,530 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:28:41,530 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:28:41,532 - INFO - Successfully saved the best model
+2024-07-14 22:28:41,532 - INFO - Successfully saved the best model
+2024-07-14 22:28:41,532 - INFO - Model loaded successfully!
+2024-07-14 22:28:41,532 - INFO - Model loaded successfully!
+2024-07-14 22:28:41,533 - INFO - Successfully retrieved features name!
+2024-07-14 22:28:41,533 - INFO - Successfully retrieved features name!
+2024-07-14 22:28:41,533 - INFO - Successfully retrieved features name!
+2024-07-14 22:28:41,533 - INFO - Successfully retrieved features name!
+2024-07-14 22:33:28,951 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 22:33:28,951 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 22:33:28,951 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 22:33:28,951 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 22:33:28,952 - INFO - Successfully created the train-test set!
+2024-07-14 22:33:28,952 - INFO - Successfully created the train-test set!
+2024-07-14 22:33:28,959 - INFO - Successfully retrieved features name!
+2024-07-14 22:33:28,959 - INFO - Successfully retrieved features name!
+2024-07-14 22:33:28,959 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 22:33:28,959 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 22:33:28,961 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:33:28,961 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:33:29,074 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 22:33:29,074 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 22:33:30,155 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 22:33:30,155 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 22:33:30,285 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 22:33:30,285 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 22:33:30,287 - INFO - Successfully trained the model
+2024-07-14 22:33:30,287 - INFO - Successfully trained the model
+2024-07-14 22:33:30,488 - INFO - Successfully trained the model
+2024-07-14 22:33:30,488 - INFO - Successfully trained the model
+2024-07-14 22:33:30,492 - INFO - Successfully trained the model
+2024-07-14 22:33:30,492 - INFO - Successfully trained the model
+2024-07-14 22:33:31,950 - INFO - Successfully trained the model
+2024-07-14 22:33:31,950 - INFO - Successfully trained the model
+2024-07-14 22:33:32,029 - INFO - Successfully trained the model
+2024-07-14 22:33:32,029 - INFO - Successfully trained the model
+2024-07-14 22:33:32,033 - INFO - Successfully trained the model
+2024-07-14 22:33:32,033 - INFO - Successfully trained the model
+2024-07-14 22:33:32,035 - INFO - Successfully trained the model
+2024-07-14 22:33:32,035 - INFO - Successfully trained the model
+2024-07-14 22:33:32,037 - INFO - Successfully trained the model
+2024-07-14 22:33:32,037 - INFO - Successfully trained the model
+2024-07-14 22:33:32,037 - INFO - Successfully trained all models
+2024-07-14 22:33:32,037 - INFO - Successfully trained all models
+2024-07-14 22:33:32,041 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:33:32,041 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:33:32,103 - INFO - Successfully selected the best model
+2024-07-14 22:33:32,103 - INFO - Successfully selected the best model
+2024-07-14 22:33:32,108 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:33:32,108 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:33:32,110 - INFO - Successfully saved the best model
+2024-07-14 22:33:32,110 - INFO - Successfully saved the best model
+2024-07-14 22:33:32,111 - INFO - Model loaded successfully!
+2024-07-14 22:33:32,111 - INFO - Model loaded successfully!
+2024-07-14 22:33:32,111 - INFO - Successfully retrieved features name!
+2024-07-14 22:33:32,111 - INFO - Successfully retrieved features name!
+2024-07-14 22:33:32,111 - INFO - Successfully retrieved features name!
+2024-07-14 22:33:32,111 - INFO - Successfully retrieved features name!
+2024-07-14 22:36:54,476 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 22:36:54,476 - INFO - Successfully dropped mult-collinear columns!
+2024-07-14 22:36:54,477 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 22:36:54,477 - INFO - Successfully extracted numerical and categorical columns!
+2024-07-14 22:36:54,477 - INFO - Successfully created the train-test set!
+2024-07-14 22:36:54,477 - INFO - Successfully created the train-test set!
+2024-07-14 22:36:54,483 - INFO - Successfully retrieved features name!
+2024-07-14 22:36:54,483 - INFO - Successfully retrieved features name!
+2024-07-14 22:36:54,483 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 22:36:54,483 - INFO - Successfully fitted the pre-processing pipeline!
+2024-07-14 22:36:54,485 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:36:54,485 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:36:54,597 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 22:36:54,597 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 22:36:55,538 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 22:36:55,538 - INFO - Successfully found the best alpha for Lasso regression
+2024-07-14 22:36:55,664 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 22:36:55,664 - INFO - Successfully found the best alpha and l1 for ElasticNet regression
+2024-07-14 22:36:55,666 - INFO - Successfully trained the model
+2024-07-14 22:36:55,666 - INFO - Successfully trained the model
+2024-07-14 22:36:55,848 - INFO - Successfully trained the model
+2024-07-14 22:36:55,848 - INFO - Successfully trained the model
+2024-07-14 22:36:55,852 - INFO - Successfully trained the model
+2024-07-14 22:36:55,852 - INFO - Successfully trained the model
+2024-07-14 22:36:57,211 - INFO - Successfully trained the model
+2024-07-14 22:36:57,211 - INFO - Successfully trained the model
+2024-07-14 22:36:57,271 - INFO - Successfully trained the model
+2024-07-14 22:36:57,271 - INFO - Successfully trained the model
+2024-07-14 22:36:57,274 - INFO - Successfully trained the model
+2024-07-14 22:36:57,274 - INFO - Successfully trained the model
+2024-07-14 22:36:57,276 - INFO - Successfully trained the model
+2024-07-14 22:36:57,276 - INFO - Successfully trained the model
+2024-07-14 22:36:57,277 - INFO - Successfully trained the model
+2024-07-14 22:36:57,277 - INFO - Successfully trained the model
+2024-07-14 22:36:57,277 - INFO - Successfully trained all models
+2024-07-14 22:36:57,277 - INFO - Successfully trained all models
+2024-07-14 22:36:57,280 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:36:57,280 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:36:57,336 - INFO - Successfully selected the best model
+2024-07-14 22:36:57,336 - INFO - Successfully selected the best model
+2024-07-14 22:36:57,340 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:36:57,340 - INFO - Successfully transformed the dataset using the pre-processing pipeline
+2024-07-14 22:36:57,342 - INFO - Successfully saved the best model
+2024-07-14 22:36:57,342 - INFO - Successfully saved the best model
+2024-07-14 22:36:57,342 - INFO - Model loaded successfully!
+2024-07-14 22:36:57,342 - INFO - Model loaded successfully!
+2024-07-14 22:36:57,342 - INFO - Successfully retrieved features name!
+2024-07-14 22:36:57,342 - INFO - Successfully retrieved features name!
+2024-07-14 22:36:57,342 - INFO - Successfully retrieved features name!
+2024-07-14 22:36:57,342 - INFO - Successfully retrieved features name!
+2024-07-14 22:36:57,344 - INFO - Successfully retrieved features name!
+2024-07-14 22:36:57,344 - INFO - Successfully retrieved features name!
