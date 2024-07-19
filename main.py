@@ -53,6 +53,18 @@ if __name__ == '__main__':
           model.evaluation_results[best_model_name]["Train"])
     print(f"\nThe evaluation metrics from the {best_model_name} based on test set are :",
           model.evaluation_results[best_model_name]["Test"])
+
+    # Perform GridSearchCV for best model
+    gridsearch_best_model, best_params, best_score = model.tune_parameters(best_model_name, X_train_transformed, y_train, cv=5)
+    print(gridsearch_best_model)
+    print("\nThe best parameters are :", best_params)
+    print("\nThe best score is :", best_score)
+
+    # Perform KFold Cross validation
+    r2_score, adj_r2_score = model.cross_validate_models(best_model_name, X_train_transformed, y_train)
+    print("\nThe r2 score is :", r2_score)
+    print("\nThe adjusted r2 score is :", adj_r2_score)
+
     # Make Prediction
     test1 = pd.DataFrame({
         'GRE Score': [324.000000],
@@ -66,10 +78,11 @@ if __name__ == '__main__':
     test1 = model.preprocessor_transform(test1).values
     print(test1)
     y_pred = model.predict(test1, model.best_model)
-    print("The chance of admission is :", y_pred[0])
+    print("\nThe chance of admission is :", y_pred[0])
     model.save_best_model()
     regr = model.load_model()
     print(model.get_feature_names_out())
     sorted_importances = model.get_feature_importance(model_name=best_model_name)
+    print()
     print(sorted_importances)
     model.plot_features_importance(best_model_name)

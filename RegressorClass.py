@@ -4,7 +4,8 @@ import pickle
 from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score, KFold
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 import statsmodels.api as sm
-from sklearn.preprocessing import StandardScaler, OneHotEncoder, OrdinalEncoder, LabelEncoder, MinMaxScaler,FunctionTransformer
+from sklearn.preprocessing import StandardScaler, OneHotEncoder, OrdinalEncoder, LabelEncoder, MinMaxScaler, \
+    FunctionTransformer
 from sklearn.cluster import KMeans
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
@@ -38,7 +39,7 @@ class regressor:
             "XGBRegressor": XGBRegressor(random_state=self.random_state, verbosity=1)
         }
         self.best_model = None
-        self.test_best_model = None
+        self.best_model_name = None
         self.preprocessor = None
         self.scaler = StandardScaler()
         self.max_scaler = MinMaxScaler()
@@ -168,7 +169,7 @@ class regressor:
             raise ValueError(f"Something went wrong while performing label encoding: {e}")
             logs.log("Something went wrong while finding the numeric and categorical columns", level='ERROR')
 
-    def find_numericategory_columns (self, X):
+    def find_numericategory_columns(self, X):
         """
         Find numerical and categorical columns from dataset
         :param X:
@@ -245,7 +246,7 @@ class regressor:
 
     def split_train_test(self, X, y, test_size=0.2):
         """
-        Split dataset into tain and test split using test size of 20%
+        Split dataset into train and test split using test size of 20%
         :param X:
         :param y:
         :param test_size:
@@ -270,7 +271,8 @@ class regressor:
             x_num = X[numeric_features].dropna()
             correlation_matrix = x_num.corr().abs()
             upper_triangle = correlation_matrix.where(np.triu(np.ones(correlation_matrix.shape), k=1).astype(bool))
-            high_correlation_pairs = [(column, row) for row in upper_triangle.index for column in upper_triangle.columns if upper_triangle.loc[row, column] > threshold]
+            high_correlation_pairs = [(column, row) for row in upper_triangle.index for column in upper_triangle.columns
+                                      if upper_triangle.loc[row, column] > threshold]
             columns_to_drop = {column for column, row in high_correlation_pairs}
             df_reduced = X.drop(columns=columns_to_drop)
             logs.log("Successfully dropped mult-collinear columns!")
@@ -327,7 +329,8 @@ class regressor:
             elastic_cv.fit(X, y)
             self.elasticnet_alpha = elastic_cv.alpha_
             self.elasticnet_l1_ratio = elastic_cv.l1_ratio_
-            self.models["ElasticNet"] = ElasticNet(alpha=self.elasticnet_alpha, l1_ratio=self.elasticnet_l1_ratio, random_state=self.random_state)
+            self.models["ElasticNet"] = ElasticNet(alpha=self.elasticnet_alpha, l1_ratio=self.elasticnet_l1_ratio,
+                                                   random_state=self.random_state)
             logs.log("Successfully found the best alpha and l1 for ElasticNet regression")
         except Exception as e:
             raise ValueError(f"Error in fitting ElasticNetCV: {e}")
@@ -442,7 +445,7 @@ class regressor:
                     best_model_name = model_name
                     best_model = model
             self.best_model = best_model
-            self.test_best_model = self.evaluation_results[best_model_name]["Test"]
+            # self.test_best_model = self.evaluation_results[best_model_name]["Test"]
             logs.log("Successfully selected the best model")
             return best_model_name, best_model
         except Exception as e:
@@ -458,6 +461,7 @@ class regressor:
         try:
             with open(file_path, 'wb') as file:
                 pickle.dump(self.best_model, file)
+                #pickle.dump(self.gridsearch_best_model, file)
             print("\nModel saved as a pickle file successfully!")
             logs.log("Successfully saved the best model")
         except Exception as e:
@@ -498,7 +502,8 @@ class regressor:
                 print(f"Feature Importances: {feature_importances}")
 
                 if len(features) != len(feature_importances):
-                    print(f"Lengths of features ({len(features)}) and feature_importances ({len(feature_importances)}) do not match.")
+                    print(
+                        f"Lengths of features ({len(features)}) and feature_importances ({len(feature_importances)}) do not match.")
                     raise ValueError("Lengths of features and feature_importances do not match.")
 
                 # If using one-hot encoding, aggregate importance scores per original feature
@@ -520,7 +525,7 @@ class regressor:
                 plt.barh(original_features, importance_scores)
                 plt.xlabel('Feature Importance')
                 plt.ylabel('Feature')
-                plt.title(f'Feature Importance in {model_name }')
+                plt.title(f'Feature Importance in {model_name}')
                 plt.show(block=True)
             else:
                 raise ValueError(f"Feature importance are not available for the best model: {self.test_best_model}")
@@ -564,39 +569,85 @@ class regressor:
             raise ValueError(f"Error in getting feature importance: {e}")
             logs.log("Something went wrong while getting feature importance", level='ERROR')
 
-    def tune_parameters(self, model, param_grid, X, y, cv=5, scoring='r2'):
+    def tune_parameters(self, model_name, X, y, cv=5, scoring='r2'):
         """
-        Perform parameter tuning of parameters
-        :param model:
-        :param param_grid:
+        Perform parameter tuning of parameters using Grid Search CV
+        :param model_name:
         :param X:
         :param y:
         :param cv:
-        :param scoring:
+        :param scoring: 'neg_mean_squared_error', 'r2'
         :return:
 
         """
         try:
-            grid_search = GridSearchCV(estimator=model, param_grid=param_grid, cv=cv, scoring=scoring)
-            grid_search.fit(X, y)
-            logs.log("Successfully tuned the parameters")
-            return grid_search.best_params_, grid_search.best_score_
-        except Exception as e:
-            raise ValueError(f"Error in tuning parameters: {e}")
-            logs.log("Something went wrong while tuning parameters", level='ERROR')
+            # Define models and their parameter grids
+            models = {'Lasso': (Lasso(alpha=self.lasso_alpha, random_state=self.random_state), {
+                        'max_iter': [1000, 1500, 2000, 5000, 10000]}),
 
-    def cross_validate_models(self, model, X, y, cv=5):
+                      'ElasticNet': (ElasticNet(alpha=self.elasticnet_alpha, l1_ratio=self.elasticnet_l1_ratio,
+                                                random_state=self.random_state), {
+                                         'max_iter': [1000, 1500, 2000, 3000, 5000, 10000]}),
+
+                      'LinearRegression': (LinearRegression(), {
+                          'fit_intercept': [True, False],
+                          'normalize': [True, False]}),
+
+                      'RandomForestRegressor': (RandomForestRegressor(random_state=self.random_state), {
+                          'n_estimators': [100, 200, 500],
+                          'max_depth': [None, 10, 20, 30],
+                          'min_samples_split': [2, 5, 10]}),
+
+                      'Ridge': (Ridge(alpha=self.ridge_alpha, random_state=self.random_state), {
+                          'max_iter': [1000, 5000, 10000]}),
+
+                      'SVR': (SVR(), {
+                          'C': [0.1, 1, 10],
+                          'gamma': ['scale', 'auto'],
+                          'kernel': ['linear', 'rbf']}),
+
+                      'XGBRegressor': (XGBRegressor(random_state=self.random_state, verbosity=1), {
+                          'n_estimators': [100, 200, 500],
+                          'learning_rate': [0.01, 0.1, 0.3],
+                          'max_depth': [3, 5, 7]}),
+
+                      'CatBoostRegressor': (CatBoostRegressor(random_state=self.random_state, verbose=10), {
+                          'iterations': [100, 200, 500],
+                          'learning_rate': [0.01, 0.1, 0.3],
+                          'depth': [3, 5, 7]})
+                      }
+
+            # Select the model and parameter grid
+            model, param_grid = models[model_name]
+            # Initialize GridSearchCV
+            grid_search = GridSearchCV(estimator=model, param_grid=param_grid, scoring=scoring, cv=cv)
+            grid_search.fit(X, y)
+            # Get the best parameters and the best score
+            best_params = grid_search.best_params_
+            best_score = grid_search.best_score_
+            self.best_model = grid_search.best_estimator_
+            logs.log("Successfully tuned the parameters using GridSearchCV")
+            return grid_search.best_estimator_, best_params, best_score
+        except Exception as e:
+            raise ValueError(f"Error in tuning parameters using GridSearchCV: {e}")
+            logs.log("Something went wrong while tuning parameters using GridSearchCV", level='ERROR')
+
+    def cross_validate_models(self, model_name, X, y, n_splits=5):
         """
         Perform cross validation of specified model
         :param X:
         :param y:
-        :param cv:
-        :param model:
+        :param n_splits:
+        :param model_name:
         :return:
         """
         try:
-            kf = KFold(n_splits=cv, shuffle=True, random_state=self.random_state)
-            r2_scores = cross_val_score(model, X, y, cv=kf, scoring='r2')
+            # Perform grid search to get the best model
+            best_model, best_params, best_score = self.tune_parameters(model_name, X, y)
+            # Initialize KFold
+            kf = KFold(n_splits=n_splits, shuffle=True, random_state=self.random_state)
+            #kf = KFold(n_splits=cv, shuffle=True, random_state=self.random_state)
+            r2_scores = cross_val_score(best_model, X, y, cv=kf, scoring='r2')
             adj_r2_scores = 1 - (1 - r2_scores) * (len(y) - 1) / (len(y) - len(X[0, :]) - 1)
             logs.log("Successfully performed cross-validation")
             return np.mean(adj_r2_scores), np.std(adj_r2_scores)
@@ -653,6 +704,30 @@ class regressor:
         except Exception as e:
             raise ValueError(f"Error in getting feature names: {e}")
             logs.log("Something went wrong while getting feature names", level='ERROR')
+
+    def vif_multicollinearity(self, X, threshold=10.0):
+        """
+        Checks for multi-collinearity between features doesn't work well
+        :param X should be normailzed:
+        :param threshold:
+        :return: non-collinear features
+        """
+        try:
+            numeric_features, _ = self.find_numericategory_columns(X)
+            x_num = self.pre_process(X[numeric_features])
+            vif_data = pd.DataFrame()
+            vif_data["feature"] = X[numeric_features].columns
+            vif_data["VIF"] = [variance_inflation_factor(x_num, i) for i in range(X[numeric_features].shape[1])]
+
+            # Drop columns with VIF above the threshold
+            high_vif_features = vif_data[vif_data["VIF"] > threshold]["feature"].tolist()
+            x_dropped = X.drop(columns=high_vif_features)
+            logs.log("Successfully performed the multi-collinearity check step!")
+
+            return x_dropped.columns, high_vif_features, vif_data
+        except Exception as e:
+            raise ValueError(f"Error in checking multi-collinearity: {e}")
+            logs.log("Something went wrong while checking multi-collinearity:", level='ERROR')
 
     def __str__(self):
         return "This is my custom regressor class object"
